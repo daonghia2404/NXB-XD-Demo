@@ -1575,127 +1575,353 @@
           <div class="breadcrumb_detail">
             <p>Trang chủ<span>/ Trang chi tiết sách</span></p>
           </div>
-          <div class="row chi-tiet-sach-main">
-            <div class="col-lg-9">
-              <div class="row">
-                <div class="col-lg-4 col-md-4">
-                  <div class="detail__group d-flex flex-column"><img class="lazy lazy-opacity mb-4" src="./assets/images/book-detail/img.png" alt=""></div>
+          <div class="BookDetailSection d-flex flex-wrap align-items-start justify-content-between">
+            <div class="BookDetailSection-col">
+              <div class="BookDetailSection-preview d-flex align-items-start">
+                <div class="BookDetailSection-preview-list">
+                  <div class="BookDetailSection-preview-list-arrow prev"> <img src="./assets/icons/icon-angle-up-gray-light.svg" alt=""></div>
+                  <div class="BookDetailSection-preview-list-group">
+                    <div class="BookDetailSection-preview-list-item"> <img src="./assets/images/image-book-detail.png" alt=""></div>
+                    <div class="BookDetailSection-preview-list-item"> <img src="./assets/images/image-book-detail.png" alt=""></div>
+                    <div class="BookDetailSection-preview-list-item"> <img src="./assets/images/image-book-detail.png" alt=""></div>
+                    <div class="BookDetailSection-preview-list-item"> <img src="./assets/images/image-book-detail.png" alt=""></div>
+                    <div class="BookDetailSection-preview-list-item"> <img src="./assets/images/image-book-detail.png" alt=""></div>
+                  </div>
+                  <div class="BookDetailSection-preview-list-arrow next"><img src="./assets/icons/icon-angle-down-gray-light.svg" alt=""></div>
                 </div>
-                <div class="col-lg-8 col-md-8">
-                  <div class="detail-book">
-                    <div class="list-content mb-4">
-                      <h1 class="detail__list-title">Các đô thị Việt Nam quá trình hình thành, phát triển và quy hoạch đô thị - Tập 1</h1>
-                      <p class="detail__list-description">Tập 1: Hà Nội, Hải Phòng, Vinh, Huế, Đà Nẵng, Hội An, Đà Lạt, Nha Trang, Buôn Ma Thuột, Cần Thơ</p>
-                    </div>
-                    <div class="list-card d-flex justify-content-around align-items-center mb-3">
-                      <div class="card__item d-flex justify-content-center align-items-center">
-                        <p class="num">4.5</p>
-                        <div class="start d-flex">
-                          <div class="start__in"><img class="lazy" data-src="./assets/images/book-detail/shape.png" src="./assets/images/book-detail/shape.png" alt=""></div>
-                          <div class="start__in"><img class="lazy" data-src="./assets/images/book-detail/shape.png" src="./assets/images/book-detail/shape.png" alt=""></div>
-                          <div class="start__in"><img class="lazy" data-src="./assets/images/book-detail/shape.png" src="./assets/images/book-detail/shape.png" alt=""></div>
-                          <div class="start__in"><img class="lazy" data-src="./assets/images/book-detail/shape.png" src="./assets/images/book-detail/shape.png" alt=""></div>
-                          <div class="start__in"><img class="lazy" data-src="./assets/images/book-detail/shape.png" src="./assets/images/book-detail/shape.png" alt=""></div>
-                        </div>
+                <div class="BookDetailSection-preview-carousel-wrapper">
+                  <div class="BookDetailSection-preview-carousel"> 
+                    <div class="owl-carousel" id="BookDetailSection-carousel"> 
+                      <div class="item"> 
+                        <div class="BookDetailSection-preview-carousel-item"> <img src="./assets/images/image-book-detail.png" alt=""></div>
                       </div>
-                      <div class="card__item border__lr d-flex justify-content-center align-items-center">
-                        <p class="num">5.8</p><span>đánh giá</span>
+                      <div class="item"> 
+                        <div class="BookDetailSection-preview-carousel-item"> <img src="./assets/images/image-book-detail.png" alt=""></div>
                       </div>
-                      <div class="card__item d-flex justify-content-center align-items-center">
-                        <p class="num">369</p><span>đá bán</span>
+                      <div class="item"> 
+                        <div class="BookDetailSection-preview-carousel-item"> <img src="./assets/images/image-book-detail.png" alt=""></div>
+                      </div>
+                      <div class="item"> 
+                        <div class="BookDetailSection-preview-carousel-item"> <img src="./assets/images/image-book-detail.png" alt=""></div>
+                      </div>
+                      <div class="item"> 
+                        <div class="BookDetailSection-preview-carousel-item"> <img src="./assets/images/image-book-detail.png" alt=""></div>
                       </div>
                     </div>
-                    <div class="list-cart">
-                      <div class="cart__category">
-                        <div class="category-top">
-                          <div class="top-co">
-                            <h3 class="tit_option d-flex align-items-center">Chọn</h3>
-                          </div>
-                          <div class="category_social desktop d-flex justify-content-center">
-                            <div class="social-title"><img src="./assets/images/book-detail/soci.png" alt=""><span>Chia sẻ:</span></div>
-                            <div class="social-list"><img class="lazy mr-1" data-src="./assets/images/book-detail/fb.png" src="./assets/images/book-detail/fb.png" alt=""><img class="lazy mr-1" data-src="./assets/images/book-detail/mess.png" src="./assets/images/book-detail/mess.png" alt=""><img class="lazy mr-1" data-src="./assets/images/book-detail/zalo.png" src="./assets/images/book-detail/zalo.png" alt=""><img class="lazy mr-1" data-src="./assets/images/book-detail/pt.png" src="./assets/images/book-detail/pt.png" alt=""><img class="lazy" data-src="./assets/images/book-detail/file.png" src="./assets/images/book-detail/file.png" alt=""></div>
+                  </div>
+                  <div class="BookDetailSection-actions d-flex align-items-center justify-content-center auto">
+                    <button class="btn btn-sm btn-success">
+                      <svg class="mr-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.79167 10.5C3.5596 10.5 3.33704 10.5922 3.17295 10.7563C3.00885 10.9204 2.91667 11.143 2.91667 11.375C2.91667 11.6972 2.6555 11.9584 2.33333 11.9584C2.01117 11.9584 1.75 11.6972 1.75 11.375C1.75 10.8336 1.9651 10.3142 2.34799 9.93136C2.73088 9.54848 3.25018 9.33337 3.79167 9.33337H11.6667C11.9888 9.33337 12.25 9.59454 12.25 9.91671C12.25 10.2389 11.9888 10.5 11.6667 10.5H3.79167Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M3.79167 1.75004C3.5596 1.75004 3.33704 1.84223 3.17295 2.00632C3.00885 2.17042 2.91667 2.39298 2.91667 2.62504V11.375C2.91667 11.6071 3.00885 11.8297 3.17295 11.9938C3.33704 12.1579 3.5596 12.25 3.79167 12.25H11.0833V1.75004H3.79167ZM3.79167 0.583374H11.6667C11.9888 0.583374 12.25 0.844541 12.25 1.16671V12.8334C12.25 13.1555 11.9888 13.4167 11.6667 13.4167H3.79167C3.25018 13.4167 2.73088 13.2016 2.34799 12.8187C1.9651 12.4358 1.75 11.9165 1.75 11.375V2.62504C1.75 2.08356 1.9651 1.56425 2.34799 1.18136C2.73088 0.798478 3.25018 0.583374 3.79167 0.583374Z" fill="white"/></svg>Đọc thử</button>
+                    <button class="btn btn-sm btn-primary">
+                      <svg class="mr-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.00008 2.33329C5.7624 2.33329 4.57542 2.82496 3.70025 3.70013C2.82508 4.5753 2.33341 5.76228 2.33341 6.99996V10.5C2.33341 10.8221 2.07225 11.0833 1.75008 11.0833C1.42792 11.0833 1.16675 10.8221 1.16675 10.5V6.99996C1.16675 5.45286 1.78133 3.96913 2.87529 2.87517C3.96925 1.78121 5.45299 1.16663 7.00008 1.16663C8.54718 1.16663 10.0309 1.78121 11.1249 2.87517C12.2188 3.96913 12.8334 5.45286 12.8334 6.99996V10.5C12.8334 10.8221 12.5722 11.0833 12.2501 11.0833C11.9279 11.0833 11.6667 10.8221 11.6667 10.5V6.99996C11.6667 5.76228 11.1751 4.5753 10.2999 3.70013C9.42474 2.82496 8.23776 2.33329 7.00008 2.33329Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M1.16675 8.16663C1.16675 7.84446 1.42792 7.58329 1.75008 7.58329H3.50008C3.96421 7.58329 4.40933 7.76767 4.73752 8.09586C5.06571 8.42405 5.25008 8.86916 5.25008 9.33329V11.0833C5.25008 11.5474 5.06571 11.9925 4.73752 12.3207C4.40933 12.6489 3.96421 12.8333 3.50008 12.8333H2.91675C2.45262 12.8333 2.0075 12.6489 1.67931 12.3207C1.35112 11.9925 1.16675 11.5474 1.16675 11.0833V8.16663ZM2.33341 8.74996V11.0833C2.33341 11.238 2.39487 11.3864 2.50427 11.4958C2.61367 11.6052 2.76204 11.6666 2.91675 11.6666H3.50008C3.65479 11.6666 3.80316 11.6052 3.91256 11.4958C4.02196 11.3864 4.08342 11.238 4.08342 11.0833V9.33329C4.08342 9.17858 4.02196 9.03021 3.91256 8.92081C3.80316 8.81142 3.65479 8.74996 3.50008 8.74996H2.33341ZM10.5001 8.74996C10.3454 8.74996 10.197 8.81142 10.0876 8.92081C9.97821 9.03021 9.91675 9.17858 9.91675 9.33329V11.0833C9.91675 11.238 9.97821 11.3864 10.0876 11.4958C10.197 11.6052 10.3454 11.6666 10.5001 11.6666H11.0834C11.2381 11.6666 11.3865 11.6052 11.4959 11.4958C11.6053 11.3864 11.6667 11.238 11.6667 11.0833V8.74996H10.5001ZM9.26265 8.09586C9.59083 7.76767 10.036 7.58329 10.5001 7.58329H12.2501C12.5722 7.58329 12.8334 7.84446 12.8334 8.16663V11.0833C12.8334 11.5474 12.649 11.9925 12.3209 12.3207C11.9927 12.6489 11.5475 12.8333 11.0834 12.8333H10.5001C10.036 12.8333 9.59083 12.6489 9.26265 12.3207C8.93446 11.9925 8.75008 11.5474 8.75008 11.0833V9.33329C8.75008 8.86916 8.93446 8.42405 9.26265 8.09586Z" fill="white"/></svg>Nghe thử</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="BookDetailSection-col">
+              <div class="BookDetailSection-title">Chiến lược barbell trong quản trị danh mục đầu tư trái phiếu của ngân hàng thương mại Việt Nam</div>
+              <div class="BookDetailSection-subtitle">Subtitle: Mô tả tiêu đề phụ ở đây</div>
+              <div class="BookDetailSection-values d-flex flex-wrap align-items-center"> 
+                <div class="BookDetailSection-values-item d-flex align-items-center">
+                  <div class="BookDetailSection-values-item-number">4.5</div>
+                  <div class="BookDetailSection-values-item-label d-flex align-items-center"> <img src="./assets/icons/icon-star-yellow.svg" alt=""><img src="./assets/icons/icon-star-yellow.svg" alt=""><img src="./assets/icons/icon-star-yellow.svg" alt=""><img src="./assets/icons/icon-star-yellow.svg" alt=""><img src="./assets/icons/icon-star-yellow.svg" alt="">
+                  </div>
+                </div>
+                <div class="BookDetailSection-values-item d-flex align-items-center">
+                  <div class="BookDetailSection-values-item-number">52358</div>
+                  <div class="BookDetailSection-values-item-label">Lượt xem</div>
+                </div>
+                <div class="BookDetailSection-values-item d-flex align-items-center">
+                  <div class="BookDetailSection-values-item-number">3639</div>
+                  <div class="BookDetailSection-values-item-label">Đã bán</div>
+                </div>
+                <div class="BookDetailSection-values-item d-flex align-items-center">
+                  <div class="BookDetailSection-values-item-share"><img src="./assets/icons/icon-share.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="BookDetailSection-info">
+                <div class="BookDetailSection-info-header d-flex">
+                  <div class="BookDetailSection-info-header-item">Chọn sản phẩm</div>
+                </div>
+                <div class="BookDetailSection-info-body">
+                  <div class="BookDetailSection-info-options">
+                    <div class="BookDetailSection-info-options-overlay"></div>
+                    <div class="BookDetailSection-info-options-item d-flex align-items-center">
+                      <div class="BookDetailSection-info-options-item-icon">
+                         <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.67773 1.75H4.42773C3.94449 1.75 3.55273 2.14175 3.55273 2.625V4.375H2.67773V2.625C2.67773 1.6585 3.46124 0.875 4.42773 0.875H9.67773C10.6442 0.875 11.4277 1.6585 11.4277 2.625V4.375H10.5527V2.625C10.5527 2.14175 10.161 1.75 9.67773 1.75Z" fill="#02010E"/><path d="M12.3027 5.25H1.80273C1.31949 5.25 0.927734 5.64175 0.927734 6.125V8.75C0.927734 9.23325 1.31949 9.625 1.80273 9.625H2.67773V10.5H1.80273C0.836236 10.5 0.0527344 9.7165 0.0527344 8.75V6.125C0.0527344 5.1585 0.836236 4.375 1.80273 4.375H12.3027C13.2692 4.375 14.0527 5.1585 14.0527 6.125V8.75C14.0527 9.7165 13.2692 10.5 12.3027 10.5H11.4277V9.625H12.3027C12.786 9.625 13.1777 9.23325 13.1777 8.75V6.125C13.1777 5.64175 12.786 5.25 12.3027 5.25Z" fill="#02010E"/><path fill-rule="evenodd" clip-rule="evenodd" d="M9.67773 7.875H4.42773C3.94449 7.875 3.55273 8.26675 3.55273 8.75V11.375C3.55273 11.8582 3.94449 12.25 4.42773 12.25H9.67773C10.161 12.25 10.5527 11.8582 10.5527 11.375V8.75C10.5527 8.26675 10.161 7.875 9.67773 7.875ZM4.42773 7C3.46124 7 2.67773 7.7835 2.67773 8.75V11.375C2.67773 12.3415 3.46124 13.125 4.42773 13.125H9.67773C10.6442 13.125 11.4277 12.3415 11.4277 11.375V8.75C11.4277 7.7835 10.6442 7 9.67773 7H4.42773Z" fill="#02010E"/><path d="M2.67773 6.5625C2.67773 6.80412 2.48186 7 2.24023 7C1.99861 7 1.80273 6.80412 1.80273 6.5625C1.80273 6.32088 1.99861 6.125 2.24023 6.125C2.48186 6.125 2.67773 6.32088 2.67773 6.5625Z" fill="#02010E"/></svg></div>
+                      <div class="BookDetailSection-info-options-item-title">Sách giấy</div>
+                      <div class="BookDetailSection-info-options-item-control"> 
+                        <div class="skin-1">
+                          <div class="num-in"><span class="minus"></span>
+                            <input class="in-num" type="number" value="0"><span class="plus"></span>
                           </div>
                         </div>
-                        <div class="cart-bg">
-                          <form action="">
-                            <ul class="category-li d-flex justify-content-between">
-                              <li class="li-item">
-                                <label class="category-li__item fas" for="rental-book">
-                                  <h3 class="title item_left">Eboook</h3>
-                                  <del class="item-price">135.000 đ</del>
-                                </label>
-                                <input type="checkbox" id="buy-book" style="display:none">
-                                <button class="btn btn-success btn-sm"><img class="mr-1" src="./assets/images/button/book.svg" alt=""><span>Vào đọc</span></button>
-                              </li>
-                              <li>
-                                <div class="line"></div>
-                              </li>
-                              <li class="li-item">
-                                <label class="category-li__item fas" for="rental-book">
-                                  <h6 class="title item_left">Eboook</h6>
-                                  <del class="item-price">135.000 đ</del>
-                                </label>
-                                <input type="checkbox" id="rental-book" style="display:none">
-                                <button class="btn btn-primary btn-sm"><img class="mr-1" src="./assets/images/button/phone.svg" alt=""><span>Vào nghe</span></button>
-                              </li>
-                              <li>
-                                <div class="line"></div>
-                              </li>
-                              <li class="li-item sach-giay">
-                                <label class="category-li__item fas" for="buy-book">
-                                  <h6 class="title">Sách Giấy</h6><span class="item-price">150.000 đ</span>
-                                </label>
-                                <input type="checkbox" id="buy-book" style="display:none">
-                                <div class="amout-options">
-                                  <div class="option-wrap flex items-center">
-                                    <div class="button d-flex justify-content-center align-items-center minus js-qty-decrease-2">-</div>
-                                    <div class="amount buy__amount">
-                                      <input class="number js-product-qty-2" type="text" value="1">
+                      </div>
+                      <div class="BookDetailSection-info-options-item-price">
+                         315.000 đ
+                        <del>515.000 đ</del>
+                      </div>
+                      <div class="BookDetailSection-info-options-item-checkbox">
+                        <input type="checkbox">
+                      </div>
+                    </div>
+                    <div class="BookDetailSection-info-options-item d-flex align-items-center">
+                      <div class="BookDetailSection-info-options-item-icon">
+                         <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.96932 13.4167H4.13599C3.14432 13.4167 2.38599 12.6584 2.38599 11.6667V2.33337C2.38599 1.34171 3.14432 0.583374 4.13599 0.583374H9.96932C10.961 0.583374 11.7193 1.34171 11.7193 2.33337V11.6667C11.7193 12.6584 10.961 13.4167 9.96932 13.4167ZM4.13599 1.75004C3.78599 1.75004 3.55265 1.98337 3.55265 2.33337V11.6667C3.55265 12.0167 3.78599 12.25 4.13599 12.25H9.96932C10.3193 12.25 10.5527 12.0167 10.5527 11.6667V2.33337C10.5527 1.98337 10.3193 1.75004 9.96932 1.75004H4.13599Z" fill="#02010E"/><path d="M7.05265 11.0834C6.99432 11.0834 6.87765 11.0834 6.81932 11.025C6.76099 11.025 6.70265 10.9667 6.64432 10.9084C6.52765 10.7917 6.46932 10.675 6.46932 10.5C6.46932 10.4417 6.46932 10.325 6.52765 10.2667C6.58599 10.2084 6.58599 10.15 6.64432 10.0917C6.87765 9.85837 7.22765 9.85837 7.46099 10.0917C7.57765 10.2084 7.63599 10.3834 7.63599 10.5C7.63599 10.675 7.57765 10.7917 7.46099 10.9084C7.34432 11.025 7.22765 11.0834 7.05265 11.0834Z" fill="#02010E"/></svg></div>
+                      <div class="BookDetailSection-info-options-item-title">Ebook</div>
+                      <div class="BookDetailSection-info-options-item-control"> 
+                        <div class="time click-show-dropdow">
+                          <input class="valua-time" type="hidden" value="1">
+                          <h6 class="time-text mb-0 mr-1">1 tháng</h6><i class="fas fa-angle-down"></i>
+                          <ul class="dropdow">
+                            <li>
+                              <input class="get-valua-number" type="hidden" value="1"><i class="fas fa-check"></i><span class="get-valua-text">1 tháng</span>
+                            </li>
+                            <li>
+                              <input class="get-valua-number" type="hidden" value="3"><i class="fas fa-check"></i><span class="get-valua-text">3 tháng</span>
+                            </li>
+                            <li>
+                              <input class="get-valua-number" type="hidden" value="6"><i class="fas fa-check"></i><span class="get-valua-text">6 tháng</span>
+                            </li>
+                            <li>
+                              <input class="get-valua-number" type="hidden" value="999"><i class="fas fa-check"></i><span class="get-valua-text">Vĩnh viễn</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="BookDetailSection-info-options-item-price">
+                         315.000 đ</div>
+                      <div class="BookDetailSection-info-options-item-checkbox">
+                        <input type="checkbox">
+                      </div>
+                    </div>
+                    <div class="BookDetailSection-info-options-item d-flex align-items-center">
+                      <div class="BookDetailSection-info-options-item-icon">
+                         <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_9136_2373)"><path d="M11.6985 4.83337H11.2922C11.0637 4.83337 10.886 5.0365 10.886 5.23962V6.45837C10.886 8.36267 9.2356 9.88611 7.30591 9.70837C5.60474 9.53064 4.38599 8.03259 4.38599 6.33142V5.23962C4.38599 5.0365 4.18286 4.83337 3.97974 4.83337H3.57349C3.34497 4.83337 3.16724 5.0365 3.16724 5.23962V6.28064C3.16724 8.54041 4.76685 10.5717 7.02661 10.8763V11.7396H5.60474C5.37622 11.7396 5.19849 11.9427 5.19849 12.1459V12.5521C5.19849 12.7806 5.37622 12.9584 5.60474 12.9584H9.66724C9.87036 12.9584 10.0735 12.7806 10.0735 12.5521V12.1459C10.0735 11.9427 9.87036 11.7396 9.66724 11.7396H8.24536V10.9017C10.4036 10.597 12.1047 8.71814 12.1047 6.45837V5.23962C12.1047 5.0365 11.9016 4.83337 11.6985 4.83337ZM7.63599 8.89587C8.98169 8.89587 10.0735 7.82947 10.0735 6.45837V2.39587C10.0735 1.05017 8.98169 -0.041626 7.63599 -0.041626C6.26489 -0.041626 5.19849 1.05017 5.19849 2.39587V6.45837C5.19849 7.82947 6.26489 8.89587 7.63599 8.89587ZM6.41724 2.39587C6.41724 1.73572 6.95044 1.17712 7.63599 1.17712C8.29614 1.17712 8.85474 1.73572 8.85474 2.39587V6.45837C8.85474 7.14392 8.29614 7.67712 7.63599 7.67712C6.95044 7.67712 6.41724 7.14392 6.41724 6.45837V2.39587Z" fill="#02010E"/></g><defs><clipPath id="clip0_9136_2373"><rect width="14" height="14" fill="white" transform="translate(0.0527344)"/></clipPath></defs></svg></div>
+                      <div class="BookDetailSection-info-options-item-title">Audio book</div>
+                      <div class="BookDetailSection-info-options-item-control"> 
+                        <div class="time click-show-dropdow">
+                          <input class="valua-time" type="hidden" value="1">
+                          <h6 class="time-text mb-0 mr-1">1 tháng</h6><i class="fas fa-angle-down"></i>
+                          <ul class="dropdow">
+                            <li>
+                              <input class="get-valua-number" type="hidden" value="1"><i class="fas fa-check"></i><span class="get-valua-text">1 tháng</span>
+                            </li>
+                            <li>
+                              <input class="get-valua-number" type="hidden" value="3"><i class="fas fa-check"></i><span class="get-valua-text">3 tháng</span>
+                            </li>
+                            <li>
+                              <input class="get-valua-number" type="hidden" value="6"><i class="fas fa-check"></i><span class="get-valua-text">6 tháng</span>
+                            </li>
+                            <li>
+                              <input class="get-valua-number" type="hidden" value="999"><i class="fas fa-check"></i><span class="get-valua-text">Vĩnh viễn</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="BookDetailSection-info-options-item-price">
+                         315.000 đ</div>
+                      <div class="BookDetailSection-info-options-item-checkbox">
+                        <input type="checkbox">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="BookDetailSection-info-price">
+                    <div class="BookDetailSection-info-price-text d-flex align-items-center">Thành tiền<strong>9.345.000 đ</strong></div>
+                    <div class="BookDetailSection-info-price-btn d-flex justify-content-between">
+                      <button class="btn btn-danger">
+                         <svg class="mr-2" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.03516 1C4.16953 1 1.03516 4.13438 1.03516 8C1.03516 11.8656 4.16953 15 8.03516 15C11.9008 15 15.0352 11.8656 15.0352 8C15.0352 4.13438 11.9008 1 8.03516 1ZM8.03516 13.8125C4.82578 13.8125 2.22266 11.2094 2.22266 8C2.22266 4.79063 4.82578 2.1875 8.03516 2.1875C11.2445 2.1875 13.8477 4.79063 13.8477 8C13.8477 11.2094 11.2445 13.8125 8.03516 13.8125ZM8.78047 7.6375L8.38359 7.54531V5.44688C8.97734 5.52813 9.34453 5.9 9.40703 6.35625C9.41484 6.41875 9.46797 6.46406 9.53047 6.46406H10.232C10.3055 6.46406 10.3633 6.4 10.357 6.32656C10.2617 5.35313 9.46016 4.72813 8.38984 4.62031V4.10938C8.38984 4.04063 8.33359 3.98438 8.26484 3.98438H7.82578C7.75703 3.98438 7.70078 4.04063 7.70078 4.10938V4.625C6.59453 4.73281 5.72891 5.34375 5.72891 6.48438C5.72891 7.54063 6.50703 8.05 7.32422 8.24531L7.71016 8.34375V10.5734C7.01953 10.4812 6.63203 10.1125 6.55234 9.61563C6.54297 9.55625 6.48984 9.5125 6.42891 9.5125H5.70703C5.63359 9.5125 5.57578 9.575 5.58203 9.64844C5.65234 10.5078 6.30391 11.2984 7.69453 11.4V11.8906C7.69453 11.9594 7.75078 12.0156 7.81953 12.0156H8.26328C8.33203 12.0156 8.38828 11.9594 8.38828 11.8891L8.38516 11.3938C9.60859 11.2859 10.4836 10.6313 10.4836 9.45625C10.482 8.37188 9.79297 7.8875 8.78047 7.6375ZM7.70859 7.38438C7.62109 7.35938 7.54766 7.33594 7.47422 7.30625C6.94609 7.11562 6.70078 6.80781 6.70078 6.41094C6.70078 5.84375 7.13047 5.52031 7.70859 5.44688V7.38438ZM8.38359 10.5781V8.48906C8.43203 8.50312 8.47578 8.51406 8.52109 8.52344C9.26016 8.74844 9.50859 9.06094 9.50859 9.54062C9.50859 10.1516 9.04922 10.5188 8.38359 10.5781Z" fill="white"/></svg>Mua ngay</button>
+                      <button class="btn btn-outline-danger">
+                         <svg class="mr-2" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5351 7.43626H2.53512C2.30298 7.43626 2.10209 7.35375 1.93244 7.18873C1.7628 7.02371 1.67798 6.82302 1.67798 6.58664C1.67798 6.35026 1.76057 6.14734 1.92575 5.97786C2.09092 5.80838 2.29405 5.72364 2.53512 5.72364H3.28512C3.46369 5.99124 3.6936 6.20085 3.97485 6.35249C4.2561 6.50413 4.56191 6.57995 4.89226 6.57995C5.22262 6.57995 5.52842 6.50413 5.80967 6.35249C6.09092 6.20085 6.32084 5.99124 6.49941 5.72364H10.5708C10.7494 5.99124 10.9793 6.20085 11.2606 6.35249C11.5418 6.50413 11.8476 6.57995 12.178 6.57995C12.5083 6.57995 12.8141 6.50413 13.0954 6.35249C13.3766 6.20085 13.6065 5.99124 13.7851 5.72364H14.5351C14.7762 5.72364 14.9793 5.80838 15.1445 5.97786C15.3097 6.14734 15.3923 6.35026 15.3923 6.58664C15.3923 6.82302 15.3074 7.02371 15.1378 7.18873C14.9682 7.35375 14.7673 7.43626 14.5351 7.43626ZM12.4726 5.64336C12.303 5.74148 12.1244 5.76378 11.9369 5.71026C11.7494 5.65674 11.6065 5.54525 11.5083 5.37577L9.48601 1.65619C9.3878 1.48671 9.36325 1.30608 9.41235 1.1143C9.46146 0.922527 9.57084 0.77758 9.74048 0.679461C9.91012 0.581343 10.0887 0.559043 10.2762 0.612562C10.4637 0.666081 10.6065 0.77758 10.7048 0.947057L12.7271 4.66664C12.8253 4.83612 12.8499 5.01674 12.8007 5.20852C12.7516 5.4003 12.6423 5.54525 12.4726 5.64336ZM5.56191 5.37577C5.46369 5.54525 5.32084 5.65674 5.13334 5.71026C4.94584 5.76378 4.76726 5.74148 4.59762 5.64336C4.42798 5.54525 4.3186 5.4003 4.2695 5.20852C4.22039 5.01674 4.24494 4.83612 4.34316 4.66664L6.36548 0.947057C6.46369 0.77758 6.60655 0.666081 6.79405 0.612562C6.98155 0.559043 7.16012 0.581343 7.32976 0.679461C7.49941 0.77758 7.60878 0.922527 7.65789 1.1143C7.707 1.30608 7.68244 1.48671 7.58423 1.65619L5.56191 5.37577ZM13.678 13.4304C13.6065 13.7872 13.4749 14.0191 13.2829 14.1262C13.0909 14.2332 12.7985 14.2867 12.4057 14.2867H4.71816C4.31637 14.2867 4.0128 14.2332 3.80744 14.1262C3.60209 14.0191 3.46369 13.7872 3.39226 13.4304L2.53512 8.29256H14.5351L13.678 13.4304ZM11.5351 10.8615H10.2494V9.57702C10.2494 9.46106 10.207 9.36072 10.1222 9.27598C10.0374 9.19124 9.93691 9.14887 9.82084 9.14887C9.70476 9.14887 9.60432 9.19124 9.5195 9.27598C9.43467 9.36072 9.39226 9.46106 9.39226 9.57702V10.8615H8.10655C7.99048 10.8615 7.89003 10.9039 7.80521 10.9886C7.72039 11.0733 7.67798 11.1737 7.67798 11.2896C7.67798 11.4056 7.72039 11.5059 7.80521 11.5907C7.89003 11.6754 7.99048 11.7178 8.10655 11.7178H9.39226V13.0022C9.39226 13.1182 9.43467 13.2186 9.5195 13.3033C9.60432 13.388 9.70476 13.4304 9.82084 13.4304C9.93691 13.4304 10.0374 13.388 10.1222 13.3033C10.207 13.2186 10.2494 13.1182 10.2494 13.0022V11.7178H11.5351C11.6512 11.7178 11.7516 11.6754 11.8365 11.5907C11.9213 11.5059 11.9637 11.4056 11.9637 11.2896C11.9637 11.1737 11.9213 11.0733 11.8365 10.9886C11.7516 10.9039 11.6512 10.8615 11.5351 10.8615Z" fill="#EB5757"/></svg>Thêm vào giỏ</button>
+                    </div>
+                  </div>
+                  <div class="BookDetailSection-voice">
+                    <div class="BookDetailSection-voice-wrapper d-flex align-items-center justify-content-between">
+                      <div class="BookDetailSection-voice-item d-flex align-items-center"><img src="./assets/icons/icon-voice.svg" alt="">Phiên bản sách nói:</div>
+                      <div class="BookDetailSection-voice-item">
+                        <button class="btn btn-primary d-flex align-items-center">
+                           Mua tại Fonos<img src="./assets/images/image-logo-fonos.png" alt=""></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="BookDetailSection-bonus d-flex align-items-center">
+                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.07827 17.9392V21.9179L9.05699 20.9349L12.0527 23.9307L15.0485 20.9349L19.0272 21.9179V17.9392L23.0527 16.9094L21.04 12.9307L23.0527 8.95194L19.0272 7.92215V3.94343L15.0485 4.92641L12.0527 1.93066L9.05699 4.92641L5.07827 3.94343V7.92215L1.05273 8.95194L3.0655 12.9307L1.05273 16.9094L5.07827 17.9392ZM4.84422 12.0413L3.95486 10.2158L5.54635 9.8413C6.01444 9.74769 6.3811 9.52144 6.64635 9.16258C6.9116 8.80371 7.04422 8.39024 7.04422 7.92215V6.5179L8.5421 6.93917H9.05699C9.58749 6.93917 10.0556 6.73634 10.4612 6.33066L12.0527 4.73917L13.6442 6.33066C14.0499 6.73634 14.518 6.93917 15.0485 6.93917C15.2357 6.93917 15.4073 6.90797 15.5634 6.84556L17.0612 6.5179V7.92215C17.0612 8.39024 17.1939 8.80371 17.4591 9.16258C17.7244 9.52144 18.091 9.74769 18.5591 9.8413L20.1506 10.2158L19.2612 12.0413C18.9492 12.6342 18.9492 13.2271 19.2612 13.82L20.1506 15.6456L18.5591 16.02C18.091 16.1136 17.7244 16.3399 17.4591 16.6987C17.1939 17.0576 17.0612 17.4711 17.0612 17.9392V19.3434L15.5634 18.9222H15.0485C14.518 18.9222 14.0499 19.125 13.6442 19.5307L12.0527 21.1222L10.4612 19.5307C10.0556 19.125 9.58749 18.9222 9.05699 18.9222C8.86976 18.9222 8.69812 18.9534 8.5421 19.0158L7.04422 19.3434V17.9392C7.04422 17.4711 6.9116 17.0576 6.64635 16.6987C6.3811 16.3399 6.01444 16.1136 5.54635 16.02L3.95486 15.6456L4.84422 13.82C5.15628 13.2271 5.15628 12.6342 4.84422 12.0413ZM11.0698 16.3477L15.7506 11.62C16.1875 11.1831 16.1875 10.7151 15.7506 10.2158C15.2825 9.8101 14.8144 9.8101 14.3464 10.2158L11.0698 13.5392L9.75912 12.2285C9.29103 11.8229 8.82295 11.8229 8.35486 12.2285C7.94919 12.6966 7.94919 13.1647 8.35486 13.6328L11.0698 16.3477Z" fill="#2D9CDB"/></svg><strong>Khuyến mãi: </strong>Mua bộ sách giấy tặng bộ ebook</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row chi-tiet-sach-main mb-4">
+            <div class="col-lg-9">
+              <div class="author-list">
+                <div class="author-list-wrapper d-flex">
+                  <div class="author-list-wrapper-item">
+                    <div class="author-list__more-txt">Nhiều tác giả</div>
+                    <div class="d-flex align-items-center" style="margin-top: 5px;">
+                      <div class="author-list__avatar">
+                        <div class="author-list__avatar-img"> <img class="lazy" data-src="./assets/images/author-avatar/author-avatar-1.png" src="./assets/images/author-avatar/author-avatar-1.png" alt=""><span class="img__check">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewbox="0 0 10 10" fill="none">
+                              <path d="M5.00016 0.833374C2.69808 0.833374 0.833496 2.69796 0.833496 5.00004C0.833496 7.30004 2.69808 9.16671 5.00016 9.16671C7.30016 9.16671 9.16683 7.30004 9.16683 5.00004C9.16683 2.69796 7.30016 0.833374 5.00016 0.833374ZM4.16683 7.08337L2.0835 5.00004L2.67308 4.41046L4.16683 5.90421L7.32725 2.74379L7.91683 3.33337L4.16683 7.08337Z" fill="#27AE34"></path>
+                            </svg></span></div>
+                        <div class="author-list__avatar-img"> <img class="lazy" data-src="./assets/images/author-avatar/author-avatar-2.png" src="./assets/images/author-avatar/author-avatar-2.png" alt=""><span class="img__check"></span></div>
+                        <div class="author-list__avatar-img"> <img class="lazy" data-src="./assets/images/author-avatar/author-avatar-3.png" src="./assets/images/author-avatar/author-avatar-3.png" alt=""><span class="img__check"></span></div>
+                        <div class="author-list__avatar-img"> <img class="lazy" data-src="./assets/images/author-avatar/author-avatar-4.png" src="./assets/images/author-avatar/author-avatar-4.png" alt=""><span class="img__check"></span></div>
+                      </div>
+                      <div class="author-list__more">
+                        <div class="author-list__more-list"><span>+3 </span>
+                          <div class="list__content"><span class="list__content-btn">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 14 14" fill="none">
+                                <path d="M14 1.415L12.585 0L7 5.585L1.415 0L0 1.415L5.585 7L0 12.585L1.415 14L7 8.415L12.585 14L14 12.585L8.415 7L14 1.415Z" fill="#828282"></path>
+                              </svg></span>
+                            <h5 class="h5-16 mb-0 list__content-title">Danh sách tác giả</h5>
+                            <div class="list__content-author">
+                              <div class="row border-ct">
+                                <div class="col-6 col-sm-4 col-md-3 box-item">
+                                  <div class="author__item">
+                                    <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""><span class="img__check">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666504 7.99984C0.666504 3.94975 3.94975 0.666504 7.99984 0.666504C12.0499 0.666504 15.3332 3.94975 15.3332 7.99984C15.3332 12.0499 12.0499 15.3332 7.99984 15.3332C3.94975 15.3332 0.666504 12.0499 0.666504 7.99984Z" fill="#27AE34"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5403 5.36182C11.8007 5.62217 11.8007 6.04428 11.5403 6.30463L7.40223 10.638C7.14188 10.8983 6.71977 10.8983 6.45942 10.638L4.45942 8.63796C4.19907 8.37761 4.19907 7.9555 4.45942 7.69515C4.71977 7.4348 5.14188 7.4348 5.40223 7.69515L6.93083 9.22375L10.5975 5.36182C10.8578 5.10147 11.28 5.10147 11.5403 5.36182Z" fill="white"></path>
+                                          </svg></span></a></div>
+                                    <div class="author__item-info">
+                                      <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
                                     </div>
-                                    <div class="button d-flex justify-content-center align-items-center plus js-qty-increase-2">+</div>
                                   </div>
                                 </div>
-                                <button class="btn btn-red btn-sm sach-giay-btn" type="button"><img class="mr-1" src="./assets/images/button/money.svg" alt=""><span>Mua sách giấy</span></button>
-                              </li>
-                            </ul>
-                            <div class="sach-giay__options__wrapper">
-                              <div class="category-total d-flex">
-                                <div class="total_pr">
-                                  <h6 class="title">Thành tiền</h6>
-                                  <h3 class="price">9.345.000 đ</h3>
+                                <div class="col-6 col-sm-4 col-md-3 box-item">
+                                  <div class="author__item">
+                                    <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
+                                    <div class="author__item-info">
+                                      <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="category-submit d-flex justify-content-between align-items-center">
-                                <div class="submit__item">
-                                  <button class="btn btn-red d-flex justify-content-center align-items-center"><img src="./assets/images/book-detail/nxb-dollard.svg" alt=""><span>Mua ngay</span></button>
+                                <div class="col-6 col-sm-4 col-md-3 box-item">
+                                  <div class="author__item">
+                                    <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
+                                    <div class="author__item-info">
+                                      <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
+                                    </div>
+                                  </div>
                                 </div>
-                                <div class="submit__item">
-                                  <button class="btn btn-outline-red btn-add-to-cart d-flex justify-content-center align-items-center"><img src="./assets/images/book-detail/nxb-addtocart.svg" alt=""><span>Thêm giỏ hàng</span></button>
+                                <div class="col-6 col-sm-4 col-md-3 box-item">
+                                  <div class="author__item">
+                                    <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
+                                    <div class="author__item-info">
+                                      <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="category-vote d-flex align-items-center"><img src="./assets/images/book-detail/vote.png" alt="">
-                                <h6 class="title">Khuyến mãi:</h6>
-                                <h6 class="description">+20% giá trị khi nạp ví</h6>
+                                <div class="col-6 col-sm-4 col-md-3 box-item">
+                                  <div class="author__item">
+                                    <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
+                                    <div class="author__item-info">
+                                      <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-3 box-item">
+                                  <div class="author__item">
+                                    <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
+                                    <div class="author__item-info">
+                                      <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-3 box-item">
+                                  <div class="author__item">
+                                    <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
+                                    <div class="author__item-info">
+                                      <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-3 box-item">
+                                  <div class="author__item">
+                                    <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
+                                    <div class="author__item-info">
+                                      <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </form>
+                          </div>
+                          <div class="list__overlay"></div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="author-list-wrapper-item">
+                    <div class="author-list__sales"><span class="author-list__sales-txt">Được bán bởi:</span><span class="author-list__sales-des">
+                        <div class="des__logo"><img src="./assets/images/single-author/logo.png" alt="logo"></div>
+                        <div class="des__info">
+                          <h5 class="des__info-title">Nhà Xuất Bản xây dựng</h5>
+                          <div class="des__info-des">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewbox="0 0 10 12" fill="none">
+                              <path d="M0.71208 1.81284L5.00016 0.20459L9.28825 1.81284C9.39941 1.85451 9.49522 1.92911 9.56287 2.02667C9.63052 2.12424 9.66678 2.24012 9.66683 2.35884V4.87126C9.66683 6.72451 8.8665 8.48792 7.47175 9.70826L5.00016 11.8713L2.52858 9.70826C1.83913 9.105 1.2866 8.36134 0.908019 7.52711C0.529438 6.69288 0.333554 5.78737 0.333496 4.87126V2.35884C0.333541 2.24012 0.369809 2.12424 0.437457 2.02667C0.505105 1.92911 0.600912 1.85451 0.71208 1.81284ZM4.38125 6.19367L3.55641 5.37001C3.5026 5.31429 3.43823 5.26985 3.36707 5.23928C3.2959 5.20871 3.21935 5.19262 3.1419 5.19194C3.06444 5.19127 2.98763 5.20603 2.91594 5.23536C2.84425 5.26469 2.77912 5.30801 2.72435 5.36278C2.66958 5.41755 2.62626 5.48268 2.59693 5.55437C2.5676 5.62606 2.55284 5.70287 2.55352 5.78032C2.55419 5.85778 2.57028 5.93432 2.60085 6.00549C2.63143 6.07666 2.67587 6.14103 2.73158 6.19484L3.96883 7.43209C4.07822 7.54145 4.22657 7.60288 4.38125 7.60288C4.53592 7.60288 4.68427 7.54145 4.79366 7.43209L7.26875 4.95701C7.32446 4.9032 7.3689 4.83883 7.39947 4.76766C7.43004 4.69649 7.44614 4.61995 7.44681 4.54249C7.44748 4.46504 7.43272 4.38822 7.40339 4.31653C7.37406 4.24484 7.33075 4.17971 7.27598 4.12494C7.22121 4.07017 7.15608 4.02686 7.08439 3.99753C7.0127 3.9682 6.93588 3.95344 6.85843 3.95411C6.78097 3.95478 6.70443 3.97088 6.63326 4.00145C6.56209 4.03202 6.49772 4.07646 6.44391 4.13217L4.38125 6.19484V6.19367Z" fill="#27AE60"></path>
+                            </svg><span class="des__text">Nhà phát hành tin cậy</span>
+                          </div>
+                        </div></span></div>
+                  </div>
                 </div>
               </div>
-              <ul class="lstDetail mt-4">
-                <li><img class="lazy icon" data-src="./assets/images/book-detail/ic_1.png" alt=""><span class="text"><span class="fRobotoB">NXB</span><span>Nhà xuất bản xây dứng</span></span></li>
-                <li><img class="lazy icon" data-src="./assets/images/book-detail/ic_2.png" alt=""><span class="text"><span class="fRobotoB">Người dịch:</span><span>Duy Phương,Duy Phương</span></span></li>
-                <li><img class="lazy icon" data-src="./assets/images/book-detail/ic_3.png" alt=""><span class="text"><span class="fRobotoB">Kt bìa:</span><span>18x27</span></span></li>
-                <li><img class="lazy icon" data-src="./assets/images/book-detail/ic_4.png" alt=""><span class="text"><span class="fRobotoB">Nhà XB:</span><span>2019</span></span></li>
-                <li><img class="lazy icon" data-src="./assets/images/book-detail/ic_5.png" alt=""><span class="text"><span class="fRobotoB">Quốc gia:</span><span>Đức</span></span></li>
-                <li><img class="lazy icon" data-src="./assets/images/book-detail/ic_6.png" alt=""><span class="text"><span class="fRobotoB">Loại sách:</span><span>Ebook, Sách giấy</span></span></li>
-                <li><img class="lazy icon" data-src="./assets/images/book-detail/ic_7.png" alt=""><span class="text"><span class="fRobotoB">Số trang</span><span>202 trang</span></span></li>
-                <li><img class="lazy icon" data-src="./assets/images/book-detail/ic_8.png" alt=""><span class="text"><span class="fRobotoB"></span><span> Giấy phép xuất bản</span></span></li>
-                <li><img class="lazy icon" data-src="./assets/images/book-detail/ic_9.png" alt=""><span class="text"><span class="fRobotoB">Ngôn ngữ:</span><span>Tiếng Việt</span></span></li>
-              </ul>
+              <div class="chi-tiet-sach-main-table-list mb-4">
+                <div class="chi-tiet-sach-main-table-list-title">Thông tin xuất bản</div>
+                <div class="chi-tiet-sach-main-table-list-wrapper">
+                  <table>
+                    <tr> 
+                      <td>
+                        <div class="d-flex align-items-center"><img class="lazy icon" data-src="./assets/images/book-detail/ic_1.png" alt="">NXB</div>
+                      </td>
+                      <td>Nhà xuất bản xây dứng</td>
+                      <td>
+                        <div class="d-flex align-items-center"><img class="lazy icon" data-src="./assets/images/book-detail/ic_2.png" alt="">Người dịch: </div>
+                      </td>
+                      <td>Phạm Vĩnh Cư</td>
+                    </tr>
+                    <tr> 
+                      <td>
+                        <div class="d-flex align-items-center"><img class="lazy icon" data-src="./assets/images/book-detail/ic_4.png" alt="">Năm XB:</div>
+                      </td>
+                      <td>2019</td>
+                      <td>
+                        <div class="d-flex align-items-center"><img class="lazy icon" data-src="./assets/images/book-detail/ic_11.png" alt="">Loại sách:</div>
+                      </td>
+                      <td>Ebook; Sách giấy, Audio Book</td>
+                    </tr>
+                    <tr> 
+                      <td>
+                        <div class="d-flex align-items-center"><img class="lazy icon" data-src="./assets/images/book-detail/ic_3.png" alt="">Kt bìa:</div>
+                      </td>
+                      <td>16x24 cm</td>
+                      <td>
+                        <div class="d-flex align-items-center"><img class="lazy icon" data-src="./assets/images/book-detail/ic_12.png" alt="">Số trang:</div>
+                      </td>
+                      <td>202 trang</td>
+                    </tr>
+                    <tr> 
+                      <td>
+                        <div class="d-flex align-items-center"><img class="lazy icon" data-src="./assets/images/book-detail/ic_5.png" alt="">Quốc gia: </div>
+                      </td>
+                      <td>Đức</td>
+                      <td>
+                        <div class="d-flex align-items-center"><img class="lazy icon" data-src="./assets/images/book-detail/ic_13.png" alt="">Ngôn ngữ:</div>
+                      </td>
+                      <td>Tiếng Việt</td>
+                    </tr>
+                    <tr> 
+                      <td>
+                        <div class="d-flex align-items-center"><img class="lazy icon" data-src="./assets/images/book-detail/ic_10.png" alt="">Mã ISBN: </div>
+                      </td>
+                      <td>978-604-82-3892-6</td>
+                      <td>
+                        <div class="d-flex align-items-center"><img class="lazy icon" data-src="./assets/images/book-detail/ic_10.png" alt="">Mã  ISBN Điện tử: </div>
+                      </td>
+                      <td>978-604-82-3892-6</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
               <div class="contentBook mb-4">
                 <ul class="nav nav-tabs">
                   <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#review">Giới thiệu</a></li>
@@ -1726,158 +1952,49 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12 pl-0 pr-0 mb-4">
-                <div class="comment-box">
-                  <h3 class="comment__title">Bình luận</h3>
-                  <div class="comment__list"> 
-                    <div class="comment__list-user"> 
-                      <div class="user__avatar">T </div>
-                      <div class="user__name">Duy Phương </div>
-                    </div>
-                    <div class="comment__list-content"> 
-                      <p class="list-content__cm">Sách rất hay và chất lượng .Qúa tuyệt vời ! </p>
-                      <p class="list-content__reply"> <span class="content__reply-name">Trả lời </span><small>-23 giờ trước </small></p>
-                      <div class="comment__list-rectangle"> 
-                        <div class="comment__list-user"> 
-                          <div class="user__avatar">D</div>
-                          <div class="user__name"> Thành Luân <span class="name-role">Quản trị viên </span></div>
-                        </div>
-                        <div class="comment__list-content"> 
-                          <p class="list-content__cm"> <span class="cm-greeting">Chào bạn! </span><br><span>Bạn đang cần tư vấn gì đấy .Vui lòng liên hệ với chúng tôi ^^.</span><br><span>Xin cảm ơn bạn. </span></p>
-                          <p class="list-content__reply"> <span class="content__reply-name">Trả lời </span><small>-23 giờ trước </small></p>
-                        </div>
+              <div class="comment-box mb-4">
+                <h3 class="comment__title">Bình luận</h3>
+                <div class="comment__list"> 
+                  <div class="comment__list-user"> 
+                    <div class="user__avatar">T </div>
+                    <div class="user__name">Duy Phương </div>
+                  </div>
+                  <div class="comment__list-content"> 
+                    <p class="list-content__cm">Sách rất hay và chất lượng .Qúa tuyệt vời ! </p>
+                    <p class="list-content__reply"> <span class="content__reply-name">Trả lời </span><small>-23 giờ trước </small></p>
+                    <div class="comment__list-rectangle"> 
+                      <div class="comment__list-user"> 
+                        <div class="user__avatar">D</div>
+                        <div class="user__name"> Thành Luân <span class="name-role">Quản trị viên </span></div>
                       </div>
-                      <div class="comment__reply">
-                        <form> 
-                          <div class="comment__avatar"> 
-                            <div class="avt">M </div>
-                            <input class="reply" type="text" placeholder="Viết câu trả lời ..">
-                          </div>
-                        </form>
+                      <div class="comment__list-content"> 
+                        <p class="list-content__cm"> <span class="cm-greeting">Chào bạn! </span><br><span>Bạn đang cần tư vấn gì đấy .Vui lòng liên hệ với chúng tôi ^^.</span><br><span>Xin cảm ơn bạn. </span></p>
+                        <p class="list-content__reply"> <span class="content__reply-name">Trả lời </span><small>-23 giờ trước </small></p>
                       </div>
                     </div>
-                  </div>
-                  <div class="comment__text">
-                    <form> 
-                      <div class="form__contend">
-                        <div class="message__form">
-                          <textarea class="message" placeholder="Để lại bình luận của bạn..."></textarea><img class="icon-mess lazy" data-src="./assets/images/comment/icon.png" src="./assets/images/comment/icon.png" alt="icon_rightdown">
+                    <div class="comment__reply">
+                      <form> 
+                        <div class="comment__avatar"> 
+                          <div class="avt">M </div>
+                          <input class="reply" type="text" placeholder="Viết câu trả lời ..">
                         </div>
-                        <p class="btn-submit"> <a href="#">Gửi bình luận </a></p>
-                      </div>
-                    </form>
+                      </form>
+                    </div>
                   </div>
+                </div>
+                <div class="comment__text">
+                  <form> 
+                    <div class="form__contend">
+                      <div class="message__form">
+                        <textarea class="message" placeholder="Để lại bình luận của bạn..."></textarea><img class="icon-mess lazy" data-src="./assets/images/comment/icon.png" src="./assets/images/comment/icon.png" alt="icon_rightdown">
+                      </div>
+                      <p class="btn-submit"> <a href="#">Gửi bình luận </a></p>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
             <div class="col-lg-3">
-              <div class="author-list">
-                <div class="author-list__avatar">
-                  <div class="author-list__avatar-img"> <img class="lazy" data-src="./assets/images/author-avatar/author-avatar-1.png" src="./assets/images/author-avatar/author-avatar-1.png" alt=""><span class="img__check">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewbox="0 0 10 10" fill="none">
-                        <path d="M5.00016 0.833374C2.69808 0.833374 0.833496 2.69796 0.833496 5.00004C0.833496 7.30004 2.69808 9.16671 5.00016 9.16671C7.30016 9.16671 9.16683 7.30004 9.16683 5.00004C9.16683 2.69796 7.30016 0.833374 5.00016 0.833374ZM4.16683 7.08337L2.0835 5.00004L2.67308 4.41046L4.16683 5.90421L7.32725 2.74379L7.91683 3.33337L4.16683 7.08337Z" fill="#27AE34"></path>
-                      </svg></span><a class="author-list__avatar-more" href=""></a></div>
-                  <div class="author-list__avatar-img"> <img class="lazy" data-src="./assets/images/author-avatar/author-avatar-2.png" src="./assets/images/author-avatar/author-avatar-2.png" alt=""><span class="img__check"></span><a class="author-list__avatar-more" href=""></a></div>
-                  <div class="author-list__avatar-img"> <img class="lazy" data-src="./assets/images/author-avatar/author-avatar-3.png" src="./assets/images/author-avatar/author-avatar-3.png" alt=""><span class="img__check"></span><a class="author-list__avatar-more" href=""></a></div>
-                  <div class="author-list__avatar-img"> <img class="lazy" data-src="./assets/images/author-avatar/author-avatar-4.png" src="./assets/images/author-avatar/author-avatar-4.png" alt=""><span class="img__check"></span><a class="author-list__avatar-more" href=""></a></div><a class="author-list__avatar-icon d-flex align-items-center justify-content-center" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
-                      <path id="Shape" d="M7.90675 0.51436L8.00015 0.509644C8.47311 0.509644 8.86212 0.86909 8.90889 1.32971L8.91361 1.42311V7.08657H14.5771C15.05 7.08657 15.439 7.44601 15.4858 7.90663L15.4905 8.00003C15.4905 8.47299 15.1311 8.86199 14.6705 8.90877L14.5771 8.91349H8.91361V14.577C8.91361 15.0499 8.55416 15.4389 8.09355 15.4857L8.00015 15.4904C7.52719 15.4904 7.13818 15.131 7.0914 14.6703L7.08669 14.577V8.91349H1.42323C0.950267 8.91349 0.56126 8.55404 0.514482 8.09342L0.509766 8.00003C0.509766 7.52707 0.869212 7.13806 1.32983 7.09128L1.42323 7.08657H7.08669V1.42311C7.08669 0.950145 7.44613 0.561138 7.90675 0.51436L8.00015 0.509644L7.90675 0.51436Z" fill="#4F4F4F"></path>
-                    </svg></a>
-                </div>
-                <div class="author-list__more"><span class="author-list__more-txt mr-2">Nhiều tác giả</span>
-                  <div class="author-list__more-list"><span>Xem danh sách</span>
-                    <div class="list__content"><span class="list__content-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 14 14" fill="none">
-                          <path d="M14 1.415L12.585 0L7 5.585L1.415 0L0 1.415L5.585 7L0 12.585L1.415 14L7 8.415L12.585 14L14 12.585L8.415 7L14 1.415Z" fill="#828282"></path>
-                        </svg></span>
-                      <h5 class="h5-16 mb-0 list__content-title">Danh sách tác giả</h5>
-                      <div class="list__content-author">
-                        <div class="row border-ct">
-                          <div class="col-6 col-sm-4 col-md-3 box-item">
-                            <div class="author__item">
-                              <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""><span class="img__check">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666504 7.99984C0.666504 3.94975 3.94975 0.666504 7.99984 0.666504C12.0499 0.666504 15.3332 3.94975 15.3332 7.99984C15.3332 12.0499 12.0499 15.3332 7.99984 15.3332C3.94975 15.3332 0.666504 12.0499 0.666504 7.99984Z" fill="#27AE34"></path>
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5403 5.36182C11.8007 5.62217 11.8007 6.04428 11.5403 6.30463L7.40223 10.638C7.14188 10.8983 6.71977 10.8983 6.45942 10.638L4.45942 8.63796C4.19907 8.37761 4.19907 7.9555 4.45942 7.69515C4.71977 7.4348 5.14188 7.4348 5.40223 7.69515L6.93083 9.22375L10.5975 5.36182C10.8578 5.10147 11.28 5.10147 11.5403 5.36182Z" fill="white"></path>
-                                    </svg></span></a></div>
-                              <div class="author__item-info">
-                                <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-6 col-sm-4 col-md-3 box-item">
-                            <div class="author__item">
-                              <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
-                              <div class="author__item-info">
-                                <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-6 col-sm-4 col-md-3 box-item">
-                            <div class="author__item">
-                              <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
-                              <div class="author__item-info">
-                                <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-6 col-sm-4 col-md-3 box-item">
-                            <div class="author__item">
-                              <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
-                              <div class="author__item-info">
-                                <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-6 col-sm-4 col-md-3 box-item">
-                            <div class="author__item">
-                              <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
-                              <div class="author__item-info">
-                                <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-6 col-sm-4 col-md-3 box-item">
-                            <div class="author__item">
-                              <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
-                              <div class="author__item-info">
-                                <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-6 col-sm-4 col-md-3 box-item">
-                            <div class="author__item">
-                              <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
-                              <div class="author__item-info">
-                                <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-6 col-sm-4 col-md-3 box-item">
-                            <div class="author__item">
-                              <div class="author__item-img"><a class="img__links" href="#"><img class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt=""></a></div>
-                              <div class="author__item-info">
-                                <h6 class="h6-14 bold info__name mb-0">Lê Thanh Sơn</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="list__overlay"></div>
-                  </div>
-                </div>
-                <div class="author-list__sales"><span class="author-list__sales-txt">Được bán bởi:</span><span class="author-list__sales-des">
-                    <div class="des__logo"><img src="./assets/images/single-author/logo.png" alt="logo"></div>
-                    <div class="des__info">
-                      <h5 class="des__info-title">Nhà Xuất Bản xây dựng</h5>
-                      <div class="des__info-des">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewbox="0 0 10 12" fill="none">
-                          <path d="M0.71208 1.81284L5.00016 0.20459L9.28825 1.81284C9.39941 1.85451 9.49522 1.92911 9.56287 2.02667C9.63052 2.12424 9.66678 2.24012 9.66683 2.35884V4.87126C9.66683 6.72451 8.8665 8.48792 7.47175 9.70826L5.00016 11.8713L2.52858 9.70826C1.83913 9.105 1.2866 8.36134 0.908019 7.52711C0.529438 6.69288 0.333554 5.78737 0.333496 4.87126V2.35884C0.333541 2.24012 0.369809 2.12424 0.437457 2.02667C0.505105 1.92911 0.600912 1.85451 0.71208 1.81284ZM4.38125 6.19367L3.55641 5.37001C3.5026 5.31429 3.43823 5.26985 3.36707 5.23928C3.2959 5.20871 3.21935 5.19262 3.1419 5.19194C3.06444 5.19127 2.98763 5.20603 2.91594 5.23536C2.84425 5.26469 2.77912 5.30801 2.72435 5.36278C2.66958 5.41755 2.62626 5.48268 2.59693 5.55437C2.5676 5.62606 2.55284 5.70287 2.55352 5.78032C2.55419 5.85778 2.57028 5.93432 2.60085 6.00549C2.63143 6.07666 2.67587 6.14103 2.73158 6.19484L3.96883 7.43209C4.07822 7.54145 4.22657 7.60288 4.38125 7.60288C4.53592 7.60288 4.68427 7.54145 4.79366 7.43209L7.26875 4.95701C7.32446 4.9032 7.3689 4.83883 7.39947 4.76766C7.43004 4.69649 7.44614 4.61995 7.44681 4.54249C7.44748 4.46504 7.43272 4.38822 7.40339 4.31653C7.37406 4.24484 7.33075 4.17971 7.27598 4.12494C7.22121 4.07017 7.15608 4.02686 7.08439 3.99753C7.0127 3.9682 6.93588 3.95344 6.85843 3.95411C6.78097 3.95478 6.70443 3.97088 6.63326 4.00145C6.56209 4.03202 6.49772 4.07646 6.44391 4.13217L4.38125 6.19484V6.19367Z" fill="#27AE60"></path>
-                        </svg><span class="des__text">Nhà phát hành tin cậy</span>
-                      </div>
-                    </div></span></div>
-              </div>
               <div class="menu-topic"><a class="menu-topic__title" href="#">Các chủ đề</a>
                 <ul class="menu-topic__list">
                   <li class="menu-topic__list-item"><a class="item__links" href="#"><span class="item__links-icon"><svg width="18.71" height="17" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.9375 2.0625C17.0324 2.07496 14.8728 2.475 13.31 3.16637C12.1438 3.68199 11.6875 4.07215 11.6875 5.39387V19.25C13.4737 17.6387 15.0588 17.1875 21.3125 17.1875V2.0625H19.9375Z" fill="#91909A"/><path d="M2.0625 2.0625C4.96762 2.07496 7.12723 2.475 8.69 3.16637C9.85617 3.68199 10.3125 4.07215 10.3125 5.39387V19.25C8.52629 17.6387 6.94117 17.1875 0.6875 17.1875V2.0625H2.0625Z" fill="#91909A"/></svg></span><span class="item__links-category">Giáo trình</span></a></li>
@@ -1913,240 +2030,8 @@
               </div>
             </div>
           </div>
-                    <div class="book__content bg-white boder-5px px-md-4 px-3 book_slider">
-                      <div class="book__content-title d-flex justify-content-between align-items-md-center border_bottom pt-3">
-                        <h3 class="h3-20 color-8C8C8C p-0 m-0">Sách có thể bạn quan tâm</h3><a class="content__title-view d-flex align-items-center" href="#">
-                          <div class="button__item">
-                            <button class="btn btn-gray-link btn-sm px-0"><span class="mr-1">Xem toàn bộ
-                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M6.6 1L12 6.4L6.6 11.8M0 6.4H12H0Z" stroke="#8C8C8C" stroke-width="2"></path>
-                                </svg></span></button>
-                          </div></a>
-                      </div>
-                      <div class="book__content-content d-flex typical__slider owl-carousel">
-                        <div class="content__item position-relative"><a href="#">
-                            <div class="item__feature rounded-circle position-absolute bg-white d-flex justify-content-center align-items-center">
-                              <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1C3.23858 1 1 3.23858 1 6V10.5H0V6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6V10.5H11V6C11 3.23858 8.76142 1 6 1Z" fill="#6C757D"></path>
-                                <path d="M9 8C9 7.44772 9.44772 7 10 7H12V11C12 11.5523 11.5523 12 11 12H10C9.44772 12 9 11.5523 9 11V8Z" fill="#6C757D"></path>
-                                <path d="M3 8C3 7.44772 2.55228 7 2 7H0V11C0 11.5523 0.447715 12 1 12H2C2.55228 12 3 11.5523 3 11V8Z" fill="#6C757D"></path>
-                              </svg>
-                            </div>
-                            <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
-                          <div class="content__item-infor d-flex flex-column justify-content-center">
-                            <div class="item__infor-title">
-                              <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
-                            </div>
-                            <div class="item__infor-vote">
-                              <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
-                                <g opacity="0.32">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
-                                </g>
-                              </svg>
-                            </div>
-                            <div class="item__infor-category">
-                              <p class="body-13">Danh mục</p>
-                            </div>
-                            <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
-                          </div>
-                        </div>
-                        <div class="content__item position-relative"><a href="#">
-                            <div class="item__feature rounded-circle position-absolute bg-white d-flex justify-content-center align-items-center">
-                              <svg width="14" height="10" viewbox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.05827 10H12.9417C13.5264 10 14 9.52017 14 8.92849V1.07151C14 0.479827 13.5264 0 12.9417 0H1.05827C0.473896 0 0 0.479827 0 1.07151V8.92849C0 9.52017 0.473896 10 1.05827 10ZM7.81472 9.24786H6.18478V8.22829H7.81472V9.24786ZM11.6988 0.776569H13.3288V1.79614H11.6988V0.776569ZM11.6506 8.22829H13.2808V9.24786H11.6506V8.22829ZM8.96568 0.776569H10.5959V1.79614H8.96568V0.776569ZM8.91768 8.22829H10.5479V9.24786H8.91768V8.22829ZM6.23303 0.776569H7.86297V1.79614H6.23303V0.776569ZM5.7759 3.23973L8.22385 4.47916C8.79197 4.7669 8.79197 5.23336 8.22385 5.52084L5.7759 6.76052C5.20778 7.04801 4.74683 6.75975 4.74683 6.11613V3.88387C4.74658 3.2405 5.20752 2.95225 5.7759 3.23973ZM3.50013 0.776569H5.13032V1.79614H3.50013V0.776569ZM3.45213 8.22829H5.08207V9.24786H3.45213V8.22829ZM0.767224 0.776569H2.39742V1.79614H0.767224V0.776569ZM0.719225 8.22829H2.34942V9.24786H0.719225V8.22829Z" fill="#6C757D"></path>
-                              </svg>
-                            </div>
-                            <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
-                          <div class="content__item-infor d-flex flex-column justify-content-center">
-                            <div class="item__infor-title">
-                              <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
-                            </div>
-                            <div class="item__infor-vote">
-                              <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
-                                <g opacity="0.32">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
-                                </g>
-                              </svg>
-                            </div>
-                            <div class="item__infor-category">
-                              <p class="body-13">Danh mục</p>
-                            </div>
-                            <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
-                          </div>
-                        </div>
-                        <div class="content__item position-relative"><a href="#">
-                            <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
-                          <div class="content__item-infor d-flex flex-column justify-content-center">
-                            <div class="item__infor-title">
-                              <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
-                            </div>
-                            <div class="item__infor-vote">
-                              <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
-                                <g opacity="0.32">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
-                                </g>
-                              </svg>
-                            </div>
-                            <div class="item__infor-category">
-                              <p class="body-13">Danh mục</p>
-                            </div>
-                            <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
-                          </div>
-                        </div>
-                        <div class="content__item position-relative"><a href="#">
-                            <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
-                          <div class="content__item-infor d-flex flex-column justify-content-center">
-                            <div class="item__infor-title">
-                              <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
-                            </div>
-                            <div class="item__infor-vote">
-                              <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
-                                <g opacity="0.32">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
-                                </g>
-                              </svg>
-                            </div>
-                            <div class="item__infor-category">
-                              <p class="body-13">Danh mục</p>
-                            </div>
-                            <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
-                          </div>
-                        </div>
-                        <div class="content__item position-relative"><a href="#">
-                            <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
-                          <div class="content__item-infor d-flex flex-column justify-content-center">
-                            <div class="item__infor-title">
-                              <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
-                            </div>
-                            <div class="item__infor-vote">
-                              <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
-                                <g opacity="0.32">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
-                                </g>
-                              </svg>
-                            </div>
-                            <div class="item__infor-category">
-                              <p class="body-13">Danh mục</p>
-                            </div>
-                            <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
-                          </div>
-                        </div>
-                        <div class="content__item position-relative"><a href="#">
-                            <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
-                          <div class="content__item-infor d-flex flex-column justify-content-center">
-                            <div class="item__infor-title">
-                              <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
-                            </div>
-                            <div class="item__infor-vote">
-                              <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
-                                <g opacity="0.32">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
-                                </g>
-                              </svg>
-                            </div>
-                            <div class="item__infor-category">
-                              <p class="body-13">Danh mục</p>
-                            </div>
-                            <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
-                          </div>
-                        </div>
-                        <div class="content__item position-relative"><a href="#">
-                            <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
-                          <div class="content__item-infor d-flex flex-column justify-content-center">
-                            <div class="item__infor-title">
-                              <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
-                            </div>
-                            <div class="item__infor-vote">
-                              <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
-                                <g opacity="0.32">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
-                                </g>
-                              </svg>
-                            </div>
-                            <div class="item__infor-category">
-                              <p class="body-13">Danh mục</p>
-                            </div>
-                            <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
-                          </div>
-                        </div>
-                        <div class="content__item position-relative"><a href="#">
-                            <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
-                          <div class="content__item-infor d-flex flex-column justify-content-center">
-                            <div class="item__infor-title">
-                              <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
-                            </div>
-                            <div class="item__infor-vote">
-                              <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
-                                <g opacity="0.32">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
-                                </g>
-                              </svg>
-                            </div>
-                            <div class="item__infor-category">
-                              <p class="body-13">Danh mục</p>
-                            </div>
-                            <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
-                          </div>
-                        </div>
-                        <div class="content__item position-relative"><a href="#">
-                            <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
-                          <div class="content__item-infor d-flex flex-column justify-content-center">
-                            <div class="item__infor-title">
-                              <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
-                            </div>
-                            <div class="item__infor-vote">
-                              <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
-                                <g opacity="0.32">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
-                                </g>
-                              </svg>
-                            </div>
-                            <div class="item__infor-category">
-                              <p class="body-13">Danh mục</p>
-                            </div>
-                            <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
           <div class="collection-book mb-4">
-            <div class="collection-heading d-flex justify-content-between my-3">
+            <div class="collection-heading d-flex justify-content-between">
               <h3 class="h3-20 medium mb-0">Tuyển tập hay nhất</h3>
               <div class="button__item"><a class="btn btn-gray-link btn-sm px-0" href="#"><span class="mr-1">Xem toàn bộ</span>
                   <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2257,6 +2142,240 @@
                   </div></a>
               </div>
             </div>
+          </div>
+          <div style="margin-bottom: 24px">
+                      <div class="book__content bg-white boder-5px px-md-4 px-3 book_slider">
+                        <div class="book__content-title d-flex justify-content-between align-items-md-center border_bottom pt-3">
+                          <h3 class="h3-20 color-8C8C8C p-0 m-0">Sách có thể bạn quan tâm</h3><a class="content__title-view d-flex align-items-center" href="#">
+                            <div class="button__item">
+                              <button class="btn btn-gray-link btn-sm px-0"><span class="mr-1">Xem toàn bộ
+                                  <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.6 1L12 6.4L6.6 11.8M0 6.4H12H0Z" stroke="#8C8C8C" stroke-width="2"></path>
+                                  </svg></span></button>
+                            </div></a>
+                        </div>
+                        <div class="book__content-content d-flex typical__slider owl-carousel">
+                          <div class="content__item position-relative"><a href="#">
+                              <div class="item__feature rounded-circle position-absolute bg-white d-flex justify-content-center align-items-center">
+                                <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1C3.23858 1 1 3.23858 1 6V10.5H0V6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6V10.5H11V6C11 3.23858 8.76142 1 6 1Z" fill="#6C757D"></path>
+                                  <path d="M9 8C9 7.44772 9.44772 7 10 7H12V11C12 11.5523 11.5523 12 11 12H10C9.44772 12 9 11.5523 9 11V8Z" fill="#6C757D"></path>
+                                  <path d="M3 8C3 7.44772 2.55228 7 2 7H0V11C0 11.5523 0.447715 12 1 12H2C2.55228 12 3 11.5523 3 11V8Z" fill="#6C757D"></path>
+                                </svg>
+                              </div>
+                              <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
+                            <div class="content__item-infor d-flex flex-column justify-content-center">
+                              <div class="item__infor-title">
+                                <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
+                              </div>
+                              <div class="item__infor-vote">
+                                <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
+                                  <g opacity="0.32">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                              <div class="item__infor-category">
+                                <p class="body-13">Danh mục</p>
+                              </div>
+                              <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
+                            </div>
+                          </div>
+                          <div class="content__item position-relative"><a href="#">
+                              <div class="item__feature rounded-circle position-absolute bg-white d-flex justify-content-center align-items-center">
+                                <svg width="14" height="10" viewbox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1.05827 10H12.9417C13.5264 10 14 9.52017 14 8.92849V1.07151C14 0.479827 13.5264 0 12.9417 0H1.05827C0.473896 0 0 0.479827 0 1.07151V8.92849C0 9.52017 0.473896 10 1.05827 10ZM7.81472 9.24786H6.18478V8.22829H7.81472V9.24786ZM11.6988 0.776569H13.3288V1.79614H11.6988V0.776569ZM11.6506 8.22829H13.2808V9.24786H11.6506V8.22829ZM8.96568 0.776569H10.5959V1.79614H8.96568V0.776569ZM8.91768 8.22829H10.5479V9.24786H8.91768V8.22829ZM6.23303 0.776569H7.86297V1.79614H6.23303V0.776569ZM5.7759 3.23973L8.22385 4.47916C8.79197 4.7669 8.79197 5.23336 8.22385 5.52084L5.7759 6.76052C5.20778 7.04801 4.74683 6.75975 4.74683 6.11613V3.88387C4.74658 3.2405 5.20752 2.95225 5.7759 3.23973ZM3.50013 0.776569H5.13032V1.79614H3.50013V0.776569ZM3.45213 8.22829H5.08207V9.24786H3.45213V8.22829ZM0.767224 0.776569H2.39742V1.79614H0.767224V0.776569ZM0.719225 8.22829H2.34942V9.24786H0.719225V8.22829Z" fill="#6C757D"></path>
+                                </svg>
+                              </div>
+                              <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
+                            <div class="content__item-infor d-flex flex-column justify-content-center">
+                              <div class="item__infor-title">
+                                <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
+                              </div>
+                              <div class="item__infor-vote">
+                                <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
+                                  <g opacity="0.32">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                              <div class="item__infor-category">
+                                <p class="body-13">Danh mục</p>
+                              </div>
+                              <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
+                            </div>
+                          </div>
+                          <div class="content__item position-relative"><a href="#">
+                              <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
+                            <div class="content__item-infor d-flex flex-column justify-content-center">
+                              <div class="item__infor-title">
+                                <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
+                              </div>
+                              <div class="item__infor-vote">
+                                <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
+                                  <g opacity="0.32">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                              <div class="item__infor-category">
+                                <p class="body-13">Danh mục</p>
+                              </div>
+                              <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
+                            </div>
+                          </div>
+                          <div class="content__item position-relative"><a href="#">
+                              <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
+                            <div class="content__item-infor d-flex flex-column justify-content-center">
+                              <div class="item__infor-title">
+                                <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
+                              </div>
+                              <div class="item__infor-vote">
+                                <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
+                                  <g opacity="0.32">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                              <div class="item__infor-category">
+                                <p class="body-13">Danh mục</p>
+                              </div>
+                              <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
+                            </div>
+                          </div>
+                          <div class="content__item position-relative"><a href="#">
+                              <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
+                            <div class="content__item-infor d-flex flex-column justify-content-center">
+                              <div class="item__infor-title">
+                                <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
+                              </div>
+                              <div class="item__infor-vote">
+                                <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
+                                  <g opacity="0.32">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                              <div class="item__infor-category">
+                                <p class="body-13">Danh mục</p>
+                              </div>
+                              <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
+                            </div>
+                          </div>
+                          <div class="content__item position-relative"><a href="#">
+                              <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
+                            <div class="content__item-infor d-flex flex-column justify-content-center">
+                              <div class="item__infor-title">
+                                <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
+                              </div>
+                              <div class="item__infor-vote">
+                                <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
+                                  <g opacity="0.32">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                              <div class="item__infor-category">
+                                <p class="body-13">Danh mục</p>
+                              </div>
+                              <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
+                            </div>
+                          </div>
+                          <div class="content__item position-relative"><a href="#">
+                              <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
+                            <div class="content__item-infor d-flex flex-column justify-content-center">
+                              <div class="item__infor-title">
+                                <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
+                              </div>
+                              <div class="item__infor-vote">
+                                <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
+                                  <g opacity="0.32">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                              <div class="item__infor-category">
+                                <p class="body-13">Danh mục</p>
+                              </div>
+                              <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
+                            </div>
+                          </div>
+                          <div class="content__item position-relative"><a href="#">
+                              <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
+                            <div class="content__item-infor d-flex flex-column justify-content-center">
+                              <div class="item__infor-title">
+                                <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
+                              </div>
+                              <div class="item__infor-vote">
+                                <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
+                                  <g opacity="0.32">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                              <div class="item__infor-category">
+                                <p class="body-13">Danh mục</p>
+                              </div>
+                              <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
+                            </div>
+                          </div>
+                          <div class="content__item position-relative"><a href="#">
+                              <div class="owl-lazy bg-book-search bg-book-category bg-layout" data-src="./assets/images/book-box/book-tcvn.jpg"></div></a>
+                            <div class="content__item-infor d-flex flex-column justify-content-center">
+                              <div class="item__infor-title">
+                                <h6 class="h6-14 element-text mt-2 mb-0">Gió và tác động của gió lên công trình</h6>
+                              </div>
+                              <div class="item__infor-vote">
+                                <svg width="69" height="12" viewbox="0 0 69 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1428 4.30324L8.19268 3.87589L6.87491 1.21294C6.79696 1.081 6.65481 1 6.5012 1C6.34759 1 6.20544 1.081 6.12749 1.21294L4.80721 3.87589L1.85711 4.30324C1.70018 4.32582 1.5697 4.43525 1.52054 4.58553C1.47138 4.73581 1.51206 4.90088 1.62547 5.01134L3.76066 7.08539L3.25696 10.0146C3.23018 10.1704 3.29445 10.3278 3.42275 10.4207C3.55105 10.5136 3.72113 10.5258 3.86148 10.4523L6.49995 9.06973L9.13842 10.4523C9.27877 10.5258 9.44885 10.5136 9.57715 10.4207C9.70545 10.3278 9.76971 10.1704 9.74293 10.0146L9.23924 7.08539L11.3744 5.01134C11.4878 4.90099 11.5286 4.73608 11.4796 4.58585C11.4306 4.43562 11.3004 4.32608 11.1436 4.30324H11.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1428 4.30324L22.1927 3.87589L20.8749 1.21294C20.797 1.081 20.6548 1 20.5012 1C20.3476 1 20.2054 1.081 20.1275 1.21294L18.8072 3.87589L15.8571 4.30324C15.7002 4.32582 15.5697 4.43525 15.5205 4.58553C15.4714 4.73581 15.5121 4.90088 15.6255 5.01134L17.7607 7.08539L17.257 10.0146C17.2302 10.1704 17.2945 10.3278 17.4227 10.4207C17.551 10.5136 17.7211 10.5258 17.8615 10.4523L20.4999 9.06973L23.1384 10.4523C23.2788 10.5258 23.4488 10.5136 23.5771 10.4207C23.7054 10.3278 23.7697 10.1704 23.7429 10.0146L23.2392 7.08539L25.3744 5.01134C25.4878 4.90099 25.5286 4.73608 25.4796 4.58585C25.4306 4.43562 25.3004 4.32608 25.1436 4.30324H25.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1428 4.30324L36.1927 3.87589L34.8749 1.21294C34.7969 1.081 34.6548 1 34.5012 1C34.3476 1 34.2054 1.081 34.1275 1.21294L32.8072 3.87589L29.8571 4.30324C29.7002 4.32582 29.5697 4.43525 29.5205 4.58553C29.4714 4.73581 29.5121 4.90088 29.6255 5.01134L31.7607 7.08539L31.257 10.0146C31.2302 10.1704 31.2944 10.3278 31.4227 10.4207C31.551 10.5136 31.7211 10.5258 31.8615 10.4523L34.4999 9.06973L37.1384 10.4523C37.2788 10.5258 37.4488 10.5136 37.5771 10.4207C37.7054 10.3278 37.7697 10.1704 37.7429 10.0146L37.2392 7.08539L39.3744 5.01134C39.4878 4.90099 39.5286 4.73608 39.4796 4.58585C39.4306 4.43562 39.3004 4.32608 39.1436 4.30324H39.1428Z" fill="#FFCE47"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1428 4.30324L50.1927 3.87589L48.8749 1.21294C48.797 1.081 48.6548 1 48.5012 1C48.3476 1 48.2054 1.081 48.1275 1.21294L46.8072 3.87589L43.8571 4.30324C43.7002 4.32582 43.5697 4.43525 43.5205 4.58553C43.4714 4.73581 43.5121 4.90088 43.6255 5.01134L45.7607 7.08539L45.257 10.0146C45.2302 10.1704 45.2945 10.3278 45.4227 10.4207C45.551 10.5136 45.7211 10.5258 45.8615 10.4523L48.4999 9.06973L51.1384 10.4523C51.2788 10.5258 51.4488 10.5136 51.5771 10.4207C51.7054 10.3278 51.7697 10.1704 51.7429 10.0146L51.2392 7.08539L53.3744 5.01134C53.4878 4.90099 53.5286 4.73608 53.4796 4.58585C53.4306 4.43562 53.3004 4.32608 53.1436 4.30324H53.1428Z" fill="#FFCE47"></path>
+                                  <g opacity="0.32">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M67.1428 4.30324L64.1927 3.87589L62.8749 1.21294C62.797 1.081 62.6548 1 62.5012 1C62.3476 1 62.2054 1.081 62.1275 1.21294L60.8072 3.87589L57.8571 4.30324C57.7002 4.32582 57.5697 4.43525 57.5205 4.58553C57.4714 4.73581 57.5121 4.90088 57.6255 5.01134L59.7607 7.08539L59.257 10.0146C59.2302 10.1704 59.2945 10.3278 59.4227 10.4207C59.551 10.5136 59.7211 10.5258 59.8615 10.4523L62.4999 9.06973L65.1384 10.4523C65.2788 10.5258 65.4488 10.5136 65.5771 10.4207C65.7054 10.3278 65.7697 10.1704 65.7429 10.0146L65.2392 7.08539L67.3744 5.01134C67.4878 4.90099 67.5286 4.73608 67.4796 4.58585C67.4306 4.43562 67.3004 4.32608 67.1436 4.30324H67.1428Z" fill="#C1C0C8"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                              <div class="item__infor-category">
+                                <p class="body-13">Danh mục</p>
+                              </div>
+                              <div class="item__infor-price"><span class="h6-14 bold color-AA8B47">45.0000 VNĐ</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
           </div>
         </div>
       </section>

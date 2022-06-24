@@ -69,6 +69,9 @@ $(document).ready(function () {
   borderColor.init();
   categoryPanel.init();
   pdf.init();
+  copyText.init();
+  seeMoreSection.init();
+  chooseBookType.init();
 });
 
 /* ============================= 2, Scroll ============================= */
@@ -535,6 +538,7 @@ const cartmobile = {
 const owl = {
   init: function () {
     this.latestNewsSlider();
+    this.setupBookDetailCarousel();
   },
   latestNewsSlider: function () {
     $(".latest-news__body-box").owlCarousel({
@@ -573,6 +577,69 @@ const owl = {
       margin: 20,
     });
   },
+  setupBookDetailCarousel: function () {
+    let activeIndex = 0;
+    const listSlider = document.querySelector(
+      ".BookDetailSection-preview-list-group"
+    );
+    const listSliderItems = listSlider?.querySelectorAll(
+      ".BookDetailSection-preview-list-item"
+    );
+    const arrowUp = document.querySelector(
+      ".BookDetailSection-preview-list-arrow.prev"
+    );
+    const arrowDown = document.querySelector(
+      ".BookDetailSection-preview-list-arrow.next"
+    );
+
+    const $owl = $("#BookDetailSection-carousel").owlCarousel({
+      responsive: {
+        0: {
+          items: 1,
+          nav: true,
+          mouseDrag: true,
+          touchDrag: true,
+        },
+        991: {
+          items: 1,
+          mouseDrag: false,
+          touchDrag: false,
+        },
+      },
+      loop: false,
+      autoplay: false,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      smartSpeed: 300,
+      lazyLoad: true,
+      dots: false,
+      nav: false,
+      navText: [
+        '<img src="./assets/icons/icon-angle-left-gray-light.svg" alt="" />',
+        '<img src="./assets/icons/icon-angle-right-gray-light.svg" alt="" />',
+      ],
+      margin: 0,
+    });
+
+    arrowUp?.addEventListener?.("click", () => {
+      listSlider.scrollTop = listSlider.scrollTop - 85 - 15;
+    });
+
+    arrowDown?.addEventListener?.("click", () => {
+      listSlider.scrollTop = listSlider.scrollTop + 85 + 15;
+    });
+
+    listSliderItems?.forEach?.((item, index) =>
+      item.addEventListener("click", () => {
+        activeIndex = index;
+        $owl.trigger("to.owl.carousel", [index, 500]);
+        listSliderItems.forEach((i) => i.classList.remove("active"));
+        item.classList.add("active");
+      })
+    );
+
+    listSliderItems?.[activeIndex]?.classList?.add?.("active");
+  },
 };
 
 /* ============================= 14, Select 2 Filter Partner ============================= */
@@ -606,8 +673,15 @@ const select_2 = {
         tags: true,
       });
       $(".language-select").select2({
-        dropdownParent: $(".author-type"),
+        dropdownParent: $(".language-type"),
         placeholder: "Nhập ngôn ngữ khác",
+        dropdownPosition: "below",
+        closeOnSelect: false,
+        tags: true,
+      });
+      $(".partner-select").select2({
+        dropdownParent: $(".partner-type"),
+        placeholder: "Tìm đối tác theo tên",
         dropdownPosition: "below",
         closeOnSelect: false,
         tags: true,
@@ -1568,5 +1642,83 @@ const pdf = {
         }
       );
     });
+  },
+};
+
+const copyText = {
+  init: function () {
+    this.config();
+  },
+  config: function () {
+    const copyElements = document.querySelectorAll(".js-copy");
+
+    copyElements.forEach((item) =>
+      item.addEventListener("click", () => {
+        const data = item.dataset.copy;
+        const el = document.createElement("textarea");
+        el.value = data;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand("copy");
+        document.body.removeChild(el);
+      })
+    );
+  },
+};
+
+const seeMoreSection = {
+  init: function () {
+    this.config();
+  },
+  config: function () {
+    const sections = document.querySelectorAll(".SeeMore");
+    sections.forEach((item) => {
+      let isExpand = false;
+      const btn = item.querySelector(".SeeMore-btn");
+
+      btn.addEventListener("click", () => {
+        const text = btn.querySelector("span");
+        if (isExpand) {
+          item.classList.remove("active");
+          text.innerHTML = "Xem đầy đủ";
+        } else {
+          item.classList.add("active");
+          text.innerHTML = "Thu gọn";
+        }
+
+        isExpand = !isExpand;
+      });
+    });
+  },
+};
+
+const chooseBookType = {
+  init: function () {
+    this.config();
+  },
+  config: function () {
+    const allTypesBtn = document.querySelectorAll(".js-product-type-option");
+    const mainModal = document.querySelector(
+      ".BookDetailSection-info-options-mobile"
+    );
+
+    allTypesBtn.forEach((item, index) =>
+      item.addEventListener("click", () => {
+        mainModal.classList.add("active");
+        const allTypesBtnInModal = mainModal.querySelectorAll(
+          ".BookDetailSection-info-type-item-wrapper input"
+        );
+        allTypesBtnInModal[index].checked = true;
+      })
+    );
+
+    if (mainModal) {
+      const overlay = mainModal.querySelector(
+        ".BookDetailSection-info-options-mobile-overlay"
+      );
+      overlay.addEventListener("click", () => {
+        mainModal.classList.remove("active");
+      });
+    }
   },
 };
