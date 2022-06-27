@@ -72,6 +72,7 @@ $(document).ready(function () {
   copyText.init();
   seeMoreSection.init();
   chooseBookType.init();
+  nxbInfoModal.init();
 });
 
 /* ============================= 2, Scroll ============================= */
@@ -539,6 +540,7 @@ const owl = {
   init: function () {
     this.latestNewsSlider();
     this.setupBookDetailCarousel();
+    this.setupNxbCarousel();
   },
   latestNewsSlider: function () {
     $(".latest-news__body-box").owlCarousel({
@@ -639,6 +641,36 @@ const owl = {
     );
 
     listSliderItems?.[activeIndex]?.classList?.add?.("active");
+  },
+  setupNxbCarousel: function () {
+    $("#NxbCarousel-carousel").owlCarousel({
+      responsive: {
+        0: {
+          items: 2.5,
+          margin: 16,
+        },
+        768: {
+          items: 4,
+          margin: 24,
+        },
+        991: {
+          items: 5,
+          margin: 24,
+        },
+      },
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      smartSpeed: 300,
+      dots: false,
+      nav: true,
+      navText: [
+        '<img src="./assets/icons/icon-arrow-circle-left.svg">',
+        '<img src="./assets/icons/icon-arrow-circle-right.svg">',
+      ],
+      margin: 24,
+    });
   },
 };
 
@@ -1718,6 +1750,33 @@ const chooseBookType = {
       );
       overlay.addEventListener("click", () => {
         mainModal.classList.remove("active");
+      });
+    }
+  },
+};
+
+const nxbInfoModal = {
+  init: function () {
+    this.config();
+  },
+  config: function () {
+    const openBtn = document.querySelector(".js-open-nxb-info-modal");
+    const modal = document.querySelector(".NxbInfoModal");
+
+    if (modal) {
+      const overlay = modal.querySelector(".NxbInfoModal-overlay");
+      const closeBtn = modal.querySelector(".NxbInfoModal-close");
+
+      openBtn.addEventListener("click", () => {
+        modal.classList.add("active");
+      });
+
+      overlay.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("active");
       });
     }
   },
