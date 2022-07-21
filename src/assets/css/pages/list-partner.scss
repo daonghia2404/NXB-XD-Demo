@@ -1,0 +1,59 @@
+.listpartner {
+    &__content {
+        &-main {
+            margin-top: 28px;
+            .btn__filter {
+                display: flex;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                width: 68px;
+                height: 30px;
+                background-color: $primary-color;
+                border-radius: 3px;
+                z-index: 100;
+                cursor: pointer;
+                h6 {
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding-left: 2px;
+                    padding-top: 7px;
+                }
+                @include max-breakpoint(992) {
+                    display: flex;
+                    position: absolute;
+                    right: 55px;
+                    margin-top: 30px;
+                }
+            }
+            & .row .col-lg-4.col-md-6.col-6{
+                padding-left: 14px;
+                padding-right: 14px;
+                @include breakpoint(576){
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+            }
+        }
+        .main__left {
+            img{
+                @include max-breakpoint(992) {
+                    display: none;
+                }
+            }
+        }
+        .main__right {
+            margin-left: -12px;
+            .partner {
+                padding: 8px 0px 20px;
+                @include max-breakpoint(992) {
+                    padding: 86px 0px 20px;
+                }
+            }
+        }
+    }
+    & .component__pagination{
+        margin-bottom:28px
+    }
+}

@@ -1,0 +1,46 @@
+mixin content_study(open,lock="dk")
+    .content__study.px-md-3.bg-white
+        each item in [1,2]
+            .panel-group.content__group.py-2(id =`accordion${item}`)
+                .panel.panel-default
+                    .panel-heading
+                        .panel-title.border_bottom
+                            a(data-toggle='collapse', data-parent=`#accordion${item}`, href=`#collapseThree${item}`)
+                                h6.h6-14.bold Phần 1: Hợp đồng trong xây dựng
+                    .panel-collapse.collapse(id =`collapseThree${item}`)
+                        .panel-body
+                            .panel-group.border_bottom.a(id =`accordion${item}-1`)
+                                .panel.panel-default
+                                    .panel-heading
+                                        h4.panel-title
+                                            a(data-toggle='collapse', data-parent=`#accordion${item}-1`, href=`#collapseThree${item}-1`)
+                                                .name__subjects-open.d-flex.align-items-md-center.justify-content-between
+                                                    .left.d-flex.align-items-md-center
+                                                        .name__subjects-icon.me-auto.pr-3.align-items-center
+                                                            img(src="./assets/images/play.svg", alt="").img-open
+                                                        .name__subjects-text.align-items-center.d-flex
+                                                            h6.h6-14.regular.mt-2 Bài 2: Giới thiệu chung Phân loại hợp đồng và nghị định 37
+                                                    .right.d-flex.align-items-md-center.align-items-center.d-flex.mt-2
+                                                        if open=="mb"
+                                                            .btn.btn-outline-brand.btn-study Học thử
+                                                        if open=="dk"
+                                                            .btn.btn-outline-brand.btn-study xem thử
+                                                            h6.h6-14.regular.pl-3.mt-2 20:12
+                                    .panel-collapse.collapse.in(id =`collapseThree${item}-1`)
+                                        .panel-body
+                                            .video-study
+                                                include book-video.pug
+
+                            .name__subjects-lock.d-flex.align-items-md-center.justify-content-between.border_bottom.pt-2
+                                .left.d-flex.align-items-md-center
+                                    .name__subjects-icon.me-auto.pr-3.mb-2
+                                        img(src="./assets/images/lock.svg", alt="").img-lock
+                                    .name__subjects-text
+                                        h6.h6-14.regular Bài 2: Giới thiệu chung Phân loại hợp đồng và nghị định 37    
+                                .right.d-flex.align-items-md-center 
+                                    if lock=="mb"
+                                        .btn.btn-lock Xem
+                                    if lock=="dk"
+                                        h6.h6-14.regular.pl-3 20:12
+                        
+

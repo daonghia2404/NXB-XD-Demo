@@ -1,0 +1,9 @@
+extend includes/layout/layout.pug
+block pages
+    include includes/components/breadcrumb.pug
+    div
+        +brcrumb('Thanh toán đơn hàng #125464754')
+    include includes/pages/checkout2.pug
+    .container.my-4
+        include includes/components/typical-book-slider.pug
+        +typical__book-slider("Có thể bạn quan tâm")

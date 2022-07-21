@@ -1,0 +1,12 @@
+.purchased-book
+    include ../components/account-sidebar-mb.pug
+    +slide__bar-mb("Ebook của bạn")
+    .container
+        .row
+            .p-3
+                include ../components/account-mobile-reading.pug
+                +book-reading('Ebook đang đọc gần đây nhất')
+            .purchased-bookmb-content
+                include ../components/purchased-book-mb.pug
+                +audio-ebook-video-mb("Sách bạn đã mua","audio","Hết hạn")
+            

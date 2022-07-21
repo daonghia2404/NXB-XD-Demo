@@ -1,0 +1,32 @@
+.book-coin {
+	margin-bottom: 28px;
+	&__item {
+		background-color: $white;
+		border-radius: 5px;
+		min-width: 270px;
+		height: 80px;
+		padding: 16px;
+
+	}
+
+	&__item:first-child {
+		margin-right: 28px;
+	}
+
+	.item-title {
+		color: $grey-1;
+		font-weight: 400;
+	}
+
+	.item-value {
+		&__coin {
+			color: $red-deep;
+			font-size: 16px;
+			font-weight: 500;
+		}
+	}
+
+	.btn-coin {
+		background-color: $blue-secondary;
+	}
+}

@@ -1,0 +1,22 @@
+section.list__book-mobile.list__category-wrapper.category__mb-wrapper
+    .container
+        .row
+            include ../components/typical-book.pug
+            +typical__book("Sách mới")
+        .category__content
+            .category__section_textbooks
+                include ../components/topic.pug
+                +topic(12, "Chuyên mục trong Giáo trình")
+                include ../components/filter-menu.pug
+            .category__books_in_textbooks.mt-3
+                .d-flex.justify-content-between
+                    .category__books-headding
+                        h4 Giáo trình
+                    .icon__filter#btn-filter
+                        img(class="lazy" data-src="./assets/images/filter.svg" src="./assets/images/filter.svg")
+                        span Lọc
+        div(class="search-list-mb-wrapper" style="margin-top: -15px")
+            each item in [1,2,3,4,5,6,7]
+                include ../components/search-result-mb.pug
+.category__pagination-wrapper
+    include ../components/pagination-mb.pug

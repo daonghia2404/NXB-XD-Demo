@@ -1,0 +1,213 @@
+.nxb-form {
+    .form-control {
+        box-shadow: none;
+        outline: none;
+        &:focus,
+        &:active {
+            box-shadow: none;
+        }
+    }
+    .select-filter {
+        select {
+            border: 1px solid #ced4da;
+            &:focus,
+            &:active {
+                border: 1px solid #ced4da;
+                border-left: none;
+            }
+        }
+        &:after {
+            border-top: 5px solid #91909A;
+        }
+    }
+    label {
+        font-size: 14px;
+        line-height: 16px;
+        color: #91909a;
+        margin-bottom: 10px;
+    }
+    input,
+    textarea {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        &::placeholder{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: $headding-color;
+        }
+    }
+    i {
+        color: #91909a;
+        width: 100%;
+    }
+    .nxb-input-prepend-icon,
+    .nxb-input-append-icon{
+        background-color: transparent;
+    }
+    .nxb-input-prepend-icon {
+        position: relative;
+        border-right: none;
+        padding: 0;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            right: 0;
+            background: #ced4da;
+            height: 72%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 999;
+        }
+    }
+    .nxb-prepend {
+        input{
+            border-left: none;
+            &:active,
+            &:focus {
+                border-left: none;
+            }
+        }
+        select {
+            border-left: none;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+    .nxb-append {
+        input{
+            border-right: none;
+            &:active,
+            &:focus {
+                border-right: none;
+            }
+        }
+    }
+}
+.nxb-form-inline {
+    label {
+        margin: 0;
+    }
+}
+.nxb-form-h-49 {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+        height: 49px;
+    }
+    .select-filter {
+        select {
+            height: 49px;
+        }
+    }
+    .input-group {
+        .nxb-input-prepend-icon {
+            width: 49px;
+        }
+        .nxb-input-append-icon {
+            width: 49px;
+        }
+    }
+}
+.nxb-form-h-44 {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+        height: 44px;
+    }
+    .select-filter {
+        select {
+            height: 44px;
+        }
+    }
+    .input-group {
+        .nxb-input-prepend-icon {
+            width: 44px;
+        }
+        .nxb-input-append-icon {
+            width: 44px;
+        }
+    }
+}
+.nxb-form-h-40 {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+        height: 40px;
+    }
+    .select-filter {
+        select {
+            height: 40px;
+        }
+    }
+    .input-group {
+        .nxb-input-prepend-icon {
+            width: 40px;
+        }
+        .nxb-input-append-icon {
+            width: 40px;
+        }
+    }
+}
+.nxb-form-brown-1 {
+    .form-control {
+        border: 1px solid #e1d6bf;
+        &:focus,
+        &:active {
+            border: 1px solid #e1d6bf;
+        }
+    }
+    .select-filter {
+        select {
+            border: 1px solid #e1d6bf;
+            border-left: none;
+            &:focus,
+            &:active {
+                border: 1px solid #e1d6bf;
+                border-left: none;
+            }
+        }
+    }
+    .nxb-input-prepend-icon,
+    .nxb-input-append-icon{
+        border: 1px solid #e1d6bf;
+    }
+    .nxb-input-prepend-icon {
+        &:after {
+            background: #e1d6bf;
+        }
+    }
+}
+.nxb-form-bg-input-grey-3 {
+    .form-control {
+        border: 1px solid #E0E0E0;
+        background: $grey-3;
+        &:focus,
+        &:active {
+            border: 1px solid #E0E0E0;
+        }
+    }
+    .select-filter {
+        select {
+            border: 1px solid #E0E0E0;
+            border-left: none;
+            &:focus,
+            &:active {
+                border: 1px solid #E0E0E0;
+                border-left: none;
+            }
+        }
+    }
+    .nxb-input-prepend-icon,
+    .nxb-input-append-icon{
+        border: 1px solid #E0E0E0;
+        background: $grey-3;
+    }
+    .nxb-input-prepend-icon {
+        &:after {
+            background: #E0E0E0;
+        }
+    }
+}

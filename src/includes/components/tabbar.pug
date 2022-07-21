@@ -1,0 +1,24 @@
+.tabbar
+    row.tabbar__headding.justify-content-center
+        h6.headding Lọc theo định dạng
+        .btn__filter#btn-filter.justify-content-center.align-items-center.px-2
+            img(class="lazy" data-src="./assets/images/icon-filter.png" src="./assets/images/icon-filter.png" alt="")
+            span Lọc
+    .row.ml-0.mr-0.pd-0.bd-b
+        .col-lg-8.pl-0
+            ul#pills-tab.nav.nav-pills.mb-3
+                li.nav-item.nav-item-ct.mr-3.mb-3
+                    a#pills-home-tab.nav-link.active.nav-custom.h6-14.regular Có cả ebook và sách giấy
+                li.nav-item.nav-item-ct.mr-3
+                    a#pills-profile-tab.nav-link.nav-custom.h6-14.regular Chỉ Ebook
+                li.nav-item.nav-item-ct.mr-3
+                    a#pills-contact-tab.nav-link.nav-custom.h6-14.regular chỉ sách giấy
+        .col-lg-4.pr-0.pl-0
+            .box-filter.float-right
+                .select-filter
+                    select.form-control
+                        option Sắp xếp theo
+                        option Theo giá từ thấp đến cao
+                        option Theo giá từ cao đến thấp
+                        option Năm xuất bản
+                        option Theo thời gian

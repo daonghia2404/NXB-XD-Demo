@@ -1,0 +1,24 @@
+mixin brcrumb(page,show=1)
+    .brcrumb
+        .container
+            ul.brcrumb__list
+                li.brcrumb__list-item
+                    a(href="#" class="item__links").item__links Trang chủ /
+                li.brcrumb__list-item
+                    a(href="#" class="item__links")= page
+            .brcrumb__info
+                h1.brcrumb__info-title= page
+                if show == 2 || show == 3
+                    .brcrumb__info-content
+                        .row.align-items-center
+                            if show == 2
+                                .col-lg-12
+                                    .content__txt
+                                        p Chào mừng bạn đến với Nhà xuất bản Xây Dựng!
+                            if show == 3
+                                .col-lg-8
+                                    .content__txt
+                                        p Nhà xuất bản Xây Dựng cam kết mang đến cho khách hàng nhận kiều hối chất lượng dịch vụ cao nhất từ thái độ phục vụ chu đáo và công nghệ kết nối chi trả hàng đầu thế giới
+                                .col-lg-4
+                                    .content__btn.text-left.text-lg-right
+                                        a(href="#" class="content__btn-link")

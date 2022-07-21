@@ -1,0 +1,48 @@
+
+.content.content-purchase{
+    .modal-lg,.modal-xl{
+        @media (min-width: 992px){
+            max-width: 1000px;
+        }
+    }
+    & .detail-order-desktop{
+        margin-bottom: 0;
+    }
+    & .modal-header{
+        padding: 0;
+        & button.close{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            z-index: 99;
+            outline: none;
+        }
+    }
+    & .modal-body{
+        & .detail-order-desktop .detailOrder-content{
+            padding: 15px 0;
+        }
+    }
+    & .detailOrder-content__top{
+        @include breakpoint(1023){
+            flex-wrap: wrap;
+            & .right {
+                & a{
+                    margin: 5px 0;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+.detail-order-desktop .detailOrder-content__top .right .delete{
+    outline: none;
+    border: none;
+}
+.purchase-history.table-history {
+    & .component__pagination ul{
+        flex-wrap: wrap;
+    }
+}

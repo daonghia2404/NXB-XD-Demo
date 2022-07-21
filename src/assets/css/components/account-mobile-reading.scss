@@ -1,0 +1,52 @@
+.book__reading {
+    font-family: $font-inter;
+    background-color: $white;
+    border-radius: 5px;
+    &-intro {
+        h4 {
+            color: $grey-dark;
+        }
+    }
+    &-author {
+        .reading__author-name {
+            h6 {
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                color: #333;
+            }
+            .content__infor-description {
+                svg {
+                    position: relative;
+                    top: -2px;
+                }
+                p {
+                    color: $grey-1;
+                }
+            }
+        }
+        border-top: 1px solid $red-secondary;
+        border-bottom: 1px solid $red-secondary;
+        p {
+            color: #4f4f4f !important;
+        }
+    }
+    &-book {
+        position: relative;
+    }
+    &-maintime {
+        h6 {
+            color: #333 !important;
+        }
+        span.color-blue {
+            color: $blue;
+            padding-right: 4px;
+        }
+    }
+    &-btn {
+        a {
+            color: #fff;
+        }
+    }
+}

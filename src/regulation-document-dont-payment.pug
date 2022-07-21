@@ -1,0 +1,7 @@
+extend includes/layout/layout.pug
+block pages
+    .container
+        .row
+            .col-lg-4.col-md-6
+                include includes/components/regulation-dont-payment.pug
+                +regulation-dont-payment(true)

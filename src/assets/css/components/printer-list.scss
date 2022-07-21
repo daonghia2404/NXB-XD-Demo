@@ -1,0 +1,29 @@
+.printer-list {
+    &-heading {
+        font-family: Inter;
+        margin-bottom:45px;
+        color: #02010E;
+    }
+    &-heading::before {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        width: 120px;
+        height: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #D4B26B;
+    }
+    &-content {
+        h5 {
+            font-family: Inter;
+            color: #02010E;
+        }
+
+        p { 
+            font-family: Roboto;
+            font-weight: 300;
+            color: #91909A;
+        }
+    }
+}

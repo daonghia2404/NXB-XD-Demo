@@ -1,0 +1,136 @@
+.my-account-mb-main {
+    &__content {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    &__user {
+        background-color: $white;
+        width: 100%;
+        padding: 24px;
+        margin-bottom: 16px;
+        .sidebar__user {
+            &-avatar {
+                margin-right: 16px;
+                .user__photo {
+                    border-top-left-radius: 50%;
+                    border-top-right-radius: 50%;
+                    border-bottom-right-radius: 50%;
+                    border-bottom-left-radius: 50%;
+                    border: 2px solid $brown-medium;
+                }
+                .user__text {
+                    position: absolute;
+                    padding-left: 19px;
+                    padding-right: 19px;
+                    padding-top: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: center;
+                    color: $white;
+                }
+            }
+            &-full__name {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                color: $grey-dark;
+            }
+        }
+        .sidebar__money {
+            .money {
+                height: 80px;
+                border-top: 1px solid $border-color;
+                margin-top: 15px;
+                &__heading {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $grey-dark;
+                    margin-top: 13px;
+                    margin-bottom: 13px;
+                }
+                button {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    padding: 6px 12px;
+                    color: $white;
+                    &.btn-primary {
+                        background-color: $blue-secondary;
+                    }
+                }
+                .display__text{
+                    color: $red-price;
+                    margin-left: 16px;
+                    font-weight: 500;
+                }
+            }
+            .money__real{
+                .money__display{
+                    .btn-primary{
+                        background-color: $blue-secondary;
+                    }
+                }
+            }
+        }
+    }
+    &__dashboard {
+        width: 100%;
+        background: white;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        .col-4 {
+            border: 1px solid #F9FAFC;
+        }
+        .dashboard__box {
+            padding: 24px 15px;
+            &-img {
+                position: relative;
+                display: flex;
+                background: #d4b26b;
+                border-radius: 5px;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto 11px;
+                width: 36px;
+                height: 36px;
+                .img__badge {
+                    position: absolute;
+                    border-radius: 50%;
+                    width: 24px;
+                    height: 24px;
+                    border: 2px solid $white;
+                    background-color: $blue-secondary;
+                    top: 0;
+                    right: 0;
+                    transform: translate(50%, -50%);
+                    display: flex;
+                    justify-content: center;
+                    &-number {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 10px;
+                        line-height: 14px;
+                        display: flex;
+                        align-items: center;
+                        color: $white;
+                    }
+                }
+            }
+            &-heading {
+                font-family: Inter;
+            }
+        }
+    }
+    p {
+        margin-bottom: 0px;
+    }
+}

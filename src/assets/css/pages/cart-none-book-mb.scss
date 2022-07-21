@@ -1,0 +1,59 @@
+.cart-none-book-mb {
+    &__title {
+        padding: 23px 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 13px;
+
+        & a{
+            color: $black;
+
+            & i{
+                font-size: 20px;
+            }
+            padding-right: 51px;
+        }
+
+        & h3{
+
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: $grey-dark;
+        margin: 0;
+        }
+    }
+
+    &__content {
+        background-color: $white;
+        border-radius: 5px;
+        padding-top: 72px;
+        padding-bottom: 72px;
+
+        &-img {
+            margin-bottom: 20px;
+        }
+
+        &-text {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            color: $grey-1;
+            margin-bottom: 58px;
+        }
+
+        &-btn {
+            a {
+                background-color: $blue-secondary;
+                color: $white;
+                padding: 13px 72px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+    }
+}

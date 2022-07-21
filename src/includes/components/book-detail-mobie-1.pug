@@ -1,0 +1,139 @@
+.row
+    .col-lg-5.col-sm-12
+        .detail__group
+            .mobi.mt-3.mb-2
+                .detail__title
+                    h4.h4-18.bold Giáo trình Logic mở & ứng dụng (nxb xây dựng)
+                .detail__author.d-flex.align-items-center.py-2
+                    .author-img
+                        img(class="lazy" data-src="./assets/images/book-detail/avt.png" src="./assets/images/book-detail/avt.png" alt="")
+                    h6.h6-14.medium.mx-2.author.mb-0 Giảng viên:
+                    h6.h6-14.medium.name.mb-0 Athena Quintero
+                .category_social.d-flex
+                    .social-title
+                        img(src="./assets/images/book-detail/soci.png" alt="")
+                        h6.h6-14.medium.mb-0.d-inline-block Chia sẻ:
+                    .social-list.py-2
+                        img(class="lazy ml-4" data-src="./assets/images/book-detail/fb.png" src="./assets/images/book-detail/fb.png", alt="")
+                        img(class="lazy ml-2" data-src="./assets/images/book-detail/mess.png" src="./assets/images/book-detail/mess.png", alt="")
+                        img(class="lazy ml-2" data-src="./assets/images/book-detail/zalo.png" src="./assets/images/book-detail/zalo.png", alt="")
+                        img(class="lazy ml-2" data-src="./assets/images/book-detail/pt.png" src="./assets/images/book-detail/pt.png", alt="" style="width:30px; height:30px")
+                        img(class="lazy ml-2" data-src="./assets/images/book-detail/file.png" src="./assets/images/book-detail/file.png", alt="")
+            div(class="lazy lazy-opacity bg-layout bg-book-detail-mb m-auto" data-bg="./assets/images/book-detail/img.png" style="width:229px; height:333px")
+            .group-list.mx-4.my-3.d-flex.align-items-center.justify-content-between
+                .list__content
+                    span.sm-11.regular.bought.px-2 Đã mua Ebook
+                    h5.h5-16.regular.mb-0.mt-1 Còn <b>152 </b> ngày đọc
+                a(href="#" class='btn btn-success h4-18 medium text-white') Đọc ngay
+    .col-lg-7
+        .detail-book
+            .list-content
+                h1.detail__list-title Các đô thị Việt Nam quá trình hình thành, phát triển và quy hoạch đô thị. Tập 1: Hà Nội, Hải Phòng, Vinh, Huế, Đà Nẵng, Hội An, Đà Lạt, Nha Trang, Buôn Ma Thuột, Cần Thơ
+                p.detail__list-description Qua cuốn sách “Các đô thị Việt Nam - Quá trình hình thành, phát triển và quy hoạch đô thị” tập thể tác giả đã rất cố gắng ...
+            .list-card.d-flex.justify-content-around.align-items-center
+                .card__item.d-flex.justify-content-center.align-items-center
+                    p.num 4.5
+                    .start.d-flex
+                        each item in[1,2,3,4,5]
+                            .start__in
+                                img(class="lazy" data-src="./assets/images/book-detail/shape.png" src="./assets/images/book-detail/shape.png", alt="")
+                .card__item.border__lr.d-flex.justify-content-center.align-items-center
+                    p.num 5.8
+                    span đánh giá
+                .card__item.d-flex.justify-content-center.align-items-center
+                    p.num 369
+                    span đá bán
+            .list-mobi.mt-2
+                .list__content
+                    p.content-title Được bán bởi
+                    .list__content-item
+                        .item-img
+                            img(class="lazy" data-src="./assets/images/book-detail/logoT.png" src="./assets/images/book-detail/logoT.png" alt="")
+                        .item_text
+                            p.text_one Nhà Xuất Bản xây dựng
+                            p.text_tow
+                                img(class="lazy" data-src="./assets/images/book-detail/jam.png" src="./assets/images/book-detail/jam.png" alt="")
+                                span Nhà phát hành tin cậy
+                        p.btn_detail
+                            a(href="") Chi tiết
+            include ./chonbook-mb.pug
+            +chon-book-mb()
+ul.lstDetail.mb-2
+    li
+        span.icon
+            img(class="lazy" data-src="./assets/images/book-detail/ic_1.png" alt="")
+        span.text
+            span.fRobotoB NXB
+            span Nhà xuất bản xây dứng
+    li
+        span.icon
+            img(class="lazy" data-src="./assets/images/book-detail/ic_2.png" alt="")
+        span.text
+            span.fRobotoB Người dịch:
+            span Duy Phương
+    li
+        span.icon
+            img(class="lazy" data-src="./assets/images/book-detail/ic_3.png" alt="")
+        span.text
+            span.fRobotoB Kt bìa:
+            span 18x27
+    li
+        span.icon
+            img(class="lazy" data-src="./assets/images/book-detail/ic_4.png" alt="")
+        span.text
+            span.fRobotoB Nhà XB:
+            span 2019
+    li
+        span.icon
+            img(class="lazy" data-src="./assets/images/book-detail/ic_5.png" alt="")
+        span.text
+            span.fRobotoB Quốc gia:
+            span Đức
+    li
+        span.icon
+            img(class="lazy" data-src="./assets/images/book-detail/ic_6.png" alt="")
+        span.text
+            span.fRobotoB Loại sách:
+            span Ebook, Sách giấy
+    li
+        span.icon
+            img(class="lazy" data-src="./assets/images/book-detail/ic_7.png" alt="")
+        span.text
+            span.fRobotoB Số trang
+            span 202 trang
+    li
+        span.icon
+            img(class="lazy" data-src="./assets/images/book-detail/ic_8.png" alt="")
+        span.text
+            span.fRobotoB
+            span  Giấy phép xuất bản
+    li
+        span.icon
+            img(class="lazy" data-src="./assets/images/book-detail/ic_9.png" alt="")
+        span.text
+            span.fRobotoB Ngôn ngữ:
+            span Tiếng Việt
+.contentBook.mb-2
+    ul.nav.nav-tabs
+        li.nav-item
+            a(class ="nav-link active" data-toggle="tab" href="#review" ) Giới thiệu
+        li.nav-item
+            a(class="nav-link" data-toggle="tab" href="#menu1") Mục lục
+    .tab-content.list__tabs
+        #review.tab-pane.active
+            h3.pane__title Mẹ luôn đồng hành cùng con
+            p.pane__description là một cuốn sách hay không chỉ về tình mẫu tử thiêng liêng mà còn bởi những kỹ năng nuôi dạy con khôn khéo, tuyệt vời mà nữ tác giả Dương Văn mang tới cho đọc giả
+            p.pane__description Một cô thợ may trở thành sinh viên đại học, đi du học ở Anh, là giảng viên của một trường đại học, là thạc sĩ rồi giáo sư, trở thành chủ tịch hội đồ
+            p.pane__description Một cậu bé thông minh, ham đọc sách từ nhỏ, luôn vui vẻ, say mê khám phá, là học sinh giỏi, trở thành sinh viên rồi tiến sĩ của trường Cambridge... Đó chính là quá trình đồng hành cùng con trai của Dương Văn.
+            p.pane__description Việc kiên trì quan điểm giáo dục tố chất, giáo dục vui vẻ đã giúp người mẹ này bồi dưỡng nên một tiến sĩ Cambridge vui vẻ, lương thiện, toàn diện. Đặc biệt là khi con trai trưởng thành thì người mẹ cũng tỏa sáng.
+            p.pane__description Mẹ luôn đồng hành cùng con không chỉ là lý luận giáo dục tố chất gia đình của một chuyên gia giáo dục mà còn là sự tổng kết kinh nghiệm dạy con của một người mẹ yêu con một cách khoa học
+
+
+        #menu1.tab-pane.fade
+            h3.Home
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        #readtry.tab-pane.fade
+            h3.Home
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+.col-lg-12.pl-0.pr-0
+    include comment.pug

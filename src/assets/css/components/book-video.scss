@@ -1,0 +1,37 @@
+.bookvideo{
+    width: 100%;
+    .plyr--video{
+        background: none;
+    }
+    .plyr__poster {
+        background-color: transparent;
+    }
+    .plyr__video-wrapper{
+        background: none;
+    }
+    .plyr__control--overlaid{
+        background: $primary-color;
+        &:hover{
+            background: $primary-color !important;
+        }
+    }
+    .plyr--video .plyr__controls{
+        padding-top: 16px;
+        &:hover{
+            opacity: 1;
+        }
+        transition: .5s;
+        opacity: 0;
+        button:hover{
+            background: $primary-color;
+        }
+        input{
+            color: $primary-color;
+        }
+    }
+    & .plyr:hover .plyr__controls{
+        opacity: 1;
+    }
+    @include breakpoint(425) {
+    }
+}

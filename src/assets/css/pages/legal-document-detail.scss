@@ -1,0 +1,265 @@
+.legal-document-detail {
+  margin-bottom: 30px;
+
+  .container {
+    @media (max-width: 1200px) {
+      padding: 0;
+    }
+  }
+
+  &-wrapper {
+    @media (max-width: 1200px) {
+      margin-top: 12px;
+    }
+  }
+
+  &-item {
+    &-wrapper {
+      padding: 16px 24px;
+      border-radius: 5px;
+      background: $white;
+      border-radius: 5px;
+
+      @media (max-width: 1200px) {
+        padding: 0;
+        border-radius: 0;
+      }
+    }
+
+    &:first-child {
+      flex: 1;
+    }
+
+    &:last-child {
+      flex: 0 0 338px;
+      max-width: 338px;
+      margin-left: 30px;
+    }
+
+    @media (max-width: 1200px) {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      margin: 0 0 16px 0 !important;
+
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  &-tabs {
+    border-bottom: 1px solid $border-color;
+    overflow: auto hidden !important;
+    padding: 12px 0 0;
+    margin-top: -12px;
+
+    @media (max-width: 1200px) {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+
+    .tab__item {
+      background: transparent !important;
+      transform: none !important;
+      padding: 0 !important;
+      border: none !important;
+      overflow: unset !important;
+      flex: unset !important;
+
+      &.disabled {
+        cursor: not-allowed;
+
+        span {
+          opacity: 0.3;
+        }
+      }
+
+      &.active {
+        .legal-document-detail-tabs-item {
+          &::before {
+            transform: scaleX(1);
+          }
+
+          @media (max-width: 1200px) {
+            background: #E1D6BF;
+          }
+
+          span {
+            font-size: 16px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    &-item {
+      position: relative;
+      color: $grey-dark;
+      padding: 6px 12px;
+      width: fit-content;
+
+      &::before {
+        position: absolute;
+        height: 2px;
+        background: $primary-color;
+        content: '';
+        width: 100%;
+        bottom: -1px;
+        left: -1px;
+        transition: 0.3s ease;
+        transform: scaleX(0);
+      }
+
+      &-buy {
+        position: absolute;
+        font-size: 10px !important;
+        color: $white;
+        padding: 0 8px;
+        line-height: 1.8;
+        border-radius: 2px;
+        background: $primary-color;
+        top: 0;
+        right: 10px;
+        transform: translateY(-65%);
+
+        &::before {
+          width: 5px;
+          height: 5px;
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: 4px;
+          transform: translateY(50%) rotate(45deg);
+          background: $primary-color;
+          pointer-events: none;
+        }
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        transform: none !important;
+        transition: 0.3 ease;
+
+        @media (max-width: 1200px) {
+          font-size: 13px !important;
+        }
+      }
+    }
+  }
+
+  &-tabs-main {
+    &-item {
+      padding: 16px 0 0;
+
+      &.content {
+        @media (max-width: 1200px) {
+          padding: 16px;
+        }
+      }
+
+      h3,
+      p,
+      a,
+      li {
+        font-size: 14px;
+        line-height: 1.8;
+        color: $grey-dark;
+        margin-bottom: 5px;
+      }
+
+      h3 {
+        font-weight: 700;
+      }
+
+      a {
+        color: $blue;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      ul {
+        padding-left: 13px;
+
+        li {
+          list-style: disc;
+        }
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+
+        thead {
+          td {
+            font-weight: 700;
+            color: #333333;
+          }
+        }
+
+        tr {
+          &:hover {
+            td {
+              background-color: $grey-7;
+            }
+          }
+        }
+
+        button.btn {
+          white-space: nowrap;
+          border-radius: 2px;
+        }
+
+        .legal-label {
+          font-size: 12px;
+          font-weight: 500;
+          padding: 0 8px;
+          line-height: 1.7;
+          border-radius: 3px;
+          color: $white;
+
+          &:not(:last-child) {
+            margin-right: 8px;
+          }
+
+          &.level-1 {
+            background: #007BFF;
+          }
+
+          &.level-2 {
+            background: #27AE34;
+          }
+
+          &.level-3 {
+            background: #FF9C07;
+          }
+
+          &.level-4 {
+            background: #EB5757;
+          }
+        }
+
+        td {
+          font-size: 14px;
+          padding: 8px 12px;
+          color: $black;
+          border: 1px solid $light-gray;
+          transition: 0.3s ease;
+
+          &:first-child {
+            width: 30%;
+          }
+
+          &.bold {
+            font-weight: 700;
+            color: $grey-dark;
+          }
+        }
+      }
+    }
+  }
+}

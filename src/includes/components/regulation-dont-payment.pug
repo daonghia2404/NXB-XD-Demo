@@ -1,0 +1,91 @@
+-
+    const regulationItemArr=[
+        {
+            icon: './assets/images/regulation-dont-payment/regulation-1.svg',
+            label: 'Cơ quan ban hành:',
+            content: 'Bộ xây dựng'
+        },
+        {
+            icon: './assets/images/regulation-dont-payment/regulation-2.svg',
+            label: 'Loại văn bản:',
+            content: 'Quyết định',
+        },
+        {
+            icon: './assets/images/regulation-dont-payment/regulation-3.svg',
+            label: 'Người ký:',
+            content: 'Phạm Hồng Hà',
+        },
+        {
+            icon: './assets/images/regulation-dont-payment/regulation-4.svg',
+            label: 'Ngày ban hành:',
+            content: '29/08/2016',
+        },
+        {
+            icon: './assets/images/regulation-dont-payment/regulation-5.svg',
+            label: 'Ngày hiệu lực:',
+            content: '29/08/2016',
+        },
+        {
+            icon: './assets/images/regulation-dont-payment/regulation-6.svg',
+            label: 'Ngày hết hiệu lực:',
+            content: '...',
+        },
+        {
+            icon: './assets/images/regulation-dont-payment/regulation-7.svg',
+            label: 'Hiệu lực văn bản:',
+            content: 'Còn',
+        },
+        {
+            icon: './assets/images/regulation-dont-payment/regulation-8.svg',
+            label: 'Giá trọn bộ:',
+            content: '15000',
+        }
+    ]
+    const regulationMoveOnArr=[
+        'Căn cứ pháp lý của thủ tục hành chính',
+        'Yêu cầu, điều kiện thực hiện thủ tục hành chính',
+        'Thành phần hồ sơ',
+        'Cách thức thực hiện',
+        'Trình tự thực hiện',
+        'Thời hạn giải quyết',
+        'Đối tượng thực hiện thủ tục hành chính',
+        'Cơ quan thực hiện thủ tục hành chính',
+        'Kết quả thực hiện thủ tục hành chính',
+        'Lệ phí'
+    ]
+
+- var i = 0;
+mixin regulation-dont-payment(buy=false)
+    .regulation-payment
+        h2 Thông tin bộ văn bản
+        .regulation-payment__list
+            each item in regulationItemArr
+                .regulation-payment__list-item
+                    img(src=`${item.icon}` alt="")
+                    if i === 6
+                        span.item__label=`${item.label}`
+                        span.item__content.item__content-blue=`${item.content}`
+                    else if i === 7
+                        span.item__label=`${    item.label}`
+                        span.item__content.item__content-red=`${item.content}`
+                            span đ
+                    else 
+                        span.item__label=`${item.label}`
+                        span.item__content=`${item.content}`
+                - ++i;
+        a.regulation-payment__btn(href="")
+            if buy 
+                img(src="./assets/images/regulation-dont-payment/regulation-11.svg" alt="")
+                span Mua bộ tài liệu này
+            else
+                img(src="./assets/images/regulation-dont-payment/regulation-12.svg" alt="")
+                span Bắt đầu khai và in
+
+    .regulation-moveon
+        h2 Di chuyển đến
+        .regulation-moveon__list
+            each item in regulationMoveOnArr
+                a.regulation-moveon__list-item(href="")
+                    img(src="./assets/images/regulation-dont-payment/regulation-10.svg" alt="")
+                    span=item
+

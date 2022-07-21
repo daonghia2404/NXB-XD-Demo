@@ -1,0 +1,87 @@
+.alert-show {
+    background-color: $white;
+}
+.alert-modal-content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00000085;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+        & .alert-modal{
+            pointer-events: auto;
+            opacity: 1;
+            visibility: visible;
+            transform:cale(1);
+        }
+    }
+}
+.alert-modal{
+    pointer-events: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    @include breakpoint(767){
+        border-radius: 5px;
+        width: 100%;
+        margin: 0 15px;
+    }
+    .alert-modal__img {
+        width: 57px;
+        height: 57px;
+    }
+}
+.alert-expired,
+.alert-successful,
+.alert-confirm,
+.alert-info,
+.alert-delete,
+.alert-noti {
+    box-shadow: 0px 0px 32px rgba(136, 152, 170, 0.15);
+    transform: scale(0.7);
+    transition: all 0.3s;
+    transform-origin: center;
+}
+
+.btn-alert {
+    padding: 10px;
+    margin: 10px;
+}
+.btn-toast-mess{
+    padding: 10px;
+    margin: 10px;
+}
+.overlay-modal-alert{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 999;
+    cursor: pointer;
+    &.active{
+        visibility: visible;
+        opacity: 0.6;
+    }
+}

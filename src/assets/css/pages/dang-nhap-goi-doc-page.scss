@@ -1,0 +1,168 @@
+.dang-nhap-goi-doc__page {
+  padding: 48px 0;
+  @media (max-width: 575px) {
+    padding: 0;
+  }
+  .page__wrapper {
+    .col-lg-6 {
+      @media (max-width: 575px) {
+        padding: 0;
+      }
+    }
+    .page__company {
+      border-radius: $nxb-border;
+      padding: 25px;
+      background: $blue-F4F9FF;
+      @media (max-width: 575px) {
+        padding: 30px 15px;
+      }
+      h4 {
+        margin-bottom: 15px;
+        @media (max-width: 575px) {
+          text-align: center;
+        }
+      }
+    }
+    .page__form__authen {
+      height: 100%;
+      background: $white;
+      border-radius: $nxb-border;
+      padding: 25px;
+      @media (max-width: 575px) {
+        padding: 30px 15px;
+      }
+      h1 {
+        margin-bottom: 30px;
+      }
+      .form__authen {
+        .form__group {
+          margin-bottom: 25px;
+          .form__item {
+            label {
+              color: $gray-828282;
+              font-size: 13px;
+              display: block;
+            }
+            .form__input {
+              height: 40px;
+              border: 1px solid $gray-D1D1D1;
+              border-radius: $nxb-border;
+              overflow: hidden;
+              .input__icon {
+                display: flex;
+                flex: 0 0 40px;
+                max-width: 40px;
+                height: 40px;
+                position: relative;
+                &.prefix {
+                  &:before {
+                    position: absolute;
+                    content: '';
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 90%;
+                    background: $gray-D1D1D1;
+                  }
+                }
+                &.suffix {
+                  cursor: pointer;
+                }
+                img {
+                  width: 12px;
+                  margin: auto;
+                }
+              }
+              .input {
+                width: 100%;
+                  border: none;
+                  height: 40px;
+                  outline: none;
+                  background: transparent;
+                  padding: 0 15px;
+              }
+              .input__suffix {
+                text-align: center;
+                flex: 0 0 150px;
+                max-width: 150px;
+                padding: 0 5px;
+                height: 40px;
+                @media (max-width: 575px) {
+                  flex: 0 0 120px;
+                  max-width: 120px;
+                }
+                &:disabled {
+                  border: none;
+                  background: $gray-F2F2F2;
+                  color: $gray-BDBDBD;
+                }
+              }
+            }
+            .btn {
+              width: 100%;
+              height: 45px;
+              svg {
+                width: 15px;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+        .form__forgot__password {
+          display: block;
+          text-align: right;
+          font-size: 14px;
+          color: $blue-007BFF;
+          font-weight: 500;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+.company__list {
+  @media (max-width: 575px) {
+    justify-content: center !important;
+  }
+  .company__item {
+    background: $white;
+    padding: 12px;
+    border-radius: $nxb-border;
+    border: 1px solid $gray-D1D1D1;
+    flex: 0 0 calc(100% / 2 - 7.5px);
+    max-width: calc(100% / 2 - 7.5px);
+    margin-bottom: 15px;
+    @media (max-width: 575px) {
+      flex: 0 0 68px;
+      max-width: 68px;
+      height: 68px;
+      display: flex;
+      margin: 0 5px 10px;
+    }
+    cursor: pointer;
+    &:hover,
+    &.active {
+      background: $yellow-F9F6EF;
+      border-color: $brand-D4B26B;
+    }
+    p {
+      color: $black;
+      @media (max-width: 575px) {
+        display: none;
+      }
+    }
+    .item__logo {
+      flex: 0 0 40px;
+      max-width: 40px;
+      margin-right: 10px;
+      @media (max-width: 575px) {
+        margin: auto !important;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

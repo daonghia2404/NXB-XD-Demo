@@ -1,0 +1,59 @@
+extend includes/layout/layout.pug
+block pages
+    -
+        const dataCompany = [
+            { image: './assets/images/logo-university/logo-dai-hoc-ha-noi.png', title: 'Trường Đại học Thương Mại Hà Nội' },
+            { image: './assets/images/logo-university/logo-dai-hoc-mo-ha-noi.png', title: 'Trường Đại học Thương Mại Hà Nội' },
+            { image: './assets/images/logo-university/logo-dai-hoc-ngoai-thuong.png', title: 'Trường Đại học Thương Mại Hà Nội' },
+            { image: './assets/images/logo-university/logo-dai-hoc-quoc-gia-ha-noi.png', title: 'Trường Đại học Thương Mại Hà Nội' },
+            { image: './assets/images/logo-university/logo-dai-hoc-thuong-mai.png', title: 'Trường Đại học Thương Mại Hà Nội' },
+            { image: './assets/images/logo-university/logo-dai-hoc-ha-noi.png', title: 'Trường Đại học Thương Mại Hà Nội' },
+            { image: './assets/images/logo-university/logo-dai-hoc-mo-ha-noi.png', title: 'Trường Đại học Thương Mại Hà Nội' },
+            { image: './assets/images/logo-university/logo-dai-hoc-ngoai-thuong.png', title: 'Trường Đại học Thương Mại Hà Nội' },
+            { image: './assets/images/logo-university/logo-dai-hoc-quoc-gia-ha-noi.png', title: 'Trường Đại học Thương Mại Hà Nội' },
+            { image: './assets/images/logo-university/logo-dai-hoc-thuong-mai.png', title: 'Trường Đại học Thương Mại Hà Nội' },
+            { image: './assets/images/logo-university/logo-dai-hoc-ngoai-thuong.png', title: 'Trường Đại học Thương Mại Hà Nội' },
+        ]
+    .dang-nhap-goi-doc__page
+        .container
+            .page__wrapper
+                .row
+                    .col-lg-6
+                        .page__company
+                            h4.h4-18.bold Bạn là thành viên thuộc tổ chức
+                            .company__list.d-flex.flex-wrap.justify-content-between
+                                each item, index in dataCompany
+                                    .company__item(class=`${index === 0 ? 'active' : ''}`).d-flex.align-items-center
+                                        .item__logo
+                                            img(src=`${item.image}`, alt="")
+                                        p.body-13.medium= item.title
+
+                    .col-lg-6
+                        .page__form__authen
+                            h1.h1-28.bold.text-center Đăng nhập
+                            form(action="#").form__authen
+                                .form__group
+                                    .form__item
+                                        label Email
+                                        .form__input.d-flex.align-items-center
+                                            .input__icon.prefix
+                                                img(src="./assets/images/user.svg", alt="")
+                                            input(type="text" placeholder="Nhập tên hòm thư của bạn").input
+                                            input(type="text" value="@ftu.edu.vn" disabled).input__suffix
+                                .form__group
+                                    .form__item
+                                        label Mật khẩu
+                                        .form__input.d-flex.align-items-center
+                                            .input__icon.prefix
+                                                img(src="./assets/images/lock.svg", alt="")
+                                            input(type="password" placeholder="Nhập mật khẩu của bạn").input.nxb__pw
+                                            .input__icon.suffix.icon__small
+                                                img(class="lazy" data-src="./assets/images/login-register/eyes.svg")
+
+                                a(href="#").form__forgot__password Quên mật khẩu
+                                .form__group
+                                    .form__item
+                                        .form__button
+                                            button.btn.btn-primary.d-flex.align-items-center.justify-content-center
+                                                |Đăng nhập ngay
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 1L12 6.4L6.6 11.8M0 6.4H12H0Z" stroke="#fff" stroke-width="2"></path></svg>

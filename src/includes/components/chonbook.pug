@@ -1,0 +1,108 @@
+mixin chon-book(video=false)
+    .list-cart
+        .cart__category
+            .category-top
+                .top-co
+                    h3.tit_option.d-flex.align-items-center Chọn
+                .category_social.desktop.d-flex.justify-content-center
+                    .social-title
+                        img(src="./assets/images/book-detail/soci.png", alt="")
+                        span Chia sẻ:
+                    .social-list
+                        img(class="lazy mr-1" data-src="./assets/images/book-detail/fb.png" src="./assets/images/book-detail/fb.png", alt="")
+                        img(class="lazy mr-1" data-src="./assets/images/book-detail/mess.png" src="./assets/images/book-detail/mess.png", alt="")
+                        img(class="lazy mr-1" data-src="./assets/images/book-detail/zalo.png" src="./assets/images/book-detail/zalo.png", alt="")
+                        img(class="lazy mr-1" data-src="./assets/images/book-detail/pt.png" src="./assets/images/book-detail/pt.png", alt="")
+                        img(class="lazy" data-src="./assets/images/book-detail/file.png" src="./assets/images/book-detail/file.png", alt="")
+            .cart-bg
+                form(action="")
+                    if !video
+                        ul.category-li.d-flex.justify-content-between
+                            li.li-item
+                                label.category-li__item.fas(for="rental-book")
+                                    h3.title.item_left Eboook
+                                    span.item-price 135.000 đ
+                                input(type="checkbox" id ="rental-book" style= "display:none")
+                                .amout-options.flex.items-center
+                                    .option__rental-book
+                                        .time.click-show-dropdow
+                                            input.valua-time(type='hidden' value="1")
+                                            h6.time-text 1 tháng
+                                            i.fas.fa-angle-down
+                                            ul.dropdow
+                                                li
+                                                    input.get-valua-number(type='hidden' value="1" )
+                                                    i.fas.fa-check
+                                                    span.get-valua-text 1 tháng
+                                                li
+                                                    input.get-valua-number(type='hidden' value="3" )
+                                                    i.fas.fa-check
+                                                    span.get-valua-text 3 tháng
+                                                li
+                                                    input.get-valua-number(type='hidden' value="6" )
+                                                    i.fas.fa-check
+                                                    span.get-valua-text 6 tháng
+                                                li
+                                                    input.get-valua-number(type='hidden' value="999" )
+                                                    i.fas.fa-check
+                                                    span.get-valua-text Vĩnh viễn
+                            li
+                                .line
+                            li.li-item
+                                label.category-li__item.fas(for="rental-book")
+                                    h6.title.item_left Eboook
+                                    span.item-price 135.000 đ
+                                input(type="checkbox" id ="rental-book" style= "display:none")
+                                .amout-options.flex.items-center
+                                    .option__rental-book
+                                        .time.click-show-dropdow
+                                            input.valua-time(type='hidden' value="1")
+                                            h6.time-text 1 tháng
+                                            i.fas.fa-angle-down
+                                            ul.dropdow
+                                                li
+                                                    input.get-valua-number(type='hidden' value="1" )
+                                                    i.fas.fa-check
+                                                    span.get-valua-text 1 tháng
+                                                li
+                                                    input.get-valua-number(type='hidden' value="3" )
+                                                    i.fas.fa-check
+                                                    span.get-valua-text 3 tháng
+                                                li
+                                                    input.get-valua-number(type='hidden' value="6" )
+                                                    i.fas.fa-check
+                                                    span.get-valua-text 6 tháng
+                                                li
+                                                    input.get-valua-number(type='hidden' value="999" )
+                                                    i.fas.fa-check
+                                                    span.get-valua-text Vĩnh viễn
+                            li
+                                .line
+                            li.li-item
+                                label.category-li__item.fas(for="buy-book")
+                                    h6.title Sách Giấy
+                                    span.item-price 150.000 đ
+                                input(type="checkbox" id ="buy-book" style= "display:none")
+                                .amout-options
+                                    .option-wrap.flex.items-center
+                                        .button.d-flex.justify-content-center.align-items-center.minus.js-qty-decrease-2 -
+                                        .amount.buy__amount
+                                            input(type="text" value="1" class="number js-product-qty-2 ")
+                                        .button.d-flex.justify-content-center.align-items-center.plus.js-qty-increase-2 +
+                    .category-total.d-flex
+                        .total_pr
+                            h6.title Thành tiền
+                            h3.price 9.345.000 đ
+                    .category-submit.d-flex.justify-content-between.align-items-center
+                        .submit__item
+                            button.btn.btn-red.d-flex.justify-content-center.align-items-center
+                                img(src="./assets/images/book-detail/nxb-dollard.svg", alt="")
+                                span Mua ngay
+                        .submit__item
+                            button.btn.btn-outline-red.btn-add-to-cart.d-flex.justify-content-center.align-items-center
+                                img(src="./assets/images/book-detail/nxb-addtocart.svg", alt="")
+                                span Thêm giỏ hàng
+                    .category-vote.d-flex.align-items-center
+                        img(src="./assets/images/book-detail/vote.png", alt="")
+                        h6.title Khuyến mãi:
+                        h6.description +20% giá trị khi nạp ví

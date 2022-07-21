@@ -1,0 +1,17 @@
+- const boxContentArr = ["Giáo trình", "Tiêu chuẩn - Qui Chuẩn", "Sách dịch", "Phổ biến pháp luật", "Kiến trúc", "Vật liệu xây dựng", "Thiết kế", "Thi Công", "Toán học", "Toán lớp 6", "Giới thiệu", "Giáo trình"]
+mixin topic(number, pageName, fourItem = false)
+    .topic-headding
+        .topic-title.d-flex.justify-content-between.my-3
+            h3.h3-20.medium.mb-0=pageName
+            a(href="").btn.btn-gray-link.btn-sm
+                span.mr-1 Xem toàn bộ
+                svg(width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    path(d="M6.6 1L12 6.4L6.6 11.8M0 6.4H12H0Z" stroke="#8C8C8C" stroke-width="2")
+        .topic-box.d-flex.flex-wrap(class=`${fourItem ? "fourItem" : ""}`)
+            - var n = 0;
+            while n < number
+                .box_item.d-flex.align-items-center.justify-content-center.mb-4(class=`${fourItem ? 'fourItem' : ''}`)
+                    a(href="").d-flex.flex-column.justify-content-center.align-items-center
+                        h2.h2-24.bold.mb-0 572
+                        h6.h6-14.regular.text-center=boxContentArr[n]
+                - ++n;

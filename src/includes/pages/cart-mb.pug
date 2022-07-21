@@ -1,0 +1,159 @@
+.section-checkout#cart-mb
+    include ../components/account-sidebar-mb.pug
+    +slide__bar-mb("Giỏ hàng của bạn",true)       
+    .container         
+        .section-checkout__content.content-cart
+            .row
+                .col-lg-6
+                    .section-checkout__left
+                        h3.title Danh sách sản phẩm
+                        ul.section-checkout__left-list
+                            li.section-checkout__left-item
+                                .left-item__img
+                                    a(href="./book-detail-mobile-1.html")
+                                        div(class="lazy lazy-opacity bg-layout bg-book-cart" data-bg="./assets/images/checkout/image1.jpg")
+                                    span Ebook
+                                .left-item__desc
+                                    h4
+                                        a(href="") Ebook Giáo trình lưới điện phân phối
+                                    .left-item__desc-price
+                                        span
+                                            b 15.000đ
+                                            | /tháng
+                                        .time.click-show-dropdow.block-576.time-cart-mb
+                                            input.valua-time(type='text' value="1" )
+                                            p.time-text 1 tháng
+                                            i.fas.fa-angle-down
+                                            ul.choose-time 
+                                                li.d-flex.align-items-center
+                                                    input(type="radio" name="product1" value="1" checked)
+                                                    i.fas.fa-check 
+                                                    h6.h6-14.regular 1 tháng
+                                                li.d-flex.align-items-center 
+                                                    input(type="radio" name="product1" value="2")
+                                                    i.fas.fa-check 
+                                                    h6.h6-14.regular 3 tháng
+                                                li.d-flex.align-items-center 
+                                                    input(type="radio" name="product1" value="3")
+                                                    i.fas.fa-check 
+                                                    h6.h6-14.regular 6 tháng
+                                                li.d-flex.align-items-center 
+                                                    input(type="radio" name="product1" value="4")
+                                                    i.fas.fa-check 
+                                                    h6.h6-14.regular vĩnh viễn
+                                    ul.left-item__desc-list
+                                        li.left-item__desc-item
+                                            span.color-33 Thành tiền:
+                                            b 45.000 đ
+                                button.left-item__delete
+                                    i.fas.fa-trash
+                            li.section-checkout__left-item
+                                .left-item__img
+                                    a(href="./book-detail-mobile-1.html")
+                                        div(class="lazy lazy-opacity bg-layout bg-book-cart" data-bg="./assets/images/checkout/image1.jpg")
+                                    span Ebook
+                                .left-item__desc
+                                    h4
+                                        a(href="") Ebook Giáo trình lưới điện phân phối
+                                    .left-item__desc-price
+                                        span
+                                            b 15.000đ
+                                            | /tháng
+                                        .time.click-show-dropdow.block-576.time-cart-mb
+                                            input.valua-time(type='text' value="1" )
+                                            p.time-text 1 tháng
+                                            i.fas.fa-angle-down
+                                            ul.choose-time 
+                                                li.d-flex.align-items-center
+                                                    input(type="radio" name="product2" value="1" checked)
+                                                    i.fas.fa-check 
+                                                    h6.h6-14.regular 1 tháng
+                                                li.d-flex.align-items-center 
+                                                    input(type="radio" name="product2" value="2")
+                                                    i.fas.fa-check 
+                                                    h6.h6-14.regular 3 tháng
+                                                li.d-flex.align-items-center 
+                                                    input(type="radio" name="product2" value="3")
+                                                    i.fas.fa-check 
+                                                    h6.h6-14.regular 6 tháng
+                                                li.d-flex.align-items-center 
+                                                    input(type="radio" name="product2" value="4")
+                                                    i.fas.fa-check 
+                                                    h6.h6-14.regular vĩnh viễn
+                                    ul.left-item__desc-list
+                                        li.left-item__desc-item
+                                            span.color-33 Thành tiền:
+                                            b 45.000 đ
+                                button.left-item__delete
+                                    i.fas.fa-trash
+                            li.section-checkout__left-item.--product-end
+                                .left-item__img
+                                    a(href="./book-detail-mobile-1.html")
+                                        div(class="lazy lazy-opacity bg-layout bg-book-cart" data-bg="./assets/images/checkout/image1.jpg")
+                                    span Ebook
+                                .left-item__desc
+                                    h4
+                                        a(href="") Ebook Giáo trình lưới điện phân phối
+                                    .left-item__desc-price
+                                        span
+                                            b 15.000đ
+                                            | /cuốn
+                                        .num-block.skin-1.block-576.d-flex.align-items-center.justify-content-between
+                                                span.text-over Đang tạm hết
+                                                .num-in
+                                                    span.minus
+                                                    input.in-num(type='number' value='0'  )
+                                                    span.plus
+                                    ul.left-item__desc-list
+                                        li.left-item__desc-item
+                                            span.color-33 Thành tiền:
+                                            b 0đ
+                                button.left-item__delete
+                                    i.fas.fa-trash
+                            li.section-checkout__left-item
+                                .left-item__img
+                                    a(href="./book-detail-mobile-1.html")
+                                        div(class="lazy lazy-opacity bg-layout bg-book-cart" data-bg="./assets/images/checkout/image1.jpg")
+                                    span Ebook
+                                .left-item__desc
+                                    h4
+                                        a(href="") Ebook Giáo trình lưới điện phân phối
+                                    .left-item__desc-price
+                                        span
+                                            b 15.000đ
+                                            | /cuốn
+                                        .num-block.skin-1.block-576.d-flex.align-items-center.justify-content-between
+                                                span.text-over
+                                                .num-in
+                                                    span.minus
+                                                    input.in-num(type='number' value='1'  )
+                                                    span.plus
+                                    ul.left-item__desc-list
+                                        li.left-item__desc-item
+                                            span.color-33 Thành tiền:
+                                            b 0đ
+                                button.left-item__delete( data-id="#product3")
+                                    i.fas.fa-trash
+                .col-lg-6
+                    .section-checkout__right
+                        h3.title Thông tin đơn hàng
+                        .section-checkout__right-content
+                            ul.section-checkout__right-list
+                                li.section-checkout__right-item
+                                    b Tạm tính:
+                                    span 900.000đ
+                                li.section-checkout__right-item
+                                    b Giảm giá:
+                                    span.discount -25.000đ
+                                li.section-checkout__right-item.section-checkout__right-item--money
+                                    b Thành tiền:
+                                    span.money 900.000đ
+                            .insert-code
+                                h4 Nhập mã giảm giá nếu có:
+                                .insert-code__group
+                                    .row
+                                        .col-sm-8.col-7
+                                            input.input-field(type='text' placeholder='Nhập mã')
+                                        .col-sm-4.col-5
+                                            button Áp dụng
+                            a(href="checkout-mobile-1.html").btn-pay Thanh toán

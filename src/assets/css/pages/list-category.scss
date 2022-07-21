@@ -1,0 +1,26 @@
+.list__category-wrapper {
+    .category__wrapper-typical {
+        overflow: hidden;
+    }
+    .category__wrapper-left {
+        padding-top: 20px;
+        @include max-breakpoint(992) {
+            padding-top: 0px;
+        }
+    }
+    .category__wrapper-right {
+        .wrapper__right-topic {
+            padding-top: 20px;
+        }
+        .wrapper__right {
+            background-color: $white;
+            padding: 25px 30px ;
+            border-radius: 5px;
+            margin-top: 2px;
+        }
+    }
+    .wrapper__pagination {
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+}

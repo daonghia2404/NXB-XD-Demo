@@ -1,0 +1,22 @@
+.my__account-mobile {
+    p.text-indent {
+        padding-left: 10px;
+    }
+    .account__mobile-reading {
+        padding: 16px 20px 4px 20px;
+    }
+    .account__mobile-book {
+        .list__book-mb {
+            .list__book-title {
+                border-bottom: none;
+                padding: 20px 0 17px 0;
+                border-bottom: 1px solid $border-color2;
+            }
+            .book__content-img{
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}

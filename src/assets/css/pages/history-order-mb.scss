@@ -1,0 +1,161 @@
+.history-order-mb  {
+    p {
+        margin: 0px;
+    }
+    .history-order-mb-content {
+        border-radius: 5px;
+        padding: 0;
+        background-color: $white;
+            .history-order-mb__table {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #333333;
+
+                tr {
+                    height: 56px;
+                    text-align: left;
+
+                    td,th {
+                        padding-left:0px;
+                        padding-right: 0px;
+                        border: none;
+
+                        .status {
+                            padding-left: 8px;
+                            padding-right: 8px;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 13px;
+                            line-height: 15px;
+                            text-align: center;
+                        }
+    
+                        .status__fail {
+                            width:65px;
+                            background: #FFFFFF;
+                            border: 1px solid #F2994A;
+                            box-sizing: border-box;
+                            border-radius: 2px;
+                            color: #F2994A;
+                        }
+    
+                        .status__done {
+                            width: 87px;
+                            background: #FFFFFF;
+                            border: 1px solid #27AE34;
+                            box-sizing: border-box;
+                            border-radius: 2px;
+                            color: #27AE34;
+                        }
+    
+                        .status__cancel {
+                            width: 58px;
+                            background: #FFFFFF;
+                            border: 1px solid #EB5757;
+                            box-sizing: border-box;
+                            border-radius: 2px;
+                            color: #EB5757;
+                        }
+
+                        .info-via {
+                            &__content {
+                                margin-left:45px;
+                            }
+                        }
+
+                        .info-type {
+                            &__content {
+                                margin-left:22px;
+                            }
+                        }
+
+                        .info-value {
+                            &__content {
+                                margin-left:34px;
+                            }
+                        }
+
+                        .info-time {
+                            &__content {
+                                margin-left:10px;
+                            }
+                        }
+                    }
+
+                    .table-stt {
+                        min-width: 54px;
+                    }
+
+                    .table-magiaodich {
+                        min-width: 109px;
+                    }
+
+                    .table-infogiaodich {
+                        min-width: 250px;
+                    }
+
+                    .table-status {
+                        min-width: 100px;
+                    }
+
+                    .table-mainwallet {
+                        min-width: 100px;
+                    }
+
+                    .table-secondwallet {
+                        min-width: 121px;
+                    }
+                }
+
+                th {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 19px;
+                    vertical-align: middle;
+                    color: #333333;
+                }
+
+                td {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    vertical-align:top;
+                }
+
+                thead {
+                    font-weight: 500;
+                }
+
+                .bg-tbody {
+                    background: #F8FAFF;
+                }
+
+                .bg-thead {
+                    background: #F8F8F8;
+                }
+
+                .pl-16px {
+                    padding-left: 16px;
+                }
+
+                .info-via-mb  {
+                    margin-bottom: 8px;
+                }
+
+                .py-10px {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+    }
+}
+.history__pagination-wrapper {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .component__pagination-mb {
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,61 @@
+.my-account .content.content-purchase {
+    padding: 30px 40px;
+    border-radius: 5px;
+    @include breakpoint(767) {
+        padding: 24px 15px 24px 15px;
+    }
+}
+.content.content-purchase {
+    background: $white;
+}
+.purchase-history {
+    &__table {
+        font-family: $font-inter;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $grey-dark;
+        & table {
+            margin-top: 20px;
+            margin-bottom: 33px;
+            color: $grey-dark;
+            & tr {
+                height: 56px;
+                white-space: nowrap;
+                &:nth-of-type(even) {
+                    background-color: $bg-table;
+                }
+            }
+            & th {
+                border: none;
+                padding: 0;
+                vertical-align: middle;
+                padding-left: 12px;
+                white-space: nowrap;
+                font-weight: normal;
+            }
+            & td {
+                border: none;
+                padding: 0;
+                vertical-align: middle;
+                padding-left: 12px;
+                white-space: nowrap;
+            }
+            & thead {
+                & tr {
+                    background: $grey-7;
+                    & th {
+                        font-weight: 500;
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+}

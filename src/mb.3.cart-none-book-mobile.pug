@@ -1,0 +1,8 @@
+extend includes/layout/layout.pug
+block pages
+    include includes/pages/cart-none-book-mb.pug
+    .typical__book-section.mb-3
+        .container
+            .row
+                include includes/components/typical-book.pug
+                +typical__book("Có thể bạn quan tâm")

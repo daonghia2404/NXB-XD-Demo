@@ -1,0 +1,30 @@
+extend includes/layout/layout.pug
+
+block pages
+    main.main__book-detail
+        section.detail
+            .container
+                .breadcrumb_detail
+                    p Trang chủ
+                        span / trang chi tiết sách
+                .row
+                    .col-lg-9
+                        include includes/components/book-detail-video.pug
+                    .col-lg-3
+                        .row
+                            .col-lg-12.col-md-4.mb-4
+                                include includes/components/author-list.pug
+                            .col-lg-12.col-md-4
+                                include includes/components/menu-topic.pug
+                            .col-lg-12.col-md-4
+                                include includes/components/check-license.pug
+                                include includes/components/news.pug
+        .section.my-4
+            .container
+                .row
+                    .col-12
+                        include includes/components/typical-book-slider.pug
+                        +typical__book-slider("Sách mới nổi")
+        .section
+            .container
+                include includes/components/collection-slider.pug

@@ -1,0 +1,59 @@
+extend includes/layout/layout.pug
+block pages
+    section.services-contact 
+        include includes/components/breadcrumb.pug
+        +brcrumb('Liên hệ hỗ trợ')
+
+        include includes/components/account-sidebar-mb.pug
+        +slide__bar-mb(" Liên hệ hỗ trợ", true)
+
+        .container 
+            .services-contact-wrapper.d-flex.justify-content-between.flex-wrap
+                .services-contact-item 
+                    form(action="#")
+                        h5.services-contact-title Thông tin khách hàng
+
+                        .form-groups.d-flex.flex-wrap
+                            .form-group.full
+                                label(for='') Đơn vị / cá nhân liên hệ
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-user-gray.svg", alt="" width="20px")
+                                    input.form-control.hover-input(type='text' placeholder='Đơn vị / cá nhân liên hệ' aria-label='Đơn vị / cá nhân liên hệ' )
+
+                            .form-group.width-40
+                                label(for='') Số điện thoại
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-phone-gray.svg", alt="")
+                                    input.form-control.hover-input(type='phone' placeholder='Số điện thoại' aria-label='Số điện thoại' )
+                                    
+
+                            .form-group.width-60
+                                label(for='') Email
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-mail-gray.svg", alt="")
+                                    input.form-control.hover-input(type='Email' placeholder='Email' aria-label='Email' )
+
+                            .form-group.full
+                                label(for='') Nội dung cần liên hệ
+                                .input-group.form-area
+                                    textarea.hover-input(name='user_bio' placeholder='Nhập nội dung')
+                                    .form-area__icon
+                                        img(class="lazy" data-src="./assets/images/checkout/Icon.svg", alt="")
+
+
+                            .form-group.full.d-flex.justify-content-center 
+                                .button__item
+                                    button.btn.btn-red-1.btn-sm
+                                        span Gửi thông tin
+
+                .services-contact-item
+                    include includes/components/section-contact-info.pug
+                    +sectionContactInfo({
+                        description: 'Nhà xuất bản Xây dựng là đơn vị trực thuộc Bộ Xây dựng được thành lập từ năm 1977, luôn nằm trong top các nhà xuất bản được đánh giá cao tại Việt Nam. Chúng tôi thực hiện theo đúng tôn chỉ, mục đích với chức năng nhiệm vụ: Xuất bản xuất bản sách giấy và sách điện tử',
+                        hotline: '088 8080 290',
+                        email: 'banhang@nxbxaydung.com.vn',
+                        address: '37 Lê Đại Hành, Hai Bà Trưng, TP. Hà Nội',
+                    })

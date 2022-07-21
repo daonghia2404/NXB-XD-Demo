@@ -1,0 +1,104 @@
+.row
+    .col-lg-4.col-md-4
+        .detail__group.d-flex.flex-column
+            img(src="./assets/images/book-detail/img.png", alt="" class="lazy lazy-opacity mb-4")
+            .group-list.d-flex.justify-content-between.align-items-end.mb-4
+                .list__content 
+                    small.bought Đã mua 
+                    p.note Còn <b>152 </b> ngày đọc
+                button(class="btn btn-success" type="submit") Đọc ngay
+    .col-lg-8.col-md-8
+        .detail-book
+            .list-content.mb-4
+                h1.detail__list-title Các đô thị Việt Nam quá trình hình thành, phát triển và quy hoạch đô thị - Tập 1
+                p.detail__list-description Tập 1: Hà Nội, Hải Phòng, Vinh, Huế, Đà Nẵng, Hội An, Đà Lạt, Nha Trang, Buôn Ma Thuột, Cần Thơ
+            .list-card.d-flex.justify-content-around.align-items-center.mb-3
+                .card__item.d-flex.justify-content-center.align-items-center 
+                    p.num 4.5
+                    .start.d-flex
+                        each item in[1,2,3,4,5]
+                            .start__in
+                                img(class="lazy" data-src="./assets/images/book-detail/shape.png" src="./assets/images/book-detail/shape.png", alt="")
+                .card__item.border__lr.d-flex.justify-content-center.align-items-center 
+                    p.num 5.8 
+                    span đánh giá   
+                .card__item.d-flex.justify-content-center.align-items-center 
+                    p.num 369
+                    span đá bán
+            include ./chonbook.pug
+            +chon-book()
+ul.lstDetail.mt-4
+    li
+        img(class="lazy icon" data-src="./assets/images/book-detail/ic_1.png", alt="")
+        span.text
+            span.fRobotoB NXB
+            span Nhà xuất bản xây dứng
+    li
+        img(class="lazy icon" data-src="./assets/images/book-detail/ic_2.png", alt="")
+        span.text
+            span.fRobotoB Người dịch:
+            span Duy Phương,Duy Phương
+    li
+        img(class="lazy icon" data-src="./assets/images/book-detail/ic_3.png", alt="")
+        span.text
+            span.fRobotoB Kt bìa:
+            span 18x27
+    li
+        img(class="lazy icon" data-src="./assets/images/book-detail/ic_4.png", alt="")
+        span.text
+            span.fRobotoB Nhà XB:
+            span 2019
+    li
+        img(class="lazy icon" data-src="./assets/images/book-detail/ic_5.png", alt="")
+        span.text
+            span.fRobotoB Quốc gia:
+            span Đức
+    li
+        img(class="lazy icon" data-src="./assets/images/book-detail/ic_6.png", alt="")
+        span.text
+            span.fRobotoB Loại sách:
+            span Ebook, Sách giấy
+    li
+        img(class="lazy icon" data-src="./assets/images/book-detail/ic_7.png", alt="")
+        span.text
+            span.fRobotoB Số trang
+            span 202 trang
+    li
+        img(class="lazy icon" data-src="./assets/images/book-detail/ic_8.png", alt="")
+        span.text
+            span.fRobotoB
+            span  Giấy phép xuất bản
+    li
+        img(class="lazy icon" data-src="./assets/images/book-detail/ic_9.png", alt="")
+        span.text
+            span.fRobotoB Ngôn ngữ:
+            span Tiếng Việt
+.contentBook.mb-4
+    ul.nav.nav-tabs 
+        li.nav-item 
+            a(class ="nav-link active" data-toggle="tab" href="#review" ) Giới thiệu 
+        li.nav-item 
+            a(class="nav-link" data-toggle="tab" href="#menu1") Mục lục
+    .tab-content.list__tabs
+        #review.tab-pane.active
+            h3.pane__title Mẹ luôn đồng hành cùng con
+            p.pane__description là một cuốn sách hay không chỉ về tình mẫu tử thiêng liêng mà còn bởi những kỹ năng nuôi dạy con khôn khéo, tuyệt vời mà nữ tác giả Dương Văn mang tới cho đọc giả 
+            p.pane__description Một cô thợ may trở thành sinh viên đại học, đi du học ở Anh, là giảng viên của một trường đại học, là thạc sĩ rồi giáo sư, trở thành chủ tịch hội đồ
+            p.pane__description Một cậu bé thông minh, ham đọc sách từ nhỏ, luôn vui vẻ, say mê khám phá, là học sinh giỏi, trở thành sinh viên rồi tiến sĩ của trường Cambridge... Đó chính là quá trình đồng hành cùng con trai của Dương Văn.
+            p.pane__description Việc kiên trì quan điểm giáo dục tố chất, giáo dục vui vẻ đã giúp người mẹ này bồi dưỡng nên một tiến sĩ Cambridge vui vẻ, lương thiện, toàn diện. Đặc biệt là khi con trai trưởng thành thì người mẹ cũng tỏa sáng.
+            p.pane__description Mẹ luôn đồng hành cùng con không chỉ là lý luận giáo dục tố chất gia đình của một chuyên gia giáo dục mà còn là sự tổng kết kinh nghiệm dạy con của một người mẹ yêu con một cách khoa học            
+        #menu1.tab-pane.fade
+            h3.Home
+            p.pane__description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            p.pane__description là một cuốn sách hay không chỉ về tình mẫu tử thiêng liêng mà còn bởi những kỹ năng nuôi dạy con khôn khéo, tuyệt vời mà nữ tác giả Dương Văn mang tới cho đọc giả  Cambridge vui vẻ, lương thiện, toàn diện. Đặc biệt là khi con trai trưởng thành thì người mẹ cũng tỏa sáng.
+            p.pane__description Việc kiên trì quan điểm giáo dục tố chất, giáo dục vui vẻ đã giúp người mẹ này bồi dưỡng nên một tiến sĩ Cambridge vui vẻ, lương thiện, toàn diện. Đặc biệt là khi con trai trưởng thành thì người mẹ cũng tỏa sáng.
+
+        #readtry.tab-pane.fade
+            h3.Home
+            p.pane__description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   
+            p.pane__description là một cuốn sách hay không chỉ về tình mẫu tử thiêng liêng mà còn bởi những kỹ năng nuôi dạy con khôn khéo, tuyệt vời mà nữ tác giả Dương Văn mang tới cho đọc giả 
+            p.pane__description Một cô thợ may trở thành sinh viên đại học, đi du học ở Anh, là giảng viên của một trường đại học, là thạc sĩ rồi giáo sư, trở thành chủ tịch hội đồ
+            p.pane__description Một cậu bé thông minh, ham đọc sách từ nhỏ, luôn vui vẻ, say mê khám phá, là học sinh giỏi, trở thành sinh viên rồi tiến sĩ của trường Cambridge... Đó chính là quá trình đồng hành cùng con trai của Dương Văn.
+            p.pane__description Việc kiên trì quan điểm giáo dục tố chất, giáo dục vui vẻ đã giúp người mẹ này bồi dưỡng nên một tiến sĩ Cambridge vui vẻ, lương thiện, toàn diện. Đặc biệt là khi con trai trưởng thành thì người mẹ cũng tỏa sáng.
+.col-lg-12.pl-0.pr-0
+    include comment.pug

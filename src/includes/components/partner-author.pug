@@ -1,0 +1,48 @@
+mixin parter-author(a)
+    div(class=a ? 'partner-author --partner':'partner-author --author')
+        .container
+            if a
+                h3.h3-20.medium.text-center Đối tác tiêu biểu
+            else 
+                h3.h3-20.medium.text-center Tác giả
+            .partner-author__slider.owl-carousel.owl-theme
+                .partner-author__item
+                    .partner-author__item-img
+                        if  a
+                            img(data-src="assets/images/partner/p147-0428102815.png", alt="").owl-lazy
+                        else 
+                            img(data-src="assets/images/author/author1.jpg", alt="").owl-lazy
+                    if !a
+                        h5.h5-16.medium.text-center.mb-0 Lê Thanh Sơn
+                .partner-author__item
+                    .partner-author__item-img
+                        if  a
+                            img(data-src="assets/images/partner/dv01.png", alt="").owl-lazy
+                        else 
+                            img(data-src="assets/images/author/author2.jpg", alt="").owl-lazy
+                    if !a
+                        h5.h5-16.medium.text-center.mb-0 Nguyễn Thời Trung
+                .partner-author__item
+                    .partner-author__item-img
+                        if  a
+                            img(data-src="assets/images/partner/logodhxd-0508103657.png", alt="").owl-lazy
+                        else 
+                            img(data-src="assets/images/author/author3.jpg", alt="").owl-lazy
+                    if !a
+                        h5.h5-16.medium.text-center.mb-0 Tôn Thất Đại
+                .partner-author__item
+                    .partner-author__item-img
+                        if  a
+                            img(data-src="assets/images/partner/download-0508104126.png", alt="").owl-lazy
+                        else 
+                            img(data-src="assets/images/author/author4.jpg", alt="").owl-lazy
+                    if !a
+                        h5.h5-16.medium.text-center.mb-0 Doãn Minh Khôi
+                .partner-author__item
+                    .partner-author__item-img
+                        if  a
+                            img(data-src="assets/images/partner/ftuslogo-0508104421.png", alt="").owl-lazy
+                        else 
+                            img(data-src="assets/images/author/author5.jpg", alt="").owl-lazy
+                    if !a
+                        h5.h5-16.medium.text-center.mb-0 Phạm Văn Thoan

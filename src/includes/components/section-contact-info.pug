@@ -1,0 +1,29 @@
+mixin sectionContactInfo({ description, hotline, email, address })
+  .section-contact-info
+    h5.services-contact-title Thông tin liên hệ
+    p.services-contact-des= description
+
+    .section-contact-info-items
+      .section-contact-info-item.d-flex.align-items-center 
+        .section-contact-info-item-icon.d-flex.align-items-center.justify-content-center 
+          img(src="./assets/images/contact-info/icon-phone-gray.svg", alt="")
+        .section-contact-info-item-content 
+          h6.section-contact-info-item-content-title Hotline 
+          p.section-contact-info-item-content-des= hotline
+
+      .section-contact-info-item.d-flex.align-items-center 
+        .section-contact-info-item-icon.d-flex.align-items-center.justify-content-center 
+          img(src="./assets/images/contact-info/icon-mail-gray.svg", alt="")
+        .section-contact-info-item-content 
+          h6.section-contact-info-item-content-title Email 
+          p.section-contact-info-item-content-des= email
+
+      .section-contact-info-item.d-flex.align-items-center 
+        .section-contact-info-item-icon.d-flex.align-items-center.justify-content-center 
+          img(src="./assets/images/contact-info/icon-map-marker-gray.svg", alt="")
+        .section-contact-info-item-content 
+          h6.section-contact-info-item-content-title Địa chỉ 
+          p.section-contact-info-item-content-des= address
+
+    .section-contact-info-banner 
+      img(src="./assets/images/contact-info/image-contact-info-form.png", alt="")

@@ -1,0 +1,89 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+input,
+textarea {
+    font-family: $font-inter;
+    font-weight: 400;
+    color: $text-color;
+    -webkit-appearance: none;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+body {
+    background: $grey-3;
+}
+
+img {
+    max-width: 100%;
+}
+
+@supports (position: sticky) {
+    .is-sticky {
+        position: sticky;
+    }
+}
+
+img:not(.initial) {
+    transition: opacity 1s;
+}
+
+p {
+    margin: 0;
+}
+
+.bg-book-slider {
+    padding-top: 75%;
+    padding-bottom: 75%;
+}
+
+.bg-layout {
+    width: 100%;
+    border-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-book-category-2 {
+    padding-top: 75%;
+    padding-bottom: 75%;
+}
+
+.bg-book-detail {
+    padding-top: 75%;
+    padding-bottom: 75%;
+}
+
+.bg-book-cart {
+    padding-top: 75%;
+    padding-bottom: 75%;
+}
+
+
+.style-content {
+
+    li,
+    p {
+        font-size: 14px;
+        color: #02010E;
+    }
+
+    p {
+        margin-bottom: 12px;
+    }
+
+    ul {
+        list-style: disc;
+    }
+}
+
+.btn.btn-danger {
+    background: #EB5757;
+    border-color: #EB5757;
+}

@@ -1,0 +1,126 @@
+.transaction-history {
+    margin-bottom: 32px;
+    p {
+        margin: 0px;
+    }
+    .transaction-history-content {
+        border-radius: 5px;
+        padding: 30px;
+        background-color: $white;
+        .history {
+            .transaction-history__table {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #333333;
+                tr {
+                    height: 56px;
+                    text-align: left;
+
+                    td,th {
+                        padding-left:0px;
+                        padding-right: 0px;
+                        border: none;
+
+                        .info-via {
+                            &__content {
+                                margin-left:45px;
+                            }
+                        }
+
+                        .info-type {
+                            &__content {
+                                margin-left:22px;
+                            }
+                        }
+
+                        .info-value {
+                            &__content {
+                                margin-left:34px;
+                            }
+                        }
+
+                        .info-time {
+                            &__content {
+                                margin-left:10px;
+                            }
+                        }
+                    }
+
+                    .table-stt {
+                        min-width: 54px;
+                    }
+
+                    .table-magiaodich {
+                        min-width: 109px;
+                    }
+
+                    .table-infogiaodich {
+                        min-width: 230px;
+                    }
+
+                    .table-status {
+                        min-width: 100px;
+                    }
+
+                    .table-mainwallet {
+                        min-width: 100px;
+                    }
+
+                    .table-secondwallet {
+                        min-width: 121px;
+                    }
+                }
+
+                th {
+                    vertical-align: middle;
+                    color: #333333;
+                }
+
+                td {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    vertical-align:top;
+                }
+
+                thead {
+                    font-weight: 500;
+                }
+
+                .bg-tbody {
+                    background: #F8FAFF;
+                }
+
+                .bg-thead {
+                    background: #F8F8F8;
+                }
+
+                .pl-16px {
+                    padding-left: 16px;
+                }
+
+                .info-via-mb  {
+                    margin-bottom: 8px;
+                }
+
+                .py-10px {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+            .table-top {
+                margin-bottom: 20px;
+                h3 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 32px;
+                    display: flex;
+                    align-items: center;
+                    color: #02010E;
+                }
+            }
+        }
+    }
+}

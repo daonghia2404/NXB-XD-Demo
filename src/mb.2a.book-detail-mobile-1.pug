@@ -1,0 +1,19 @@
+extend includes/layout/layout.pug
+
+block pages
+    main.main__book-detail
+        .section.detail.mb-2
+            .container
+                .breadcrumb_detail
+                    p Trang chủ
+                        span / trang chi tiết sách
+            .container
+                .row
+                    .col-lg-12
+                        include includes/components/book-detail-mobie-1.pug
+        .section
+            include includes/components/typical-book-slider.pug
+            +typical__book-slider("Sách mới")
+        .section
+            include includes/components/partner-author.pug
+            +parter-author(true)

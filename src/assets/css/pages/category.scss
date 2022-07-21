@@ -1,0 +1,26 @@
+.category__wrapper {
+
+    .category__wrapper-right {
+        .wrapper__right-topic {
+            margin-top: 6px;
+        }
+        .wrapper__right {
+            background-color: $white;
+            padding: 25px 30px;
+            border-radius: 5px;
+            & .headding{
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                color: $grey-dark;
+            }
+        }
+    }
+    .category__wrapper-typicals {
+        padding-bottom: 113px;
+    }
+    .wrapper__pagination {
+        padding-top: 17px;
+        padding-bottom: 35px;
+    }
+}

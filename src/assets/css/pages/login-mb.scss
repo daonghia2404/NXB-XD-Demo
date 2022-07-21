@@ -1,0 +1,108 @@
+.login__mb {
+    font-family: $font-inter;
+    padding: 25px;
+    background-color: $white;
+    margin: 32px 20px;
+    border-radius: 5px;
+    .login__mb-title {
+        width: 100%;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(209, 209, 209, 0.5);
+        h3 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 37.5px;
+            margin-bottom: 0;
+        }
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18.75px;
+            color: $primary-color;
+        }
+    }
+    form {
+        width: 100%;
+        margin-top: 24px;
+        .mb__form-password {
+            margin-top: 17px;
+            margin-bottom: 24px;
+            .form__showPassword {
+                width: 100%;
+            }
+        }
+        .mb__form-gmail,
+        .mb__form-password {
+            background-color: $nav-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18.75px;
+            padding: 13px;
+            width: 100%;
+            border-radius: 5px;
+            input {
+                border: none;
+                outline: none;
+                width: 100%;
+                background-color: inherit;
+                padding-left: 13.5px;
+            }
+            .icon-border {
+                padding-right: 13px;
+                border-right: 1px solid $border-color;
+            }
+        }
+    }
+    .login__mb-btn {
+        width: 100%;
+        button.mb__btn-btn {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21.09px;
+            color: $white;
+            background-color: $primary-color;
+            padding: 10px 73px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            height: 48px;
+        }
+    }
+    .login__mb-forget {
+        padding-top: 20px;
+        padding-bottom: 28px;
+        color: $blue;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.41px;
+        width: 100%;
+    }
+    .login__mb-other {
+        width: 100%;
+        .other__select-oval {
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            border: 1px solid $grey-star;
+            .f{
+                color: white;
+                font-size: 32px;
+                font-weight: 600;
+            }
+        }
+        .other__select-oval.oval-second {
+            margin: 0 24px;
+            background-color: $blue-medium;
+        }
+        .other__select-oval.oval-third {
+            background-color: $black;
+        }
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.41px;
+            color: $grey-4;
+            padding-bottom: 23px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@include max-breakpoint(768) {
+    .new_book__section-sp {
+    }
+    .author__section-sp {
+        background: $white;
+        padding-bottom: 10px;
+    }
+    .partner__section-sp {
+        background: $grey-7;
+    }
+    .partner-box__section {
+        background-color: #f8f8f8;
+    }
+}

@@ -1,0 +1,133 @@
+extend includes/layout/layout.pug
+block pages
+    section.legal-document-detail 
+        include includes/components/breadcrumb.pug
+        +brcrumb('Thuê nhà ở công vụ thuộc thẩm quyền quản lý của Chính phủ')
+
+        .container 
+            .legal-document-detail-wrapper.d-flex.justify-content-between.flex-wrap
+                .legal-document-detail-item
+                    .legal-document-detail-item-wrapper 
+                        .tab__wrapper
+                            .tab__group.legal-document-detail-tabs.d-flex.align-items-center
+                                .tab__item.active
+                                    .legal-document-detail-tabs-item #[span Thông tin chung]
+                                .tab__item.disabled
+                                    .legal-document-detail-tabs-item
+                                        span Căn cứ pháp lý
+                                        .legal-document-detail-tabs-item-buy Mua để xem
+                                .tab__item
+                                    .legal-document-detail-tabs-item #[span Trình tự thực hiện]
+                                .tab__item
+                                    .legal-document-detail-tabs-item #[span Thành phần hồ sơ]
+                                .tab__item
+                                    .legal-document-detail-tabs-item
+                                        span Biểu mẫu
+                                        .legal-document-detail-tabs-item-buy Mua để xem
+
+                            .tab__main__group.legal-document-detail-tabs-main
+                                .tab__item.active
+                                    .legal-document-detail-tabs-main-item 
+                                        table
+                                            tr 
+                                                td.bold Cơ quan thực hiện
+                                                td Bộ Xây dựng
+                                            tr 
+                                                td.bold Lĩnh vực
+                                                td Nhà ở – Kinh doanh BĐS
+                                            tr 
+                                                td.bold Mức độ
+                                                td 
+                                                    .d-flex
+                                                        .legal-label.level-1 Mức độ 1
+                                                        .legal-label.level-2 Mức độ 2
+                                                        .legal-label.level-3 Mức độ 3
+                                                        .legal-label.level-4 Mức độ 4
+                                            tr 
+                                                td.bold Cách thực hiện
+                                                td Gửi hồ sơ trực tuyến, trực tiếp hoặc qua đường Bưu điện về Bộ phận Một cửa của Bộ Xây dựng.
+                                            tr 
+                                                td.bold Thời gian giải quyết
+                                                td 20 ngày, kết từ ngày nhận được văn bản đề nghị của cơ quan, tổ chức đang trực tiếp quản lý người có nhu cầu thuê nhà ở công vụ
+                                            tr 
+                                                td.bold Đối tượng
+                                                td Cán bộ, công chức, viên chức
+                                            tr 
+                                                td.bold Yêu cầu, điều kiện
+                                                td Cán bộ thuê nhà ở công vụ phải chưa có nhà ở thuộc sở hữu của mình và chưa được thuê, thuê mua hoặc mua nhà ở xã hội tại nơi đến công tác hoặc đã có nhà ở thuộc sở hữu của mình tại nơi đến công tác nhưng diện tích nhà ở bình quân trong hộ gia đình dưới 15m2/người.
+                                            tr 
+                                                td.bold Kết quả giải quyết
+                                                td Quyết định bố trí cho thuê nhà ở công vụ.
+                                            tr 
+                                                td.bold Lệ phí
+                                                td Không quy định
+
+                                .tab__item
+                                    .legal-document-detail-tabs-main-item.content
+                                        table 
+                                            thead 
+                                                tr 
+                                                    td.text-center(style="width: 50px") #
+                                                    td.text-center Căn cứ pháp lý
+                                                    td.text-center Link xem
+                                            tbody 
+                                                tr 
+                                                    td.text-center(style="width: 50px") 1
+                                                    td Nghị định số 99/2015/NĐ-CP Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Nhà ở
+                                                    td
+                                                        button.btn.btn-brand.btn-xsm Xem chi tiết
+                                                tr 
+                                                    td.text-center(style="width: 50px") 2
+                                                    td Thông tư số 09/2015/TT-BXD Hướng dẫn quản lý sử dụng nhà ở công vụ.
+                                                    td  
+                                                        button.btn.btn-brand.btn-xsm Xem chi tiết
+
+                                .tab__item
+                                    .legal-document-detail-tabs-main-item.content
+                                        h3 Bước 1:
+                                        p Cán bộ thuộc đối tượng được thuê nhà ở công vụ của Chính phủ đề nghị cơ quan, tổ chức đang trực tiếp quản lý gửi 01 bộ hồ sơ thuê nhà ở công vụ đến Bộ Xây dựng; 
+                                        h3 Bước 2:
+                                        p Cơ quan, tổ chức đang trực tiếp quản lý người có nhu cầu thuê nhà ở công vụ gửi văn bản và bộ hồ sơ thuê nhà ở công vụ đến Bộ Xây dựng. 
+                                        h3 Bước 3:
+                                        p Căn cứ quỹ nhà ở công vụ hiện có và tiêu chuẩn nhà ở công vụ, trong thời hạn 20 ngày, kể từ ngày nhận được văn bản đề nghị của cơ quan, tổ chức đang trực tiếp quản lý người có nhu cầu thuê nhà ở công vụ, Bộ Xây dựng kiểm tra, ban hành quyết định cho thuê nhà ở công vụ (nếu đủ điều kiện cho thuê nhà ở công vụ); trường hợp không đủ điều kiện sẽ có văn bản trả lời nêu rõ lý do.
+                                        h3 Bước 4:
+                                        p Bộ Xây dựng gửi Quyết định bố trí cho thuê nhà ở công vụ cho đơn vị quản lý vận hành nhà ở công vụ, cơ quan đang trực tiếp quản lý người thuê và người được thuê nhà ở công vụ (mỗi nơi 01 bản) để phối hợp trong việc quản lý, bố trí cho thuê nhà ở công vụ. 
+                                        h3 Bước 5:
+                                        p Căn cứ quyết định bố trí cho thuê nhà ở công vụ của Bộ Xây dựng, cơ quan quản lý nhà ở công vụ có văn bản (kèm theo danh sách người được bố trí thuê nhà ở) đề nghị đơn vị quản lý vận hành ký kết hợp đồng thuê nhà ở công vụ trực tiếp với người thuê. 
+
+                                .tab__item
+                                    .legal-document-detail-tabs-main-item.content
+                                        ul
+                                            li Văn bản của tổ chức, cơ quan đang trực tiếp quản lý người có nhu cầu thuê nhà ở công vụ gửi Bộ Xây dựng;
+                                            li 01 đơn đề nghị thuê nhà ở công vụ đã có xác nhận của cơ quan đang trực tiếp quản lý cán bộ, công chức về thực trạng nhà ở;
+                                            li 01 bản sao quyết định bổ nhiệm, điều động, luân chuyển công tác có xác nhận của cơ quan ra quyết định hoặc cơ quan đang trực tiếp quản lý cán bộ, công chức.
+
+                                .tab__item
+                                    .legal-document-detail-tabs-main-item.content
+                                        table 
+                                            thead 
+                                                tr 
+                                                    td.text-center(style="width: 50px") #
+                                                    td.text-center Danh sách biểu mẫu
+                                                    td.text-center Link xem
+                                            tbody 
+                                                tr 
+                                                    td.text-center(style="width: 50px") 1
+                                                    td Văn bản của tổ chức, cơ quan đang trực tiếp quản lý người có nhu cầu thuê nhà ở công vụ gửi Bộ Xây dựng
+                                                    td
+                                                        button.btn.btn-brand.btn-xsm Xem chi tiết
+                                                tr 
+                                                    td.text-center(style="width: 50px") 2
+                                                    td 01 đơn đề nghị thuê nhà ở công vụ đã có xác nhận của cơ quan đang trực tiếp quản lý cán bộ, công chức về thực trạng nhà ở
+                                                    td  
+                                                        button.btn.btn-brand.btn-xsm Xem chi tiết
+                                                tr 
+                                                    td.text-center(style="width: 50px") 3
+                                                    td 01 bản sao quyết định bổ nhiệm, điều động, luân chuyển công tác có xác nhận của cơ quan ra quyết định hoặc cơ quan đang trực tiếp quản lý cán bộ, công chức
+                                                    td  
+                                                        button.btn.btn-brand.btn-xsm Xem chi tiết
+
+
+
+                .legal-document-detail-item
+                    include includes/components/info-detail-legal-document.pug

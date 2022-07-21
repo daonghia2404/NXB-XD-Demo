@@ -1,0 +1,20 @@
+mixin list-book(title)
+    .list-book.pt-3
+        .tabbar.mb-4 
+            .row.ml-0.mr-0.pd-0
+                .col-lg-9.pl-0.d-flex.col-7
+                    h3.h3-20.medium.d-flex.align-items-center.mb-3=title
+                .col-lg-3.pr-0.pl-0.col-5
+                    .select-dropdown
+                        select.form-control.form-control-lg.pl-2.mw-100.h6-14.regular
+                            option.h6-14.regular  Sắp xếp theo
+                            option.h6-14.regular  Theo giá từ thấp đến cao
+                            option.h6-14.regular  Theo giá từ cao đến thấp
+                            option.h6-14.regular  Năm xuất bản
+                            option.h6-14.regular  Theo thời gian
+            .tabbar__border            
+        .row
+            each item in [1,2,3,4,5,6,7,8,9,10]
+                .w-20
+                    include reading-book.pug
+                    +reading-book(true, item)

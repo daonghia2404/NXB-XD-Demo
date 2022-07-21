@@ -1,0 +1,126 @@
+.favourite-book {
+    display: none;
+    @include breakpoint(767) {
+        display: block;
+        width: 100%;
+    }
+    .infor__text-mobile {
+        display: none;
+        @include breakpoint(767) {
+            display: block;
+        }
+    }
+    .favourite-book__title {
+        .box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include breakpoint(426) {
+                padding: 20px 20px 20px 25px;
+            }
+            h3 {
+                font-family: $font-inter;
+                margin-bottom: 0;
+                color: $black;
+                @include min-breakpoint(426) {
+                    padding: 30px 25px;
+                }
+                @include breakpoint(426) {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+    .favourite-book__wrapper {
+        max-width: 100vw;
+        .favourite-book__box {
+            width: 100%;
+            .favourite-book__row {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .favourite-book__col {
+                padding: 0 6px;
+                @include min-breakpoint(375) {
+                    padding: 0 10px;
+                }
+            }
+        }
+        .col-6 {
+            &:not(:last-child) {
+                .book__wrapper-content {
+                    margin-bottom: 22px;
+                }
+            }
+        }
+        .book__wrapper-content {
+            .wrapper__content-img {
+                a {
+                    .bg-book-slider {
+                        @include breakpointminmax(320, 375) {
+                            padding-top: 75%;
+                            padding-bottom: 75%;
+                            margin: 0 auto;
+                        }
+                        @include breakpointminmax(376, 425) {
+                            padding-top: 75%;
+                            padding-bottom: 75%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+            .wrapper__content-infor {
+                @include breakpoint(426) {
+                    text-align: center;
+                }
+                .content__infor-text {
+                    p {
+                        font-family: $font-inter;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 19px;
+                        text-align: justify;
+                        padding-top: 13px;
+                        text-overflow: ellipsis;
+                        overflow-x: auto;
+                        margin-bottom: 5.5px;
+                        color: $black;
+                    }
+                    .infor__text-desktop {
+                        @include breakpoint(426) {
+                            display: none;
+                        }
+                    }
+                    p.infor__text-mobile {
+                        text-align: center;
+                        padding-top: 17.61px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
+                .content__infor-author {
+                    font-size: 14px;
+                    font-weight: 300;
+                    font-family: $font-inter;
+                    line-height: 16.41px;
+                    color: $headding-color;
+                    margin-top: 5.5px;
+                    margin-bottom: 8px;
+                }
+                .content__infor-cost {
+                    font-family: $font-inter;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $brown-price;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+-
+    const listTopicDatas=[
+        {
+            listTopicNum:'312',
+            listTopicText:'Thi Công'
+        },
+        {
+            listTopicNum:'68',
+            listTopicText:'Giáo Trình'
+        },
+        {
+            listTopicNum:'111',
+            listTopicText:'Phần Mềm'
+        },
+        {
+            listTopicNum:'168',
+            listTopicText:'Loại Khác'
+        },
+        {
+            listTopicNum:'68',
+            listTopicText:'Giáo Trình'
+        }
+    ]
+
+.list__topic
+    .list__topic-category
+        .topic__category-title
+            p.category__title-content Các chủ đề
+        .topic__category-list
+            each item in listTopicDatas
+                a(class="category__list-items",href="#")
+                    p.list__items-content
+                        span.items__content-num=`${item.listTopicNum}`
+                        span.items__content-text=`${item.listTopicText}`

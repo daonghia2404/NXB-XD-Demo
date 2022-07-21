@@ -1,0 +1,74 @@
+-
+  const dataCategoryPanel = [
+    {
+      link: '#',
+      title: 'Lĩnh vực',
+      subItems: [
+        {
+          link: '#',
+          title: 'Lĩnh vực cấp phép, hoạt động xây dựng',
+          total: 3,
+        },
+        {
+          link: '#',
+          title: 'Lĩnh vực quản lý chất lượng xây dựng, giám định tư pháp',
+          total: 7,
+        },
+        {
+          link: '#',
+          title: 'Lĩnh vực nhà ở - kinh doanh bất động sản',
+          total: 11,
+        },
+        {
+          link: '#',
+          title: 'Lĩnh vực phát triển đô thị',
+          total: 2,
+        },
+        {
+          link: '#',
+          title: 'Lĩnh vực quy hoạch kiến trúc',
+          total: 3,
+        },
+        {
+          link: '#',
+          title: 'Lĩnh vực hạ tầng kỹ thuật',
+          total: 3,
+        },
+        {
+          link: '#',
+          title: 'Lĩnh vực KHCN - môi trường - vật liệu xây dựng',
+          total: 3,
+        },
+        {
+          link: '#',
+          title: 'Lĩnh vực khiếu nại tố cáo',
+          total: 3,
+        },
+      ],
+    },
+  ]
+
+.category-panel
+  .category-panel-title Danh mục văn bản
+
+  .category-panel-main 
+    each item, index in dataCategoryPanel
+      .category-panel-item
+        .category-panel-item-wrapper.d-flex.align-items-start.justify-content-between(class=`${index === 0 ? 'active' : ''}`)
+          .category-panel-item-icon 
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.58579 1.75244C2.96086 1.37737 3.46957 1.16666 4 1.16666H9.33333C9.51014 1.16666 9.67971 1.23689 9.80474 1.36192L13.8047 5.36192C13.9298 5.48694 14 5.65651 14 5.83332V13.8333C14 14.3638 13.7893 14.8725 13.4142 15.2475C13.0391 15.6226 12.5304 15.8333 12 15.8333H4C3.46957 15.8333 2.96086 15.6226 2.58579 15.2475C2.21071 14.8725 2 14.3638 2 13.8333V3.16666C2 2.63622 2.21071 2.12752 2.58579 1.75244ZM4 2.49999C3.82319 2.49999 3.65362 2.57023 3.5286 2.69525C3.40357 2.82028 3.33333 2.98985 3.33333 3.16666V13.8333C3.33333 14.0101 3.40357 14.1797 3.5286 14.3047C3.65362 14.4298 3.82319 14.5 4 14.5H12C12.1768 14.5 12.3464 14.4298 12.4714 14.3047C12.5964 14.1797 12.6667 14.0101 12.6667 13.8333V6.10947L9.05719 2.49999H4Z" fill="#828282"/><path fill-rule="evenodd" clip-rule="evenodd" d="M9.33333 1.16666C9.70152 1.16666 10 1.46513 10 1.83332V5.16666H13.3333C13.7015 5.16666 14 5.46513 14 5.83332C14 6.20151 13.7015 6.49999 13.3333 6.49999H9.33333C8.96514 6.49999 8.66667 6.20151 8.66667 5.83332V1.83332C8.66667 1.46513 8.96514 1.16666 9.33333 1.16666Z" fill="#828282"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.66667 9.16666C4.66667 8.79847 4.96514 8.49999 5.33333 8.49999H10.6667C11.0349 8.49999 11.3333 8.79847 11.3333 9.16666C11.3333 9.53485 11.0349 9.83332 10.6667 9.83332H5.33333C4.96514 9.83332 4.66667 9.53485 4.66667 9.16666Z" fill="#828282"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.66667 11.8333C4.66667 11.4651 4.96514 11.1667 5.33333 11.1667H10.6667C11.0349 11.1667 11.3333 11.4651 11.3333 11.8333C11.3333 12.2015 11.0349 12.5 10.6667 12.5H5.33333C4.96514 12.5 4.66667 12.2015 4.66667 11.8333Z" fill="#828282"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.66667 6.49999C4.66667 6.1318 4.96514 5.83332 5.33333 5.83332H6.66667C7.03486 5.83332 7.33333 6.1318 7.33333 6.49999C7.33333 6.86818 7.03486 7.16666 6.66667 7.16666H5.33333C4.96514 7.16666 4.66667 6.86818 4.66667 6.49999Z" fill="#828282"/></svg>
+          a(href=`${item.link}`).category-panel-item-link= item.title
+
+          if (item.subItems && item.subItems.length > 0)
+            .category-panel-item-arrow 
+              <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.08736 5.33751C3.31516 5.10971 3.68451 5.10971 3.91232 5.33751L6.99984 8.42503L10.0874 5.33751C10.3152 5.10971 10.6845 5.10971 10.9123 5.33751C11.1401 5.56532 11.1401 5.93466 10.9123 6.16247L7.41232 9.66247C7.18451 9.89028 6.81516 9.89028 6.58736 9.66247L3.08736 6.16247C2.85955 5.93466 2.85955 5.56532 3.08736 5.33751Z" fill="#BDBDBD"/></svg>
+
+        if (item.subItems && item.subItems.length > 0)
+          .category-panel-item.category-panel-subitem(class=`${index === 0 ? 'active' : ''}`)
+            each subItem in item.subItems
+              .category-panel-item-wrapper.d-flex.align-items-start.justify-content-between 
+                .category-panel-item-icon.circle
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4" cy="4" r="4" fill="#828282"/></svg>
+
+                a(href=`${subItem.link}`).category-panel-item-link= subItem.title
+                .category-panel-item-total= subItem.total

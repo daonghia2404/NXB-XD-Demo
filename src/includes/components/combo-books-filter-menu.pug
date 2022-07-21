@@ -1,0 +1,78 @@
+section.filter__menu
+  .box-overlay
+  .filter__menu-icon
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.7 4.3C19.3 3.9 18.7 3.9 18.3 4.3L12 10.6L5.7 4.3C5.3 3.9 4.7 3.9 4.3 4.3C3.9 4.7 3.9 5.3 4.3 5.7L10.6 12L4.3 18.3C3.9 18.7 3.9 19.3 4.3 19.7C4.5 19.9 4.7 20 5 20C5.3 20 5.5 19.9 5.7 19.7L12 13.4L18.3 19.7C18.5 19.9 18.8 20 19 20C19.2 20 19.5 19.9 19.7 19.7C20.1 19.3 20.1 18.7 19.7 18.3L13.4 12L19.7 5.7C20.1 5.3 20.1 4.7 19.7 4.3Z" fill="white"/></svg>
+
+  .filter__menu-box
+    .filter__menu-box-card
+      form.box-author(style="margin-top: 0;")
+        h3.box-title Chuyên mục
+        each item in ['Sách tổng hợp', 'Chuyên ngành xây dựng', 'Cấp thoát nước và môi trường, Tối đa 2 dòng, thiếu hiển thị...', 'Vật liệu xây dựng', 'Vật liệu xây dựng', 'Phần mềm', 'Loại khác']
+          .box-author__check
+            input(type="checkbox" name=`${item}` id=`${item}`)
+            label(for=`${item}`)= item
+
+        .filter__menu-see-more 
+          |Xem thêm
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.23483 7.35983C3.38128 7.21339 3.61872 7.21339 3.76517 7.35983L6.5 10.0947L9.23483 7.35984C9.38128 7.21339 9.61872 7.21339 9.76517 7.35984C9.91161 7.50628 9.91161 7.74372 9.76517 7.89017L6.76516 10.8902C6.61872 11.0366 6.38128 11.0366 6.23484 10.8902L3.23483 7.89017C3.08839 7.74372 3.08839 7.50628 3.23483 7.35983Z" fill="#D4B26B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M3.23483 5.64017C3.38128 5.78661 3.61872 5.78661 3.76517 5.64017L6.5 2.90533L9.23483 5.64016C9.38128 5.78661 9.61872 5.78661 9.76517 5.64016C9.91161 5.49372 9.91161 5.25628 9.76517 5.10983L6.76516 2.10984C6.61872 1.96339 6.38128 1.96339 6.23484 2.10984L3.23483 5.10983C3.08839 5.25628 3.08839 5.49372 3.23483 5.64017Z" fill="#D4B26B"/></svg>
+
+    .filter__menu-box-card
+      form.box-author
+        h3.box-title Nhà xuất bản
+        each item in ['Sách tổng hợp', 'Nhà xuất bản Y học', 'Nhà xuất bản Bách Khoa Hà Nội', 'Nhà xuất bản Hà Nội', 'Nhà xuất bản Tri thức', 'Nhà xuất bản Đại học Kinh Tế Quốc Dân', 'Nhà xuất bản Hồng Đức']
+          .box-author__check
+            input(type="checkbox" name=`${item}` id=`${item}`)
+            label(for=`${item}`)= item
+
+      form.box-effect.partner-type.select-type
+        select(class="partner-select" multiple="multiple" style="width: 100%")
+          each item in [1,2,3,4]
+            option(value=`Đối tác ${item}`)= `Đối tác ${item}`
+        button(type='submit')
+          img(src="assets/images/search2.svg" alt="")
+
+    .filter__menu-box-card
+      form.box-author
+        h3.box-title Tác giả
+        each item in ['Nhiều Tác Giả (12044)', 'The Windy (474)', 'DK (410)']
+          .box-author__check
+            input(type="checkbox" name=`${item}` id=`${item}`)
+            label(for=`${item}`)= item
+
+      form.box-effect.author-type.select-type
+        select(class="author-select" multiple="multiple" style="width: 100%")
+          each item in [1,2,3,4]
+            option(value=`Tác giả ${item}`)= `Tác giả ${item}`
+        button(type='submit')
+          img(src="assets/images/search2.svg" alt="")
+
+    .filter__menu-box-card
+      .box-languages
+        h3.box-title Ngôn ngữ
+        form.box-languages__item
+          span.language.vietnamese
+            input(type="radio" name="language" id="vietnamese" checked)
+            label(for="vietnamese" class="item-link") Tiếng Việt
+          span.language.english
+            input(type="radio" name="language" id="english")
+            label(for="english" class="item-link") Tiếng Anh
+          span.language.france
+            input(type="radio" name="language" id="france" checked)
+            label(for="france" class="item-link") Tiếng Pháp
+          span.language.germany
+            input(type="radio" name="language" id="germany")
+            label(for="germany" class="item-link") Tiếng Đức
+
+      form.box-effect.language-type.select-type
+        select(class="language-select" multiple="multiple" style="width: 100%")
+          each item in [1,2,3,4]
+            option(value=`Ngôn ngữ ${item}`)= `Ngôn ngữ ${item}`
+        button(type='submit')
+          img(src="assets/images/search2.svg" alt="")
+
+
+  .box__cancle-mobile
+    .mobile__close
+      span Đóng
+    .mobile__filter
+      span Lọc

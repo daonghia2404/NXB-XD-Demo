@@ -1,0 +1,296 @@
+#checkout-mb-info{
+    margin-top: 15px;
+    margin-bottom: 34px;
+    & .section-checkout__left .payment-group{
+        flex-wrap: wrap;
+    }
+    & .section-checkout__left .payment-group .paymentMethod.vnpay{
+        margin: 0;
+    }
+    & .section-checkout__right{
+        & .desc-btn{
+            & .desc{
+                & a{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    @include breakpoint(991){
+        & .title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 32px;
+            color: $headding-color;
+            margin-bottom: 15px;
+            &.confirm-code{
+                width: 100%;
+                color: $grey-dark;
+                font-size: 18px;
+                line-height: 21px;
+                margin-bottom: 0px;
+                border-bottom:none;
+                padding-bottom: 6px;
+                & .code{
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+                & a{
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    border: none;
+                    padding: 0;
+                }
+            }
+        }
+        & .section-checkout__left .payment{
+            margin-bottom: 8px;
+            & .title{
+                padding-bottom: 21px;
+                border-bottom:1px solid $border-color-grey;
+            }
+        }
+        & .section-checkout__left .info-user ul{
+            border-bottom: 1px dashed $border-color2;
+            margin-bottom: 23px;
+            padding-top: 6px;
+            & li a{
+                font-weight: normal;
+            }
+        }
+
+        & .section-checkout__left .payment-group .paymentMethod .method {
+            & h4{
+                padding-right: 16px;
+                margin-bottom: 0;
+            }
+        }
+        & -list{
+            border-top: 1px solid $border-color-grey;
+            padding: 16px 0;
+        }
+        & .section-checkout__left .payment-group .paymentMethod input {
+            width: 20px;
+            height: 20px;
+        }
+        & .section-checkout__left .payment-group .paymentMethod .method {
+            min-height: 76px;
+            // max-height: 76px;
+        }
+        & .section-checkout__left .payment-group .paymentMethod .method .icon {
+            width: 44px;
+            height: 44px;
+            text-align: center;
+        }
+        & .section-checkout__left .payment-group .paymentMethod .method span {
+            display: block;
+            &.tag{
+                display: none;
+            }
+            & b{
+                color: $red;
+                font-weight: normal;
+            }
+            & a{
+                display: block;
+                padding: 5px 0;
+            }
+        }
+        & .payment-group .paymentMethod {
+            & .method.active{
+                border-color:$primary-color;
+            }
+            &:hover{
+                border: 1px solid $primary-color;
+                & .method.active{
+                    border: none;
+                }
+            }
+        }
+        & .section-checkout__left {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        & .section-checkout__right{
+            padding: 20px 16px;
+            &-content{
+                padding: 0;
+            }
+            & .desc-btn{
+                padding: 40px 25px;
+                text-align: center;
+                & .desc{
+                    padding: 0;
+                }
+                & .btn-pay{
+                    margin-top: 19px;
+                }
+            }
+        }
+        & .payment-group.confirm-code .title{
+            border-bottom: none;
+        }
+        & .section-checkout__right .btn-pay{
+            @include breakpoint(360){
+                width: 100%;
+            }
+        }
+    }
+    & .payment-group.confirm-code {
+        padding-bottom: 16px;
+        border-bottom: 1px dashed $border-color2;
+        & .paymentMethod .method{
+            border: none;
+        }
+    }
+    & .section-checkout__right-item.section-checkout__right-item--money.confirm-code{
+        border: none;
+        & b{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: $grey-dark;
+        }
+    }
+    & .btn-pay{
+        margin-top: 29px;
+        margin-bottom: 40px;
+    }
+    & .section-checkout__left .info-user ul li{
+        display: flex;
+        align-items: flex-start;
+        & img{
+            margin-right: 15px;
+        }
+        & span{
+            font-family: $font-inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: $grey-dark;
+        }
+    }
+    & .section-checkout__left .payment-group .paymentMethod {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    & .section-checkout__left .payment-group .paymentMethod .method .icon{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    & .section-checkout__left .payment-group .paymentMethod .method .text{
+        text-align: left;
+    }
+    & .section-checkout__content{
+        background: none;
+    }
+    & .section-checkout__right-content{
+        background: $white;
+    }
+}
+.btn-pay {
+    margin: auto;
+    width: 188px;
+    padding: 13px;
+    border-radius: 5px;
+    background: #eb5757;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    color: $white;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 30px;
+    font-size: 17px;
+    background: $green-alert;
+    border-radius: 5px;
+    z-index: 999;
+    padding: 15px;
+    display: flex;
+    transform: translateX(-50%);
+    & i{
+        font-size: 30px;
+        vertical-align: middle;
+        padding-right: 27px;
+    }
+    & span{
+        font-weight: normal;
+        font-size: 17px;
+    }
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+  .section-checkout__left .payment-group .paymentMethod{
+
+      @include breakpoint(991){
+        width: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+  }
+  .section-checkout__left .payment-group .paymentMethod .method{
+    @include breakpoint(991){
+        padding: 15px 10px;
+        text-align: left;
+        min-height: 94px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &.active{
+            border: 1px solid #d1d1d1;
+        }
+        & .icon{
+            margin-bottom: 0px;
+            margin-right: 15px;
+        }
+    }
+  }
+  .section-checkout__left .payment-group .paymentMethod input{
+    @include breakpoint(991){
+        display: block;
+        right: 7px;
+        z-index: 99;
+        top: 19px;
+    }
+  }
+  .section-checkout__right-content{
+    @include breakpoint(991){
+        background: $white;
+    }
+  }

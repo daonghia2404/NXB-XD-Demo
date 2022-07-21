@@ -1,0 +1,113 @@
+.NxbCarousel {
+
+  &-card {
+    padding: 24px;
+    background: #fff;
+    border-radius: 5px;
+
+    &-body {
+      @media (max-width: 768px) {
+        margin-right: -16px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 16px;
+    }
+
+    &-header {
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #F2F2F2;
+
+      &-title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #8C8C8C;
+
+        &-icon {
+          flex: 0 0 16px;
+          max-width: 16px;
+          margin-right: 8px;
+        }
+      }
+
+      &-see-all {
+        font-size: 14px;
+        color: #8C8C8C;
+        transition: 0.3s ease;
+
+        &:hover {
+          color: $primary-color;
+
+          svg path {
+            stroke: $primary-color;
+          }
+        }
+
+        &-icon {
+          flex: 0 0 24px;
+          max-width: 24px;
+          margin-left: 8px;
+
+          svg path {
+            transition: 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+
+  &-carousel {
+    position: relative;
+
+    @media (max-width: 768px) {
+      margin-right: -16px;
+    }
+
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      top: 50%;
+      width: 24px;
+      height: 24px;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .owl-prev {
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    .owl-next {
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+
+    &-item {
+      padding: 16px;
+      background: #FFFFFF;
+      border: 1px solid #E5E5E5;
+      border-radius: 5px;
+
+      &-image {
+        height: 32px;
+        display: flex;
+      }
+
+      img {
+        margin: auto;
+        width: auto !important;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}

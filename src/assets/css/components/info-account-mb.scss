@@ -1,0 +1,52 @@
+.infoaccount {
+    font-family: $font-roboto;
+}
+
+.infoaccount__main-form {
+    background-color: $white;
+    margin: 20px 0;
+    padding: 20px 0px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    form {
+        padding: 25px;
+    }
+    .form-input {
+        display: flex;
+        border: 1px solid $red-secondary;
+        border-radius: 5px;
+        height: 47px;
+        align-items: center;
+        background-color: $nav-color;
+        .icon-input {
+            padding: 16px;
+        }
+    }
+    .form-btn {
+        border: none;
+    }
+    input {
+        outline: none;
+        border: none;
+        font-size: 16px;
+        font-weight: normal;
+        background-color: $nav-color;
+        color: $black;
+        &.ellipsis {
+            margin-right: 10px;
+            border-left: 1px solid $red-secondary;
+        }
+    }
+    input[type="submit"] {
+        background: $primary-color;
+        border-radius: 5px;
+        color: $white;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        cursor: pointer;
+        width: 100%;
+        height: 47px;
+    }
+}

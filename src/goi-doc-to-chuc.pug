@@ -1,0 +1,34 @@
+extend includes/layout/layout.pug
+block pages
+  include includes/components/banner-goi-doc.pug
+
+  section.section-goi-doc-to-chuc 
+    .container 
+      .section-goi-doc-to-chuc__wrapper 
+        .row 
+          .col-lg-4
+            include includes/components/filter-menu-v2.pug
+          .col-lg-8
+            .goi-doc__tab-wrapper.tab__wrapper
+              .tab__group.d-flex  
+                .tab__item.active #[span Sách nxbxaydung.com.vn ]
+                .tab__item #[span Tài nguyên giáo dục mở]
+                .tab__item #[span Giới thiệu sách]
+              .tab__main__group 
+                .tab__item.active 
+                  .goi-doc__tab-main 
+                    include includes/components/ebook-video-audio.pug
+                    +audio-ebook-video("Sách giấy và ebook")
+                    +audio-ebook-video("Audio Book", "audio")
+                    +audio-ebook-video("Video book", "video")
+                .tab__item
+                  .goi-doc__tab-main 
+                    +audio-ebook-video("Audio Book", "audio")
+                    +audio-ebook-video("Video book", "video")
+                    +audio-ebook-video("Sách giấy và ebook")
+                .tab__item
+                  .goi-doc__tab-main 
+                    +audio-ebook-video("Sách giấy và ebook")
+                    +audio-ebook-video("Video book", "video")
+                    +audio-ebook-video("Audio Book", "audio")
+

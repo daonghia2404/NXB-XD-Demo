@@ -1,0 +1,34 @@
+extend includes/layout/layout.pug
+block pages
+  include includes/components/banner-goi-doc.pug
+
+  section.section-goi-doc-to-chuc 
+    .container 
+      .section-goi-doc-to-chuc__wrapper 
+        .row 
+          .col-lg-4
+            include includes/components/filter-menu-v2.pug
+          .col-lg-8
+            .goi-doc__tab-wrapper.tab__wrapper
+              .tab__group.d-flex  
+                .tab__item.active #[span Sách Xây Dựng ]
+                .tab__item #[span OER]
+                .tab__item #[span Giới thiệu]
+              .tab__main__group 
+                .tab__item.active 
+                  .goi-doc__tab-main 
+                    include includes/components/ebook-video-audio-mb.pug
+                    +audio-ebook-video-mb("Sách giấy và ebook")
+                    +audio-ebook-video-mb("Audio Book", "audio")
+                    +audio-ebook-video-mb("Video book", "video")
+                .tab__item
+                  .goi-doc__tab-main 
+                    +audio-ebook-video-mb("Audio Book", "audio")
+                    +audio-ebook-video-mb("Video book", "video")
+                    +audio-ebook-video-mb("Sách giấy và ebook")
+                .tab__item
+                  .goi-doc__tab-main 
+                    +audio-ebook-video-mb("Sách giấy và ebook")
+                    +audio-ebook-video-mb("Video book", "video")
+                    +audio-ebook-video-mb("Audio Book", "audio")
+

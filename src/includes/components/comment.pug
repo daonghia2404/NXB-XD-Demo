@@ -1,0 +1,39 @@
+.comment-box.mb-4
+	h3.comment__title Bình luận
+	.comment__list 
+		.comment__list-user 
+			.user__avatar T 
+			.user__name Duy Phương 
+		.comment__list-content 
+			p.list-content__cm Sách rất hay và chất lượng .Qúa tuyệt vời ! 
+			p.list-content__reply 
+				span.content__reply-name Trả lời 
+				small -23 giờ trước 
+			.comment__list-rectangle 
+				.comment__list-user 
+					.user__avatar D
+					.user__name  Thành Luân 
+						span.name-role Quản trị viên 
+				.comment__list-content 
+					p.list-content__cm 
+						span.cm-greeting Chào bạn! 
+						br
+						span Bạn đang cần tư vấn gì đấy .Vui lòng liên hệ với chúng tôi ^^.
+						br
+						span Xin cảm ơn bạn. 
+					p.list-content__reply 
+						span.content__reply-name Trả lời 
+						small -23 giờ trước 
+			.comment__reply
+				form 
+					.comment__avatar 
+						.avt M 
+						input( class="reply" type="text" placeholder ="Viết câu trả lời ..")    
+	.comment__text
+		form 
+			.form__contend
+				.message__form
+					textarea(class ="message" placeholder="Để lại bình luận của bạn...")
+					img( class="icon-mess lazy" data-src="./assets/images/comment/icon.png" src="./assets/images/comment/icon.png" alt="icon_rightdown")
+				p.btn-submit 
+					a(href="#") Gửi bình luận 

@@ -1,0 +1,15 @@
+extend includes/layout/layout.pug
+block pages
+    include includes/components/banner-goi-doc.pug
+
+    section.section-goi-doc-to-chuc.mb-4
+        .container
+            .section-goi-doc-to-chuc__wrapper.tc-2
+                .row
+                    .col-lg-3
+                        include includes/components/filter-menu-v2.pug
+                    .col-lg-9
+                        include includes/components/ebook-video-audio-2.pug
+                        +audio-ebook-video-2("Sách giấy và ebook")
+                        .wrapper__pagination
+                            include includes/components/pagination.pug

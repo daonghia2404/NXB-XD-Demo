@@ -1,0 +1,130 @@
+.cate-filter {
+    background: $white;
+    &__button {
+        & button {
+            padding: 8px;
+            background: $white;
+            border: 1px solid $border-color;
+            box-sizing: border-box;
+            border-radius: 3px;
+            outline: none;
+            color: $grey-medium;
+            margin-bottom: 5px;
+            margin-right: 1px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1;
+            text-transform: capitalize;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active {
+                background: $brown-medium;
+                color: $white;
+            }
+        }
+    }
+    &__control {
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        padding: 8px 0;
+        position: relative;
+        & span {
+            font-size: 13px;
+            color: $grey-color;
+            white-space: nowrap;
+        }
+        & .control-value {
+            font-size: 14px;
+            color: $grey-color;
+            display: inline-flex;
+            flex: 1;
+            & h6 {
+                border-bottom: 2px solid $brand-D4B26B;
+                position: relative;
+                margin-right: 12px;
+                width: fit-content;
+                padding-bottom: 4px;
+                min-width: 80px;
+                text-align: left;
+                margin-bottom: 0;
+                margin-left: 10px;
+            }
+            & i.fas.fa-angle-down {
+                font-size: 18px;
+                color: $grey-1;
+            }
+        }
+        & .control-btn {
+            position: relative;
+            max-width: 24%;
+            flex-basis: 24%;
+            padding: 3px 0;
+            padding-left: 26px;
+            cursor: pointer;
+            &:after {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 1px;
+                background: $border-color;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__dropdow {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: $white;
+        width: 100%;
+        z-index: 9999;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s ease-in-out;
+        background: #757575;
+        &.active {
+            height: 100vh;
+        }
+        & li {
+            padding: 0 16px;
+            position: relative;
+            overflow: hidden;
+            background: $white;
+            & input[type="radio"] {
+                position: absolute;
+                -webkit-appearance: auto;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                &:checked + p i {
+                    opacity: 1;
+                }
+            }
+            & p {
+                padding: 12px 0;
+                border-bottom: 1px solid #f1efef;
+                & i {
+                    color: $brand-D4B26B;
+                    opacity: 0;
+                }
+                & span {
+                    padding-left: 10px;
+                }
+                & img {
+                    padding-right: 10px;
+                }
+            }
+            &:last-child {
+                & p {
+                    border: none;
+                }
+            }
+            &:hover {
+                background: $gray-F2F2F2;
+            }
+        }
+    }
+}

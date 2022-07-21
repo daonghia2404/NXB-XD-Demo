@@ -1,0 +1,118 @@
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title
+  body
+    -
+      const dataUpdatedPage = [
+        {
+          link: 'trang-thong-tin-nxb.html',
+          label: 'trang-thong-tin-nxb-modal.html (Bấm vào button Giới Thiệu)',
+        },
+        {
+          link: 'trang-thong-tin-nxb-mb.html',
+          label: 'trang-thong-tin-nxb-modal-mb.html (Bấm vào button Giới Thiệu)',
+        },
+        {
+          link: 'trang-thong-tin-nxb.html',
+          label: 'trang-thong-tin-nxb.html',
+        },
+        {
+          link: 'trang-thong-tin-nxb-mb.html',
+          label: 'trang-thong-tin-nxb-mb.html',
+        },
+        {
+          link: 'index.html',
+          label: 'carousel-nha-xuat-ban.html',
+        },
+        {
+          link: 'mb.1.index-mobile.html',
+          label: 'carousel-nha-xuat-ban-mb.html',
+        },
+        {
+          link: 'br',
+          label: 'br',
+        },
+        {
+          link: 'chi-tiet-sach.html',
+          label: 'chi-tiet-sach.html',
+        },
+        {
+          link: 'chi-tiet-sach-mb.html',
+          label: 'chi-tiet-sach-mb.html',
+        },
+        {
+          link: 'chi-tiet-combo-sach.html',
+          label: 'chi-tiet-combo-sach.html',
+        },
+        {
+          link: 'chi-tiet-combo-sach-mb.html',
+          label: 'chi-tiet-combo-sach-mb.html',
+        },
+        {
+          link: 'danh-sach-combo-book.html',
+          label: 'danh-sach-combo-book.html',
+        },
+        {
+          link: 'danh-sach-combo-book-mb.html',
+          label: 'danh-sach-combo-book-mb.html',
+        },
+        {
+          link: 'trang-thanh-toan.html',
+          label: 'trang-thanh-toan.html',
+        },
+        {
+          link: 'trang-thanh-toan-mb.html',
+          label: 'trang-thanh-toan-mb.html',
+        },
+        {
+          link: 'br',
+          label: 'br',
+        },
+        {
+          link: 'dich-vu-lien-ket.html',
+          label: 'dich-vu-lien-ket.html',
+        },
+        {
+          link: 'bao-gia-sach-si.html',
+          label: 'bao-gia-sach-si.html',
+        },
+        {
+          link: 'bao-gia-in-dich-vu.html',
+          label: 'bao-gia-in-dich-vu.html',
+        },
+        {
+          link: 'lien-he-ho-tro.html',
+          label: 'lien-he-ho-tro.html',
+        },
+        {
+          link: 'van-ban-phap-quy.html',
+          label: 'van-ban-phap-quy.html',
+        },
+        {
+          link: 'van-ban-phap-quy-mb.html',
+          label: 'van-ban-phap-quy-mb.html',
+        },
+        {
+          link: 'van-ban-phap-quy-chi-tiet.html',
+          label: 'van-ban-phap-quy-chi-tiet.html',
+        },
+        {
+          link: 'van-ban-phap-quy-chi-tiet-mb.html',
+          label: 'van-ban-phap-quy-chi-tiet-mb.html',
+        },
+        {
+          link: 'mau-khai-san.html',
+          label: 'mau-khai-san.html',
+        },
+        {
+          link: 'mau-khai-san-mb.html',
+          label: 'mau-khai-san-mb.html',
+        },
+      ]
+    each item in dataUpdatedPage
+      if (item.link === 'br')
+        br
+      else
+        div
+          a(href=`${item.link}` target="_blank")= item.label

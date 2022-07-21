@@ -1,0 +1,112 @@
+.section-goi-doc-to-chuc {
+    .section-goi-doc-to-chuc__wrapper {
+        .col-lg-4,
+        .col-lg-8 {
+            @media (max-width: 575px) {
+                padding: 0;
+            }
+        }
+        .book__content {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-radius: 0;
+
+            @media (max-width: 575px) {
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+            }
+
+            &:not(:last-of-type) {
+                border-bottom: 1px solid $gray-D1D1D1;
+            }
+
+            .book__content-title {
+                h3 {
+                    border-bottom: 3px solid $brand-D4B26B;
+                    padding: 5px ​0 !important;
+                }
+            }
+        }
+    }
+}
+
+.tab__wrapper {
+    .tab__group {
+        overflow: hidden;
+        background: $white;
+        border-top-left-radius: $nxb-border;
+        border-top-right-radius: $nxb-border;
+
+        .tab__item {
+            background: $gray-F2F2F2;
+            transform: translateX(-7px) skewX(15deg);
+            font-size: 18px;
+            cursor: pointer;
+            color: $gray-828282;
+            border: 1px solid $white;
+            flex: auto;
+            padding: 10px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            @media (max-width: 991px) {
+                font-size: 14px;
+            }
+
+            &:last-of-type {
+                margin-right: -15px;
+            }
+
+            &:hover,
+            &.active {
+                background: $white;
+            }
+            &.active {
+                color: $black;
+            }
+
+            span {
+                display: block;
+                transform: skewX(-15deg);
+            }
+        }
+    }
+
+    .tab__main__group {
+        background: $white;
+
+        .tab__item {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+}
+.section-goi-doc-to-chuc .tc-2 {
+    .book__content {
+        &:not(:last-of-type) {
+            border-bottom: none;
+        }
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .book__content .book__content-content {
+        margin-left: -12px;
+        margin-right: -12px;
+        .content__item:first-child {
+            margin-left: 12px;
+        }
+        .content__item {
+            width: 136px;
+            margin: 16px 12px;
+            .content__item-image {
+                width: 85%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+}

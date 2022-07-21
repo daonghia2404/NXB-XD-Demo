@@ -1,0 +1,85 @@
+extend includes/layout/layout.pug
+block pages
+    section.legal-document-template
+        include includes/components/account-sidebar-mb.pug
+        +slide__bar-mb("Mẫu khai sẵn", true)
+
+        .container 
+            .legal-document-template-wrapper.d-flex.justify-content-between.flex-wrap
+                .legal-document-template-item 
+                    .legal-document-template-tabs
+                        .tab__wrapper 
+                            .tab__group.d-flex.align-items-center
+                                .tab__item.active Mẫu khai sẵn
+                                .tab__item Mẫu trống
+
+                            .tab__main__group
+                                .tab__item.active
+                                    .pdf-view(data-url=`https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf`)
+                                        .pdf-view-title Mẫu giấy khai sẵn xác nhận về đối tượng và thực trạng nhà ở để đăng ký thuê,...
+                                .tab__item
+                                    .pdf-view(data-url=`https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf`)
+                                        .pdf-view-title Mẫu giấy xác nhận về đối tượng và thực trạng nhà ở để đăng ký thuê,...
+
+
+
+                .legal-document-template-item
+                    .legal-document-template-item-wrapper 
+                        .legal-document-template-item-wrapper-title Thông tin biểu mẫu
+
+
+                        .legal-document-template-main
+                            .legal-document-template-main-row.d-flex.align-items-start 
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.6667 1.33333H9.87667C9.60333 0.56 8.87 0 8 0C7.13 0 6.39667 0.56 6.12333 1.33333H3.33333C2.59667 1.33333 2 1.93 2 2.66667V13.3333C2 14.07 2.59667 14.6667 3.33333 14.6667H12.6667C13.4033 14.6667 14 14.07 14 13.3333V2.66667C14 1.93 13.4033 1.33333 12.6667 1.33333ZM8 1.33333C8.36667 1.33333 8.66667 1.63 8.66667 2C8.66667 2.37 8.36667 2.66667 8 2.66667C7.63333 2.66667 7.33333 2.37 7.33333 2C7.33333 1.63 7.63333 1.33333 8 1.33333ZM12.6667 13.3333H3.33333V2.66667H4.66667V4.66667H11.3333V2.66667H12.6667V13.3333Z" fill="#828282"/></svg>
+                                strong Thuê nhà ở công vụ thuộc thẩm quyền quản lý của Chính phủ Thuê nhà ở công vụ thuộc thẩm quyền quản lý của Chính phủ
+
+                            .legal-document-template-main-row.d-flex.align-items-start 
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 7H4.5V2.5C4.5 2.2235 4.7235 2 5 2H11C11.2765 2 11.5 2.2235 11.5 2.5V5.5H10.5V3H5.5V7Z" fill="#828282"/><path fill-rule="evenodd" clip-rule="evenodd" d="M9 6H13.5C13.7765 6 14 6.2235 14 6.5V13.5C14 13.7765 13.7765 14 13.5 14H2.5C2.2235 14 2 13.7765 2 13.5V8.5C2 8.2235 2.2235 8 2.5 8H7C7.2765 8 7.5 8.2235 7.5 8.5V13H8.5V6.5C8.5 6.2235 8.7235 6 9 6ZM4 12.5H5.5V11.5H4V12.5ZM5.5 10.5H4V9.5H5.5V10.5ZM10.5 12.5H12V11.5H10.5V12.5ZM12 10.5H10.5V9.5H12V10.5ZM10.5 8.5H12V7.5H10.5V8.5Z" fill="#828282"/></svg>
+                                strong Căn cứ pháp lý:
+                                |Mẫu giấy về đối tượng và thực trạng
+
+                            .legal-document-template-main-row.d-flex.align-items-start 
+                                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 1H9.5V2H4C3.44772 2 3 2.44772 3 3V15C3 15.5523 3.44772 16 4 16H12C12.5523 16 13 15.5523 13 15V5.5H14V15C14 16.1046 13.1046 17 12 17H4C2.89543 17 2 16.1046 2 15V3C2 1.89543 2.89543 1 4 1Z" fill="#828282"/><path d="M9.5 4V1L14 5.5H11C10.1716 5.5 9.5 4.82843 9.5 4Z" fill="#828282"/><path d="M9.5 1H4C2.89543 1 2 1.89543 2 3V15C2 16.1046 2.89543 17 4 17H12C13.1046 17 14 16.1046 14 15V5.5M9.5 1V2H4C3.44772 2 3 2.44772 3 3V15C3 15.5523 3.44772 16 4 16H12C12.5523 16 13 15.5523 13 15V5.5H14M9.5 1V4C9.5 4.82843 10.1716 5.5 11 5.5H14M9.5 1L14 5.5" stroke="#828282" stroke-width="0.5"/><path fill-rule="evenodd" clip-rule="evenodd" d="M7 6C7.27614 6 7.5 6.22386 7.5 6.5V7.13397L8.04904 6.81699C8.28818 6.67892 8.59398 6.76085 8.73205 7C8.87012 7.23915 8.78818 7.54494 8.54903 7.68301L8 8L8.54904 8.31699C8.78819 8.45506 8.87012 8.76085 8.73205 9C8.59398 9.23915 8.28819 9.32108 8.04904 9.18301L7.5 8.86602V9.5C7.5 9.77614 7.27614 10 7 10C6.72385 10 6.5 9.77614 6.5 9.5V8.86602L5.95096 9.18301C5.71181 9.32108 5.40602 9.23915 5.26795 9C5.12987 8.76085 5.21181 8.45506 5.45096 8.31699L6 8L5.45096 7.68301C5.21182 7.54494 5.12988 7.23915 5.26795 7C5.40602 6.76085 5.71182 6.67892 5.95096 6.81699L6.5 7.13397V6.5C6.5 6.22386 6.72385 6 7 6ZM5 11.5C5 11.2239 5.22386 11 5.5 11H10.5C10.7761 11 11 11.2239 11 11.5C11 11.7761 10.7761 12 10.5 12H5.5C5.22386 12 5 11.7761 5 11.5ZM5 13.5C5 13.2239 5.22386 13 5.5 13H10.5C10.7761 13 11 13.2239 11 13.5C11 13.7761 10.7761 14 10.5 14H5.5C5.22386 14 5 13.7761 5 13.5Z" fill="#828282"/></svg>
+                                strong Hiệu lực văn bản:
+                                span.blue Còn
+
+                        .legal-document-template-main-note.content(style="margin-top: 16px")
+                            h3 Lưu ý:
+                            ul 
+                                li Admin tự nhập thông tin, phần này chỉ hiển thị khi có nội dung Admin nhập
+
+                        .legal-document-template-main-btn.d-flex.justify-content-between
+                            .button__item 
+                                button.btn.btn-success.btn-sm
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.91675 2.33335C2.76204 2.33335 2.61367 2.39481 2.50427 2.50421C2.39487 2.6136 2.33341 2.76198 2.33341 2.91669V11.0834C2.33341 11.2381 2.39487 11.3864 2.50427 11.4958C2.61367 11.6052 2.76204 11.6667 2.91675 11.6667H11.0834C11.2381 11.6667 11.3865 11.6052 11.4959 11.4958C11.6053 11.3864 11.6667 11.2381 11.6667 11.0834V4.90831L9.09179 2.33335H2.91675ZM1.67931 1.67925C2.0075 1.35106 2.45262 1.16669 2.91675 1.16669H9.33342C9.48812 1.16669 9.6365 1.22815 9.74589 1.33754L12.6626 4.25421C12.772 4.3636 12.8334 4.51198 12.8334 4.66669V11.0834C12.8334 11.5475 12.649 11.9926 12.3209 12.3208C11.9927 12.649 11.5475 12.8334 11.0834 12.8334H2.91675C2.45262 12.8334 2.0075 12.649 1.67931 12.3208C1.35112 11.9926 1.16675 11.5475 1.16675 11.0834V2.91669C1.16675 2.45256 1.35112 2.00744 1.67931 1.67925Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M3.50008 7.58335C3.50008 7.26119 3.76125 7.00002 4.08342 7.00002H9.91675C10.2389 7.00002 10.5001 7.26119 10.5001 7.58335V12.25C10.5001 12.5722 10.2389 12.8334 9.91675 12.8334C9.59458 12.8334 9.33342 12.5722 9.33342 12.25V8.16669H4.66675V12.25C4.66675 12.5722 4.40558 12.8334 4.08342 12.8334C3.76125 12.8334 3.50008 12.5722 3.50008 12.25V7.58335Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.08342 1.16669C4.40558 1.16669 4.66675 1.42785 4.66675 1.75002V4.08335H8.75008C9.07225 4.08335 9.33342 4.34452 9.33342 4.66669C9.33342 4.98885 9.07225 5.25002 8.75008 5.25002H4.08342C3.76125 5.25002 3.50008 4.98885 3.50008 4.66669V1.75002C3.50008 1.42785 3.76125 1.16669 4.08342 1.16669Z" fill="white"/></svg>
+                                    span In mẫu
+
+                            .button__item 
+                                button.btn.btn-red.btn-sm
+                                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.41675 1.16665C3.41675 0.84448 3.67792 0.583313 4.00008 0.583313H11.0001C11.3222 0.583313 11.5834 0.84448 11.5834 1.16665V5.24998C11.5834 5.57214 11.3222 5.83331 11.0001 5.83331C10.6779 5.83331 10.4167 5.57214 10.4167 5.24998V1.74998H4.58341V5.24998C4.58341 5.57214 4.32225 5.83331 4.00008 5.83331C3.67792 5.83331 3.41675 5.57214 3.41675 5.24998V1.16665Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M2.83325 5.83335C2.67854 5.83335 2.53017 5.89481 2.42077 6.00421C2.31138 6.1136 2.24992 6.26198 2.24992 6.41669V9.33335C2.24992 9.48806 2.31138 9.63644 2.42077 9.74583C2.53017 9.85523 2.67854 9.91669 2.83325 9.91669H3.99992C4.32208 9.91669 4.58325 10.1779 4.58325 10.5C4.58325 10.8222 4.32208 11.0834 3.99992 11.0834H2.83325C2.36912 11.0834 1.924 10.899 1.59582 10.5708C1.26763 10.2426 1.08325 9.79748 1.08325 9.33335V6.41669C1.08325 5.95256 1.26763 5.50744 1.59582 5.17925C1.924 4.85106 2.36912 4.66669 2.83325 4.66669H12.1666C12.6307 4.66669 13.0758 4.85106 13.404 5.17925C13.7322 5.50744 13.9166 5.95256 13.9166 6.41669V9.33335C13.9166 9.79748 13.7322 10.2426 13.404 10.5708C13.0758 10.899 12.6307 11.0834 12.1666 11.0834H10.9999C10.6778 11.0834 10.4166 10.8222 10.4166 10.5C10.4166 10.1779 10.6778 9.91669 10.9999 9.91669H12.1666C12.3213 9.91669 12.4697 9.85523 12.5791 9.74583C12.6885 9.63644 12.7499 9.48806 12.7499 9.33335V6.41669C12.7499 6.26198 12.6885 6.1136 12.5791 6.00421C12.4697 5.89481 12.3213 5.83335 12.1666 5.83335H2.83325Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M3.41675 8.16665C3.41675 7.84448 3.67792 7.58331 4.00008 7.58331H11.0001C11.3222 7.58331 11.5834 7.84448 11.5834 8.16665V12.8333C11.5834 13.1555 11.3222 13.4166 11.0001 13.4166H4.00008C3.67792 13.4166 3.41675 13.1555 3.41675 12.8333V8.16665ZM4.58341 8.74998V12.25H10.4167V8.74998H4.58341Z" fill="white"/></svg>
+                                    span Lưu mẫu
+
+                            .button__item 
+                                button.btn.btn-primary.btn-sm
+                                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.81035 5.60748H2.98438V6.48138H8.81035V5.60748Z" fill="white"/><path d="M13.2911 14L13.909 13.3821L11.8306 11.3037C12.1956 10.8118 12.4117 10.2032 12.4117 9.54508C12.4117 8.36054 11.7117 7.33663 10.7037 6.86478V3.16895L7.53476 0H1.09082V12.9628H10.7037V12.2254C10.8839 12.141 11.0544 12.0391 11.2127 11.9216L13.2911 14ZM7.7907 1.49183L9.21186 2.91299H7.7907V1.49183ZM1.96472 0.873897H6.9168V3.78689H9.82979V6.61123C9.70674 6.59556 9.58134 6.58749 9.45413 6.58749C8.54536 6.58749 7.73115 6.99959 7.18817 7.6466H2.98426V8.52049H6.67957C6.56124 8.8399 6.49648 9.18506 6.49648 9.54511C6.49648 9.59224 6.49771 9.63908 6.49989 9.68569H2.98426V10.5596H6.67575C6.91156 11.2034 7.36522 11.743 7.94686 12.0889H1.96472V0.873897ZM9.45413 11.6289C8.30516 11.6289 7.37038 10.6941 7.37038 9.54514C7.37038 8.39617 8.30513 7.46139 9.45413 7.46139C10.6031 7.46139 11.5379 8.39614 11.5379 9.54514C11.5379 10.6941 10.6031 11.6289 9.45413 11.6289Z" fill="white"/></svg>
+                                    span Tải về
+
+
+                    .legal-document-template-item-wrapper 
+                        .legal-document-template-item-wrapper-title Trình tự Thực hiện
+                        .legal-document-template-main.content(style="margin-top: 16px")
+                            h3 Bước 1:
+                            ul
+                                li Cán bộ thuộc đối tượng được thuê nhà ở công vụ của Chính phủ đề nghị cơ quan, tổ chức đang trực tiếp quản lý gửi 01 bộ hồ sơ thuê nhà ở công vụ đến Bộ Xây dựng
+                            h3 Bước 2:
+                            ul
+                                li Cơ quan, tổ chức đang trực tiếp quản lý người có nhu cầu thuê nhà ở công vụ gửi văn bản và bộ hồ sơ thuê nhà ở công vụ đến Bộ Xây dựng. 
+                            h3 Bước 3:
+                            ul
+                                li Căn cứ quỹ nhà ở công vụ hiện có và tiêu chuẩn nhà ở công vụ, trong thời hạn 20 ngày, kể từ ngày nhận được văn bản đề nghị của cơ quan, tổ chức đang trực tiếp quản lý người có nhu cầu thuê nhà ở công vụ, Bộ Xây dựng kiểm tra, ban hành quyết định cho thuê nhà ở công vụ (nếu đủ điều kiện cho thuê nhà ở công vụ); trường hợp không đủ điều kiện sẽ có văn bản trả lời nêu rõ lý do.
+                            h3 Bước 4:
+                            ul
+                                li Bộ Xây dựng gửi Quyết định bố trí cho thuê nhà ở công vụ cho đơn vị quản lý vận hành nhà ở công vụ, cơ quan đang trực tiếp quản lý người thuê và người được thuê nhà ở công vụ (mỗi nơi 01 bản) để phối hợp trong việc quản lý, bố trí cho thuê nhà ở công vụ. 
+                            h3 Bước 5:
+                            ul
+                                li Căn cứ quyết định bố trí cho thuê nhà ở công vụ của Bộ Xây dựng, cơ quan quản lý nhà ở công vụ có văn bản (kèm theo danh sách người được bố trí thuê nhà ở) đề nghị đơn vị quản lý vận hành ký kết hợp đồng thuê nhà ở công vụ trực tiếp với người thuê. 

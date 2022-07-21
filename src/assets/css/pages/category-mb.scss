@@ -1,0 +1,76 @@
+@include max-breakpoint(768) {
+    .category__mb-wrapper {
+        .book__wrapper-content {
+            padding-bottom: 15px;
+        }
+        .typical__book-title {
+            .col-md-12 {
+                padding-left: 0 !important;
+            }
+            .box {
+                .book__title-content {
+                    color: $black !important;
+                }
+            }
+        }
+        .category__content {
+            padding: 15px 0;
+            .topic-headding {
+                padding: 0;
+                .topic-box {
+                    flex-wrap: nowrap;
+                    .box_item {
+                        min-width: 151px;
+                    }
+                }
+            }
+            .category__books-headding {
+                padding-left: 0 !important;
+                width: 150px;
+                h4 {
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: $grey-dark;
+                }
+            }
+            .icon__filter {
+                background: $primary-color;
+                border-radius: 3px;
+                width: 68px;
+                height: 30px;
+                color: $white;
+                padding: 0 5px;
+                display: flex;
+                align-items: center;
+                img {
+                    margin-right: 10px;
+                }
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: $font-inter;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+    .category__pagination-wrapper {
+        margin-bottom: 30px;
+        .component__pagination {
+            .pagination {
+                justify-content: start;
+            }
+        }
+    }
+}
+
+.category__section_textbooks {
+    .topic-headding {
+        .topic-box {
+            margin-left: -15px !important;;
+            .box_item {
+                margin-left: 17px !important;
+            }
+        }
+    }
+}

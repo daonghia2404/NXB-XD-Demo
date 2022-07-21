@@ -1,0 +1,57 @@
+section.video__book-listen
+    .sidebar-mb
+        a(href="#").arrow-back
+            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.26545 9.64242L8.43291 17.7343C8.79129 18.0886 9.37193 18.0886 9.73121 17.7343C10.0896 17.38 10.0896 16.8045 9.73121 16.4503L2.21159 9.00045L9.73031 1.55064C10.0887 1.19635 10.0887 0.620898 9.73031 0.265715C9.37193 -0.0885717 8.79038 -0.0885717 8.432 0.265715L0.264545 8.3575C-0.0883323 8.70813 -0.0883323 9.29262 0.26545 9.64242Z" fill="#02010E"/></svg>
+        .sidebar-mb__line
+        .sidebar-mb__tab
+            h1 Xem video
+        button#btn-list-video.sidebar-btn.btn.icon-btn
+            img(src="./assets/images/icon-menu.svg", alt="")
+    #list-video.list__video.bg-white.border-top
+        h6.h6-14.bold.p-3.mb-0 Khoá học: Thực hành kế toán xây dựng trong doanh nghiệp
+        .list__video-main
+            each item in [1,2]
+                .panel-group.wrap.border-top(role='tablist', aria-multiselectable='true' id =`accordion${item}`).py-2.px-3
+                    .panel
+                        .panel-heading(role='tab' id =`headingOne${item}`)
+                            h4.panel-title.mb-0
+                                a(role='button', data-toggle='collapse', data-parent=`#accordion${item}`, href=`#collapseOne${item}`, aria-expanded='true', aria-controls=`#collapseOne${item}`).d-flex.collapsed
+                                    .body-13.bold.ml-4 Phần 1: Hợp đồng trong xây dựng
+                .panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne' id =`collapseOne${item}`)
+                    .panel-body
+                        each item2 in [1,2,3]
+                            .name__subjects.d-flex.align-items-md-center.border-top.px-3
+                                .name__subjects-icon.me-auto.pr-1.mb-2
+                                    img(src="./assets/images/button/play-dark.svg", alt="")
+                                .name__subjects-text
+                                    h6.body-13.regu
+                                        lar Bài 2: Giới thiệu chung Phân loại hợp đồng và nghị định 37
+    .video__main.pb-4.bg-white
+        .video__main-video
+            include ../components/book-video.pug
+        .container
+            .video__main-info.pt-3
+                p.caption-12.regular.text-top Phần 1: Hợp đồng trong xây dựng
+                h6.h6-14.bold Bài 2: Giới thiệu chung Phân loại hợp đồng và Nghị định 37
+                .download.border-bottom.pb-4  
+                    .download__title.d-flex.align-middle
+                        img(src="./assets/images/download.svg", alt="").icon-download.pr-1
+                        .body-13.regular Tải tài liệu đính kèm cho bài giảng này
+                    .download__file
+                        ul.list__file 
+                            li.list__file-item.align-middle
+                                img(src="./assets/images/doc.svg", alt="")
+                                a(href="#").caption-12.regular Tên file.doc
+                            li.list__file-item.align-middle
+                                img(src="./assets/images/pdf.svg", alt="")
+                                a(href="#").caption-12.regular Tên file.pdf
+                            li.list__file-item.align-middle 
+                                img(src="./assets/images/xml.svg", alt="")
+                                a(href="#").caption-12.regular Tên file.xml
+                .confirm.text-center.mt-2
+                    button.btn.btn-outline-gray.btn-sm.btn-comfirm
+                        img.mr-1(src='./assets/images/button/circle.svg', alt='').circle.position-relative
+                        img(src='./assets/images/button/circle-hover.svg', alt='').circle-hover.position-relative
+                        span Tôi đã xem xong
+    .video__comment.mt-2
+        include ../components/comment

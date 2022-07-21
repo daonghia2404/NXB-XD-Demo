@@ -1,0 +1,59 @@
+extend includes/layout/layout.pug
+block pages
+  include includes/containers/NxbInfoMobile.pug
+  include includes/containers/NxbInfoModalMobile.pug
+
+  .section.my-4
+    .row
+      .col-12
+        include includes/components/typical-book-slider.pug
+        +typical__book-slider("Sách nổi bật")
+
+  section.section-goi-doc-to-chuc 
+    .section-goi-doc-to-chuc__wrapper 
+      .row 
+        .col-lg-3
+          include includes/components/combo-books-filter-menu.pug
+
+        .col-lg-9
+          .ComboBooksList
+            .ComboBooksList-header
+              .ComboBooksList-title Lọc theo định dạng
+              .ComboBooksList-header-wrapper.d-flex.align-items-center.justify-content-between.flex-wrap
+                .ComboBooksList-header-item
+                  .ComboBooksList-filter.d-flex.flex-wrap
+                    each item, index in ['Tất cả', 'Chỉ Ebook (12)', 'Chỉ sách giấy', 'Chỉ Audio Book', 'Chỉ Video']
+                      .ComboBooksList-filter-item
+                        if (index === 0)
+                          input(type="radio" name=`category` id=`${item}` checked)
+                        else
+                          input(type="radio" name=`category` id=`${item}`)
+
+                        label(for=`${item}` class="item-link")= item
+
+                .ComboBooksList-header-item
+                  .select-dropdown
+                    select.form-control.form-control-lg.pl-2.mw-100.h6-14.regular
+                      option.h6-14.regular Sắp xếp theo
+                      option.h6-14.regular Năm xuất bản
+                      option.h6-14.regular Theo thời gian
+
+            .ComboBooksList-header-filter-title Sách của PGS.TS.KTS Nguyễn Đình Thi (24)
+
+            .ComboBooksList-header-mb 
+              include includes/components/filter-cate-mb.pug
+
+            .ComboBooksList-main.mt-5
+              .ComboBooksList-main-list
+                .row
+                  each item in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+                    .col-lg-3.col-md-4.col-6.mb-4
+                      include includes/components/book-box-2.pug
+                      if item == 1
+                        +box-book("video")
+                      else if item == 2
+                        +box-book("audio")
+                      else
+                        +box-book()
+
+

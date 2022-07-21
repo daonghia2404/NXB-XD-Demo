@@ -1,0 +1,54 @@
+.alert{
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alert-pos{
+    position: fixed;
+    top: 24px;
+    right: 0;
+    transform: translateX(500px);
+    z-index: 1080;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0, 1.5);
+    opacity: 0;
+    visibility: hidden; 
+    &.active{
+        margin: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+        @include breakpoint(767){
+            transform: translateX(0);
+            margin: 0 15px;
+        }
+    }
+}
+
+.alert-inner{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    svg{
+        margin-right: 11px;
+    }
+}
+
+.alert-rgba-green{
+    background: $alert-rgba-green;
+}
+.alert-rgba-pink{
+    background: $alert-rgba-pink;
+}
+.alert-rgba-warning{
+    background: $alert-rgba-warning;
+}
+.alert-rgba-primary{
+    background: $alert-rgba-primary;
+}
+
+.alert-text{
+    color: $white;
+    font-family: $font-opensans;
+    font-size: 17px;
+}

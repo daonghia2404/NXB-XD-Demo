@@ -1,0 +1,33 @@
+.purchase-history-mobile {
+    padding-top: 0;
+    @include breakpoint(767) {
+        padding: 0;
+    }
+    & .pd-0 {
+        padding: 0;
+    }
+    & .table-history .table-top {
+        justify-content: center;
+        padding: 6px 0;
+        & h3 {
+            color: $grey-medium;
+        }
+    }
+    & .content.content-purchase {
+        padding: 0;
+        // padding-bottom: 16px;
+    }
+    & .purchase-history__table table {
+        margin: 0;
+        margin-bottom: 12px;
+    }
+    & .purchase-history__table table tr:nth-of-type(even) {
+        background-color: $bg-table;
+    }
+    & .purchase-history__table table thead tr {
+        background: $grey-3;
+    }
+    & .table-history .table-bot .show-row {
+        display: none;
+    }
+}

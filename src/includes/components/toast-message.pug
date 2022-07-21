@@ -1,0 +1,43 @@
+-
+    const toastArr=[
+        {
+            icon: './assets/images/toast-message/toast-1.svg',
+            content: 'Thành công, bạn hãy kiểm tra email và nhấn xác nhận nhé',
+        },
+        {
+            icon: './assets/images/toast-message/toast-2.svg',
+            content: 'Lạ ghê, không có tài khoản nào email như bạn nhập. Bạn thử lại nhé!',
+        },
+        {
+            icon: './assets/images/toast-message/toast-3.svg',
+            content: 'Lưu ý đây là toast messenger warning nha các đồng chí!',
+        },
+        {
+            icon: './assets/images/toast-message/toast-4.svg',
+            content: 'Thông báo là không có cái thông báo nào cả',
+        }
+    ]
+
+- var i = 0;
+each item in toastArr
+    if i === 0
+        .toast-mess__wrap
+            span.toast-mess.toast-mess__green
+                img(src=`${item.icon}`, alt="")
+                span.toast-mess__content=`${item.content}`  
+    else if i === 1
+        .toast-mess__wrap
+            span.toast-mess.toast-mess__red
+                img(src=`${item.icon}`, alt="")
+                span.toast-mess__content=`${item.content}`
+    else if i === 2
+        .toast-mess__wrap
+            span.toast-mess.toast-mess__yellow
+                img(src=`${item.icon}`, alt="")
+                span.toast-mess__content=`${item.content}`
+    else
+        .toast-mess__wrap
+            span.toast-mess.toast-mess__blue
+                img(src=`${item.icon}`, alt="")
+                span.toast-mess__content=`${item.content}`
+    - ++i;

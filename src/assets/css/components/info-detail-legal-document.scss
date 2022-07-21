@@ -1,0 +1,100 @@
+.info-detail-legal-document {
+  padding: 16px 24px;
+  border-radius: 5px;
+  background: $white;
+  border-radius: 5px;
+
+  @media (max-width: 991px) {
+    border-radius: 0;
+  }
+
+  &-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: $grey-dark;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    text-transform: uppercase;
+    border-bottom: 1px solid $grey-3;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 55%;
+      height: 3px;
+      background-color: $primary-color;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &-description {
+    color: $grey-dark;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  &-main {
+    &-row {
+      padding: 8px 0;
+      border-top: 1px dashed #E1D6BF;
+
+      &-text {
+        font-size: 13px;
+        font-weight: 400;
+
+        svg {
+          flex: 0 0 10px;
+          max-width: 10px;
+          height: 10px;
+          margin-right: 4px;
+        }
+
+        &.bold {
+          font-weight: 700;
+        }
+
+        &.blue {
+          color: $blue-dark;
+        }
+
+        &.red {
+          color: $red;
+        }
+      }
+    }
+
+    &-btn {
+      padding: 8px;
+      border: 1px solid;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 16px;
+      cursor: pointer;
+
+      span {
+        font-size: 11px !important;
+        font-weight: 400;
+        text-transform: unset;
+        display: block;
+      }
+
+      &.blue {
+        border-color: 1px solid rgba(0, 123, 255, 0.1);
+        background: rgba(0, 123, 255, 0.1);
+        color: $blue-007BFF;
+      }
+
+      &.red {
+        color: $white;
+        background: $red;
+        border-color: $red;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.select-filter {
+    position: relative;
+    select {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 8px 20px;
+        height: auto;
+        outline: none;
+        box-shadow: none;
+        appearance: none;
+        border: 1px solid #4F4F4F;
+        &:active,
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid #4F4F4F;
+        }
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        width: 0;
+        height: 0;
+        margin-top: -2px;
+        border-top: 5px solid $grey-medium;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+    }
+}
+
+.table-select {
+    width: 60px;
+    height: 30px;
+    .select-filter {
+        select{
+            padding: 2px 10px;
+            border: 1px solid #e0e0e0;
+        }
+        &:after {
+            right: 10px;
+            border-top: 5px solid #828282;
+        }
+        &:focus {
+            border: 1px solid #e0e0e0;
+        }
+    }
+    span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #4f4f4f;
+    }
+}
+.box-filter {
+    width: 220px;
+    height: 42px;
+}
+.table-header {
+    font-family: $font-inter;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #02010e;
+    margin: 0;
+}
+.nxb-table {
+    tr,
+    td,
+    th,
+    thead{
+        white-space: nowrap;
+        border: none;
+    }
+    thead {
+        background: #F8F8F8;
+        th {
+            border-bottom: none;
+        }
+    }
+    tbody tr:nth-of-type(odd) {
+        background-color: #FAFBFF;
+    }
+}

@@ -1,0 +1,48 @@
+.cate-filter 
+    .cate-filter__button.pt-2.pb-1
+        .container
+            button tất cả
+            button.active Ebook
+            button Sách giấy
+            button Audio book
+            button Video
+    .cate-filter__control
+        .container
+            .d-flex.align-items-center.justify-content-between
+                span Sắp xếp: 
+                .control-value.align-items-center
+                    input(type="text" value='all' hidden)
+                    h6.h6-14.medium Chọn
+                    img(src="assets/images/angle-down.svg" alt="")
+                .control-btn#btn-filter
+                    img(src="assets/images/filter-mb.svg" alt="")
+                    span Lọc
+        ul.cate-filter__dropdow 
+            li
+                input(type="radio" name="name" value='all' checked)
+                p.d-flex.align-items-center.justify-content-between
+                    span Chọn
+                    i.fas.fa-check
+            li
+                input(type="radio" name="name" value='1' )
+                p.d-flex.align-items-center.justify-content-between 
+                    span Thời gian
+                    i.fas.fa-check
+            li
+                input(type="radio" name="name" value='2' )
+                p.d-flex.align-items-center.justify-content-between
+                    span Năm xuất bản
+                    i.fas.fa-check
+            li
+                input(type="radio" name="name" value='3' )
+                p.d-flex.align-items-center.justify-content-between
+                    span Giá từ thấp tới cao
+                    i.fas.fa-check
+            li
+                input(type="radio" name="name" value='4' )
+                p.d-flex.align-items-center.justify-content-between 
+                    span Giá từ cao tới thấp
+                    i.fas.fa-check
+
+    //- include ../components/filter-menu.pug
+    include ../components/combo-books-filter-menu.pug

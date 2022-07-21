@@ -1,0 +1,34 @@
+.cart-none-book-dk {
+    &__content {
+        background-color: $white;
+        border-radius: 5px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        &-img {
+            margin-bottom: 20px;
+        }
+
+        &-text {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+            margin-bottom: 48px;
+            color: $grey-1;
+        }
+
+        &-btn {
+            a {
+                max-width: 350px;
+                padding: 13px 72px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                background-color: $blue-secondary;
+                color: $white;
+            }
+        }
+    }
+}

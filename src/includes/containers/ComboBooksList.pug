@@ -1,0 +1,35 @@
+include ../components/BookBlock.pug
+
+.ComboBooksList
+  .ComboBooksList-header
+    .ComboBooksList-title Lọc theo định dạng
+    .ComboBooksList-header-wrapper.d-flex.align-items-center.justify-content-between.flex-wrap
+      .ComboBooksList-header-item
+        .ComboBooksList-filter.d-flex.flex-wrap
+          each item, index in ['Tất cả', 'Chỉ Ebook (12)', 'Chỉ sách giấy', 'Chỉ Audio Book', 'Chỉ Video']
+            .ComboBooksList-filter-item
+              if (index === 0)
+                input(type="radio" name=`category` id=`${item}` checked)
+              else
+                input(type="radio" name=`category` id=`${item}`)
+
+              label(for=`${item}` class="item-link")= item
+
+      .ComboBooksList-header-item
+        .select-dropdown
+          select.form-control.form-control-lg.pl-2.mw-100.h6-14.regular
+            option.h6-14.regular Sắp xếp theo
+            option.h6-14.regular Năm xuất bản
+            option.h6-14.regular Theo thời gian
+
+  .ComboBooksList-header-mb 
+    include ../components/filter-cate-mb.pug
+
+  .ComboBooksList-main 
+    .ComboBooksList-main-list
+      .row 
+        each item in [1,2,3,4,5,6,7,8,9]
+          .col-lg-4.col-6.ComboBooksList-main-list-col
+            .ComboBooksList-main-list-item
+              +BookBlock({})
+

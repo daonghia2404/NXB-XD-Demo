@@ -1,0 +1,26 @@
+.collection-book.mb-4
+    .collection-heading.d-flex.justify-content-between
+        h3.h3-20.medium.mb-0 Tuyển tập hay nhất
+        .button__item
+            a(href="#").btn.btn-gray-link.btn-sm.px-0
+                span.mr-1 Xem toàn bộ
+                svg(width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    path(d="M6.6 1L12 6.4L6.6 11.8M0 6.4H12H0Z" stroke="#8C8C8C" stroke-width="2")
+    .collection-slider
+        .owl-carousel.owl-theme
+            each item in [1,2,3,4,5,6,7,8,9,10]
+                a(href="#")
+                    .collection-slider__item
+                        .item-img
+                            span.item-img__sale.d-flex.align-items-center.justify-content-center hot <br> sale
+                            img(class="owl-lazy", data-src="./assets/images/collection/image.png", alt="img-collection")
+                        .item-content
+                            h6.item-content__title.h6-14.medium.mb-0
+                                span Bộ định mức dự toán xây dựng
+                            .item-content__desc
+                                span Ngày 26 tháng 12 năm 2019 Bộ Xây dựng đã ban hành Thông tư 10/2019...
+                            .item-content__rate
+                                each item in [1,2,3,4,5]
+                                    i.fa.fa-star
+                            .item-content__price
+                                span 1.071.200 VNĐ    

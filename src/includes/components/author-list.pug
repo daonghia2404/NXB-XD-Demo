@@ -1,0 +1,70 @@
+-
+  const authorDatas = [
+    {
+      authorAvatar: './assets/images/author-avatar/author-avatar-1.png',
+      authorType: 'checked'
+    },
+    {
+      authorAvatar: './assets/images/author-avatar/author-avatar-2.png'
+    },
+    {
+      authorAvatar: './assets/images/author-avatar/author-avatar-3.png'
+    },
+    {
+      authorAvatar: './assets/images/author-avatar/author-avatar-4.png'
+    },
+  ]
+
+.author-list
+  .author-list-wrapper.d-flex
+    .author-list-wrapper-item
+      .author-list__more-txt Nhiều tác giả
+
+      .d-flex.align-items-center(style="margin-top: 5px;")
+        .author-list__avatar
+          each item in authorDatas
+            .author-list__avatar-img 
+              img(class="lazy" data-src=`${item.authorAvatar}` src=`${item.authorAvatar}`, alt="")
+              span.img__check
+                if item.authorType == "checked"
+                  svg(xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewbox='0 0 10 10' fill='none')
+                    path(d='M5.00016 0.833374C2.69808 0.833374 0.833496 2.69796 0.833496 5.00004C0.833496 7.30004 2.69808 9.16671 5.00016 9.16671C7.30016 9.16671 9.16683 7.30004 9.16683 5.00004C9.16683 2.69796 7.30016 0.833374 5.00016 0.833374ZM4.16683 7.08337L2.0835 5.00004L2.67308 4.41046L4.16683 5.90421L7.32725 2.74379L7.91683 3.33337L4.16683 7.08337Z' fill='#27AE34')
+
+        .author-list__more
+          .author-list__more-list
+            span +3 
+
+            .list__content
+              span.list__content-btn
+                svg(xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewbox='0 0 14 14' fill='none')
+                  path(d='M14 1.415L12.585 0L7 5.585L1.415 0L0 1.415L5.585 7L0 12.585L1.415 14L7 8.415L12.585 14L14 12.585L8.415 7L14 1.415Z' fill='#828282')
+              h5.h5-16.mb-0.list__content-title Danh sách tác giả
+              .list__content-author
+                .row.border-ct
+                  each item, index in [1,2,3,4,5,6,7,8]
+                    .col-6.col-sm-4.col-md-3.box-item
+                      .author__item
+                        .author__item-img
+                          a(href="#" class="img__links")
+                            img(class="lazy" data-src="./assets/images/author-avatar/avatar.png" src="./assets/images/author-avatar/avatar.png" alt="")
+                            if index == '0'
+                              span.img__check
+                                svg(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                  path(fill-rule='evenodd' clip-rule='evenodd' d='M0.666504 7.99984C0.666504 3.94975 3.94975 0.666504 7.99984 0.666504C12.0499 0.666504 15.3332 3.94975 15.3332 7.99984C15.3332 12.0499 12.0499 15.3332 7.99984 15.3332C3.94975 15.3332 0.666504 12.0499 0.666504 7.99984Z' fill='#27AE34')
+                                  path(fill-rule='evenodd' clip-rule='evenodd' d='M11.5403 5.36182C11.8007 5.62217 11.8007 6.04428 11.5403 6.30463L7.40223 10.638C7.14188 10.8983 6.71977 10.8983 6.45942 10.638L4.45942 8.63796C4.19907 8.37761 4.19907 7.9555 4.45942 7.69515C4.71977 7.4348 5.14188 7.4348 5.40223 7.69515L6.93083 9.22375L10.5975 5.36182C10.8578 5.10147 11.28 5.10147 11.5403 5.36182Z' fill='white')
+                        .author__item-info
+                          h6.h6-14.bold.info__name.mb-0 Lê Thanh Sơn
+            .list__overlay
+
+    .author-list-wrapper-item
+      .author-list__sales
+        span.author-list__sales-txt Được bán bởi:
+        span.author-list__sales-des
+          .des__logo
+            img(src="./assets/images/single-author/logo.png" alt="logo")
+          .des__info
+            h5.des__info-title Nhà Xuất Bản xây dựng
+            .des__info-des
+              svg(xmlns='http://www.w3.org/2000/svg' width='10' height='12' viewbox='0 0 10 12' fill='none')
+                path(d='M0.71208 1.81284L5.00016 0.20459L9.28825 1.81284C9.39941 1.85451 9.49522 1.92911 9.56287 2.02667C9.63052 2.12424 9.66678 2.24012 9.66683 2.35884V4.87126C9.66683 6.72451 8.8665 8.48792 7.47175 9.70826L5.00016 11.8713L2.52858 9.70826C1.83913 9.105 1.2866 8.36134 0.908019 7.52711C0.529438 6.69288 0.333554 5.78737 0.333496 4.87126V2.35884C0.333541 2.24012 0.369809 2.12424 0.437457 2.02667C0.505105 1.92911 0.600912 1.85451 0.71208 1.81284ZM4.38125 6.19367L3.55641 5.37001C3.5026 5.31429 3.43823 5.26985 3.36707 5.23928C3.2959 5.20871 3.21935 5.19262 3.1419 5.19194C3.06444 5.19127 2.98763 5.20603 2.91594 5.23536C2.84425 5.26469 2.77912 5.30801 2.72435 5.36278C2.66958 5.41755 2.62626 5.48268 2.59693 5.55437C2.5676 5.62606 2.55284 5.70287 2.55352 5.78032C2.55419 5.85778 2.57028 5.93432 2.60085 6.00549C2.63143 6.07666 2.67587 6.14103 2.73158 6.19484L3.96883 7.43209C4.07822 7.54145 4.22657 7.60288 4.38125 7.60288C4.53592 7.60288 4.68427 7.54145 4.79366 7.43209L7.26875 4.95701C7.32446 4.9032 7.3689 4.83883 7.39947 4.76766C7.43004 4.69649 7.44614 4.61995 7.44681 4.54249C7.44748 4.46504 7.43272 4.38822 7.40339 4.31653C7.37406 4.24484 7.33075 4.17971 7.27598 4.12494C7.22121 4.07017 7.15608 4.02686 7.08439 3.99753C7.0127 3.9682 6.93588 3.95344 6.85843 3.95411C6.78097 3.95478 6.70443 3.97088 6.63326 4.00145C6.56209 4.03202 6.49772 4.07646 6.44391 4.13217L4.38125 6.19484V6.19367Z' fill='#27AE60')
+              span.des__text Nhà phát hành tin cậy

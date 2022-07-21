@@ -1,0 +1,8 @@
+extend includes/layout/layout.pug
+block pages
+    include ./includes/components/account-sidebar-mb.pug
+    +slide__bar-mb("Chi tiết đơn hàng", true)
+    main.detail-order 
+        section.detail-order-mb
+            .container
+                include includes/pages/detail-order-mb.pug

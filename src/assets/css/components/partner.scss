@@ -1,0 +1,86 @@
+.partner__wrap {
+    width: 100%;
+    .partner__content {
+        padding: 0 35px;
+        padding-top: 44px;
+        padding-bottom: 93px;
+        @include breakpoint(767) {
+            padding: 0;
+            padding-top: 38px;
+            padding-bottom: 70px;
+        }
+        @include breakpoint(575) {
+            padding: 30px 0px 40px;
+        }
+    }
+    background-color: $grey-7;
+    .partner__head {
+        position: relative;
+        text-align: center;
+        .partner__title-title {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 500;
+            margin: -2px;
+            color: $black;
+            @include max-breakpoint(575) {
+                font-size: 20px;
+            }
+        }
+        .partner__title-vector {
+            width: 120px;
+            height: 2px;
+            background-color: $primary-color;
+            position: absolute;
+            top: calc(100% + 4px);
+            right: 50%;
+            transform: translatex(50%);
+        }
+    }
+    .partner__list {
+        max-width: 100vw;
+        @include max-breakpoint(1199) {
+            display: block !important;
+            overflow: auto;
+            border-spacing: 20px;
+            margin: 0 -15px;
+        }
+        margin-top: 35px;
+        .partner__list-link {
+            background-color: $white;
+            margin-right: 29px;
+            border-radius: 10px;
+            overflow: hidden;
+            &:last-child {
+                margin-right: 0px;
+            }
+            @include max-breakpoint(1199) {
+                display: table-cell;
+            }
+            .link__thumb {
+                width: 180px;
+                height: 180px;
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+                @include max-breakpoint(992) {
+                    width: 218px;
+                    height: 218px;
+                }
+                @include max-breakpoint(767) {
+                    width: 150px;
+                    height: 150px;
+                }
+                @include max-breakpoint(575) {
+                    width: 136px;
+                    height: 136px;
+                }
+                @include max-breakpoint(320) {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+    }
+}

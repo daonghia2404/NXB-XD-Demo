@@ -1,0 +1,68 @@
+.section-contact-info {
+  .services-contact-des {
+    @media (max-width: 991px) {
+      margin-left: 16px;
+    }
+  }
+  &-items {
+    margin: 30px 0;
+
+    @media (max-width: 991px) {
+      margin-left: 16px;
+    }
+  }
+
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &-icon {
+      flex: 0 0 48px;
+      max-width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid $brown-1;
+      margin-right: 14px;
+
+      @media (max-width: 991px) {
+        flex: 0 0 36px;
+        max-width: 36px;
+        height: 36px;
+        margin-right: 10px;
+
+        img {
+          width: 15px;
+        }
+      }
+    }
+    &-content {
+      flex: 1;
+
+      &-title {
+        font-size: 14px;
+        color: $grey-1;
+        @media (max-width: 991px) {
+          font-size: 13px;
+          margin-bottom: 0;
+          font-weight: 400;
+        }
+      }
+
+      &-des {
+        font-size: 16px;
+        color: $grey-dark;
+        @media (max-width: 991px) {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &-banner {
+    img {
+      width: 100%;
+    }
+  }
+}

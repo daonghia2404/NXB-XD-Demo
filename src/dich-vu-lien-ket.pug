@@ -1,0 +1,103 @@
+extend includes/layout/layout.pug
+block pages
+    section.services-contact 
+        include includes/components/breadcrumb.pug
+        +brcrumb('Dịch vụ liên kết xuất bản')
+
+        include includes/components/account-sidebar-mb.pug
+        +slide__bar-mb(" Dịch vụ liên kết xuất bản", true)
+
+        .container 
+            .services-contact-wrapper.d-flex.justify-content-between.flex-wrap
+                .services-contact-item 
+                    form(action="#")
+                        h5.services-contact-title Thông tin khách hàng
+
+                        .form-groups.d-flex.flex-wrap
+                            .form-group.full
+                                label(for='') Họ và tên
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-user-gray.svg", alt="" width="20px")
+                                    input.form-control.hover-input(type='text' placeholder='Họ và tên' aria-label='Họ và tên' )
+
+                            .form-group.width-40
+                                label(for='') Số điện thoại
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-phone-gray.svg", alt="")
+                                    input.form-control.hover-input(type='phone' placeholder='Số điện thoại' aria-label='Số điện thoại' )
+                                    
+
+                            .form-group.width-60
+                                label(for='') Email
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-mail-gray.svg", alt="")
+                                    input.form-control.hover-input(type='Email' placeholder='Email' aria-label='Email' )
+
+                            .form-group.full
+                                label(for='') Địa chỉ
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-map-marker-gray.svg", alt="")
+                                    input.form-control.hover-input(type='text' placeholder='Nhập vị trí' aria-label='Địa chỉ' )
+
+                            .form-group.full.d-flex 
+                                .checkbox-group
+                                    input(type="checkbox" name="book" id="book-paper").checkbox-input
+                                    .checkbox-wrapper
+                                    label(for="book-paper") Sách giấy
+                                .checkbox-group
+                                    input(type="checkbox" name="book" id="book-ebook").checkbox-input
+                                    .checkbox-wrapper
+                                    label(for="book-ebook") Sách điện tử
+
+                            .form-group.full
+                                label(for='') Tác giả
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-author-gray.svg", alt="")
+                                    input.form-control.hover-input(type='text' placeholder='Nhập tên tác giả' aria-label='Tác giả' )
+
+                            .form-group.full
+                                label(for='') Tên bản thảo
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-book-gray.svg", alt="")
+                                    input.form-control.hover-input(type='text' placeholder='Nhập bản thảo' aria-label='Tên bản thảo' )
+
+                            .form-group.width-40
+                                label(for='') Số Trang
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-mail-gray.svg", alt="")
+                                    input.form-control.hover-input(type='text' placeholder='Nhập số trang' aria-label='Số trang' )
+
+                            .form-group.width-60
+                                label(for='') Lĩnh vực
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-angle-down-gray.svg", alt="")
+                                    input.form-control.hover-input(type='text' placeholder='Nhập lĩnh vực' aria-label='Lĩnh vực' )
+
+                            .form-group.full
+                                label(for='') Ghi chú
+                                .input-group.form-area
+                                    textarea.hover-input(name='user_bio' placeholder='Nhập nội dung')
+                                    .form-area__icon
+                                        img(class="lazy" data-src="./assets/images/checkout/Icon.svg", alt="")
+
+                            .form-group.full.d-flex.justify-content-center 
+                                .button__item
+                                    button.btn.btn-red-1.btn-sm
+                                        span Đặt sách
+
+                .services-contact-item
+                    include includes/components/section-contact-info.pug
+                    +sectionContactInfo({
+                        description: 'Nhà xuất bản Xây dựng hân hạnh mời các đơn vị tổ chức, quý khách hàng hợp tác liên kết xuất bản điện tử cùng chúng tôi. Thể loại sách đa dạng: ebook, audio-book, multimedia, ... với đội ngũ biên tập dày dặn kinh nghiệm và kỹ thuật hiện đại.',
+                        hotline: '096 303 1137 (Nguyễn Thị Hồng Vân)',
+                        email: 'sachdientu@nxbxaydung.com.vn',
+                        address: '37 Lê Đại Hành, Hai Bà Trưng, TP. Hà Nội',
+                    })

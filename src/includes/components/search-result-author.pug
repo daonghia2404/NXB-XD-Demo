@@ -1,0 +1,62 @@
+-
+    const searchAuthor = [
+        {
+            imgSrc : './assets/images/search-author/ellipse-1.png',
+            name : 'Tôn Thất Đại',
+            school : 'Trường Đại học Xây dựng',
+            num : '24 ',
+            note : 'sách - giáo trình',
+        },
+        {
+            imgSrc : './assets/images/search-author/ellipse-2.png',
+            name : 'Tôn Đại',
+            school : 'Trường Đại học Xây dựng',
+            num : '12 ',
+            note : 'sách - giáo trình',
+        },
+        {
+            imgSrc : './assets/images/search-author/ellipse-3.png',
+            name : 'Tôn Thất Đại',
+            school : 'Trường Đại học Xây dựng',
+            num : '34 ',
+            note : 'sách - giáo trình',
+        },
+        {
+            imgSrc : './assets/images/search-author/ellipse-4.png',
+            name : 'Tôn Thất Đại',
+            school : 'Trường Đại học Xây dựng',
+            num : '20 ',
+            note : 'sách - giáo trình',
+        },
+        {
+            imgSrc : './assets/images/search-author/ellipse-5.png',
+            name : 'Tôn Thất Đại',
+            school : 'Trường Đại học Xây dựng',
+            num : '14 ',
+            note : 'sách - giáo trình',
+        },
+        {
+            imgSrc : '../assets/images/search-author/ellipse-6.png',
+            name : 'Tôn Thất Đại',
+            school : 'Trường Đại học Xây dựng',
+            num : '18 ',
+            note : 'sách - giáo trình',
+        },
+    ]
+.search-author
+    .row
+        each item in searchAuthor
+            .col-lg-4.col-md-6
+                .search-author__box.d-flex.position-relative.align-items-center.py-3.px-3.mb-3
+                    .search-author__box-img.mr-3
+                        img(src=item.imgSrc, alt="author")
+                    .search-author__box-info.mr-2
+                        h6.mb-1.h6-14.medium=item.name
+                        p.mb-1.caption-12.regular=item.school
+                        p
+                            span.sm-11.regular=item.num
+                            span.sm-11.regular=item.note
+                    .search-author__box-link
+                        a(href="#")
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.07026 1.15454L4.41211 1.81269L10.5992 7.99998L4.41211 14.1873L5.07026 14.8454L11.5866 8.32906C11.7684 8.1473 11.7684 7.85266 11.5866 7.67091L5.07026 1.15454Z" fill="#D1D1D1"/></svg>
+

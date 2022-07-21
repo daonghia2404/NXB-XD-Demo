@@ -1,0 +1,42 @@
+.license {
+    align-items: center;
+    border-radius: 5px;
+    background-color: $blue-dark;
+    display: flex;
+    width: 100%;
+    height: 139px;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-left: 22px;
+    margin-bottom: 24px;
+    svg {
+        height: 71.88px;
+        width: 96px;
+        @include breakpointminmax(992, 1199) {
+            width: 64px;
+        }
+    }
+    &__text {
+        flex: 1;
+        padding-left: 28px;
+        span:first-child {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 23.44px;
+            padding-bottom: 6px;
+        }
+        span:last-child{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18.75px;
+        }
+        span {
+            display: block;
+            color: $white;
+            font-family: $font-inter;
+        }
+    }
+    &:hover {
+        filter: brightness(105%);
+    }
+}

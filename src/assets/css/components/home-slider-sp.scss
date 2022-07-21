@@ -1,0 +1,50 @@
+.home-sliderMb {
+	&__item {
+		&-caption {
+			position: absolute;
+			left: 18px;
+			bottom: 18px;
+			span {
+				font-size: 14px;
+				color: $white;
+				line-height: 16px;
+				font-weight: 400;
+			}
+			.caption__title {
+				margin-bottom: 0;
+				font-size: 36px;
+				line-height: 34px;
+				color: $white;
+				font-weight: 500;
+			}
+		}
+	}
+	.owl-dots {
+	 	position: absolute;
+	 	right: 13px;
+	 	bottom: 13px;
+	}
+	.owl-dots button.owl-dot {
+	 	width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		display: inline-block;
+		background: $grey-1;
+		margin: 0 7px;
+		opacity: .5;
+	}
+
+	.owl-dots button.owl-dot.active {
+	 	 background-color: $brown-medium;
+	 	 opacity: 1;
+	}
+
+	.owl-dots button.owl-dot:focus {
+	 	outline: none;
+	}
+
+	.owl-dots span {
+	    font-size: 70px;    
+	    position: relative;
+	}
+}

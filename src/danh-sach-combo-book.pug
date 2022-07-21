@@ -1,0 +1,17 @@
+extend includes/layout/layout.pug
+block pages
+  section.section-combo-book
+    include ./includes/components/breadcrumb.pug
+    +brcrumb('Danh sách Bộ sưu tập sách')
+
+    .container
+      .section-combo-book
+        .row
+          .col-lg-3
+            include ./includes/components/combo-books-filter-menu.pug
+
+          .col-lg-9
+            .wrapper__pagination
+              include ./includes/containers/ComboBooksList.pug
+
+            include includes/components/pagination.pug

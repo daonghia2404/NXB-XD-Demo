@@ -1,0 +1,33 @@
+-
+    const newFeedDatas = [
+        {
+            newImage: './assets/images/new-feed/new-feed-01.jpg',
+            title: 'mẹ luôn cùng đồng hành cùng con',
+            content: 'mẹ luôn cùng đồng hành cùng con mẹ luôn cùng đồng hành cùng con'
+        },
+        {
+            newImage: './assets/images/new-feed/new-feed-02.jpg',
+            title: 'mẹ luôn cùng đồng hành cùng con',
+            content: 'mẹ luôn cùng đồng hành cùng con mẹ luôn cùng đồng hành cùng con',
+        },
+        {
+            newImage: './assets/images/new-feed/new-feed-03.jpg',
+            title: 'mẹ luôn cùng đồng hành cùng con',
+            content: 'mẹ luôn cùng đồng hành cùng con mẹ luôn cùng đồng hành cùng con mẹ luôn cùng đồng hành cùng con mẹ luôn cùng đồng hành cùng con mẹ luôn cùng đồng hành cùng con mẹ luôn cùng đồng hành cùng con',
+        }
+    ]
+
+.news
+    a(href="#" class="new-feed__heading")
+        | Tin tức
+    ul.news__list
+        each newItem in newFeedDatas
+            li.news__list-item
+                a(href="#" class="item__link")
+                    img(class="lazy" data-src=`${newItem.newImage}` src=`${newItem.newImage}`, alt="#")
+                a(href="#" class="item__title")
+                    p.news_title= `${newItem.title}`
+                    p.news_content=`${newItem.content}`
+
+    a(href="#" class="new-feed__view")
+        | Xem toàn bộ 

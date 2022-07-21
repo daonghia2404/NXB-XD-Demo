@@ -1,0 +1,19 @@
+.book__box {
+    background: $white;
+    border-radius: 5px;
+    padding: 20px 30px 20px 30px;
+    margin-bottom: 20px;
+    .books__box-img{
+        border-radius: 5px;
+    }
+    .heading{
+        font-family: $font-inter;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28.13px;
+        color: $primary-color;
+        border-bottom: 1px solid $line-color;
+        // margin-bottom: 28px;
+        padding-bottom: 10px;
+    }
+}

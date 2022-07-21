@@ -1,0 +1,56 @@
+.book{
+    .title-link{
+        font-size: 14px;
+        line-height: 18px;
+        color: $grey-dark;
+        font-weight: 500;
+    }
+    .book__vote{
+        cursor: pointer;
+        svg{
+            margin: 5px 2px;
+            fill: $yellow-medium
+        }
+        svg:last-child{
+            fill: $grey-star;
+        }
+    }
+    .book-detail-type{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.41px;
+        color: $headding-color;
+    }
+    .book-price{
+        font-size: 14px;
+        color: $brown-price;
+        font-weight: 700;
+    }
+    .books__list-body{
+        text-align: center;
+    }
+    .text-overflow-ellipsis{
+        text-overflow: ellipsis;
+    }
+    .text-line{
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+    }
+    .fw-3{
+        font-weight: 300;
+    }
+}
+.bg-layout {
+    width: 100%;
+    border-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 75% 0;
+}
+.bg-book-detail {
+    padding-top: 75%;
+    padding-bottom: 75%;
+}

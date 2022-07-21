@@ -1,0 +1,11 @@
+extend includes/layout/layout.pug
+
+block pages
+    include includes/components/breadcrumb.pug
+    +brcrumb('Video',2)
+    include includes/pages/my-account-video.pug
+    .container.mb-4.mt-2
+        .row
+            .col-lg-12
+                include includes/components/typical-book-slider.pug
+                +typical__book-slider('Có thể bạn quan tâm',true)

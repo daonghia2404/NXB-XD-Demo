@@ -1,0 +1,59 @@
+-
+    const latesNewsData = [
+        {
+            title: 'Hợp tác cùng PGS. TS.KTS Nguyễn Đình Thi',
+            content: 'PGS. TS.KTS Nguyễn Đình Thi, sinh năm 1977. Ông hiện là nhà văn tiêu biểu của',
+            imageSource: './assets/images/latest-news/latest-news-1.png',
+            date: 'Tin sách - 23-12-2020'
+        },
+    ]
+
+    const latestNewsBox = [
+        {
+            imageSource: './assets/images/latest-news/latest-news-2.png',
+            date: 'TIN MỚI - 23-12-2020',
+            label: 'Hợp tác xuất bản điện tử - Trường đại học Mở Hà Nội',
+            author: 'nhà báo Nguyễn Văn An',
+            content: 'Sáng ngày 09/09/2020, Nhà xuất bản Xây dựng đã cùng thống nhất thỏa thuận và đi đến ký kết hợp tác xuất bản điện tử giáo trình, học liệu cùng Trường đại học Mở Hà Nội dựa trên cơ sở hai bên tự nguyện đồng lòng cùng nhau blablablalalalalalala',
+        },
+        {
+            imageSource: './assets/images/latest-news/latest-news-2.png',
+            date: 'TIN MỚI - 23-12-2020',
+            label: 'Hợp tác xuất bản điện tử - Trường đại học Mở Hà Nội',
+            author: 'nhà báo Nguyễn Văn An',
+            content: 'Sáng ngày 09/09/2020, Nhà xuất bản Xây dựng đã cùng thống nhất thỏa thuận và đi đến ký kết hợp tác xuất bản điện tử giáo trình, học liệu cùng Trường đại học Mở Hà Nội dựa trên cơ sở hai bên tự nguyện đồng lòng cùng nhau blablablalalalalalal',
+        }
+    ]
+
+.latest-news.p-4
+    .latest-news__heading.d-flex.align-items-center.justify-content-between.position-relative
+        h3.h3-20.mb-0.medium.latest-news__heading-label Tin mới nhất
+        a(href="#").btn.btn-gray-link.btn-sm.px-0
+            span.mr-1 Xem toàn bộ
+            svg(width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+                path(d="M6.6 1L12 6.4L6.6 11.8M0 6.4H12H0Z" stroke="#8C8C8C" stroke-width="2")
+    .latest-news__body.d-flex.align-items-stretch.pt-4
+        .container
+            .row
+                .latest-news__body-box.owl-carousel.col-lg-6.col-md-12.pl-0
+                    each item in latestNewsBox
+                        .box-slider
+                            a(href="#")
+                                img(class="lazy" data-src=`${item.imageSource}` src=`${item.imageSource}` alt="#")
+                            .box__date.my-2
+                                span.caption-12.regular=item.date
+                            h4.box__label.h4-18.bold.mb-3
+                                a(href="")=item.label
+                            p.box__author.caption-12.regular.mb-2=item.author
+                            p.box__content.body-13.regular=`${item.content}`
+                ul.latest-news__body-list.col-lg-6.col-md-12.position-relative
+                    -  for(var i = 0; i < 3; i++)
+                        each item in latesNewsData
+                            li.list__item.w-100
+                                a(href="#").d-flex.align-items-stretch
+                                    .list__item-img.mr-3
+                                        img(class="lazy" data-src=`${item.imageSource}` src=`${item.imageSource}`, alt="")
+                                    .list__item-main
+                                        h6.main__title.h6-14.medium.mb-2=`${item.title}`
+                                        p.main__content.body-13.regular.mb-1=`${item.content}`
+                                        span.main__date.caption-12.regular=`${item.date}`

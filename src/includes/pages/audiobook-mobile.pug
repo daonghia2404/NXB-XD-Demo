@@ -1,0 +1,69 @@
+section.audiobook__player
+    .audiobook__player-header.button-action
+        .container
+            .header-nav.d-flex.align-items-center.py-1
+                a(href="#")
+                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.26545 9.64242L8.43291 17.7343C8.79129 18.0886 9.37193 18.0886 9.73121 17.7343C10.0896 17.38 10.0896 16.8045 9.73121 16.4503L2.21159 9.00045L9.73031 1.55064C10.0887 1.19635 10.0887 0.620898 9.73031 0.265715C9.37193 -0.0885717 8.79038 -0.0885717 8.432 0.265715L0.264545 8.3575C-0.0883323 8.70813 -0.0883323 9.29262 0.26545 9.64242Z" fill="#333333"/></svg>
+                h4.h4-18.medium.custom-audio-title Nghe Audio Book
+    .audiobook__player-content.bg-white
+        .container-fluid
+            .row
+                .col-12
+                    .audiobook-content__left.content--mobile
+                        .audiobook__images.d-flex.justify-content-center.my-2
+                            img(src="./assets/images/audio-player/Bookcover.png", alt="")
+                        .audiobook__left-content
+                            h5.h5-16.audiobook__title Các đô thị Việt Nam quá trình hình thành, phát triển và quy hoạch đô thị. Tập 1: Hà Nội, Hải Phòng, Vinh, Huế, Đà Nẵng, Hội An, Đà Lạt, Nha Trang, Buôn Ma Thuột, Cần Thơ
+                            .audiobook__author
+                                p.body-13.regular Tác giả: 
+                                    span.author--name.body-13.regular Nguyễn Văn A
+                            .audiobook__detail.d-flex
+                                p.body-13.regular.mr-2.chapter-numb Chương 1
+                                p.body-13.regular.lyrics-running Nội dung đang chạy ở đây Nội dung đang chạy ở đây Nội dung đang chạy ở đây Nội dung đang chạy ở đây Nội dung đang chạy ở đây
+                            .audio--player
+                                .audio-timebars
+                                    .timebar
+                                        input(type="range" min="0" steps="1" id="songSlider" class="songSlider" value="0")
+                                        #range-timeBar
+                                    .audio-time.audio-time-mb.d-flex.justify-content-between
+                                        .current-time#current-time 00:00
+                                        .duration-time#duration-time 00:00
+                                .audio-controls.d-flex.align-items-center.flex-column.audio-controls-pos
+                                    .main-controls.main-controls-mb
+                                        audio(id="main-audio" src="")
+                                        img(src="./assets/images/audio-player/backsong.png", alt="" id="backSongBtn")
+                                        img(src="./assets/images/audio-player/back15s.png", alt="" id="back15sBtn")
+                                        .play-pause-btn
+                                            i(class="fa fa-play audio-play-btn")
+                                        img(src="./assets/images/audio-player/next15s.png", alt="" id="next15sBtn")
+                                        img(src="./assets/images/audio-player/nextsong.png", alt="" id="nextSongBtn")
+                                    .item-access.volume-event.px-3.d-flex.align-items-center
+                                        .change--speeds.items-postion
+                                            select.option-speeds#change--speeds
+                                                option(value="0.5") 0.5x
+                                                option(value="1" selected) 1.0x
+                                                option(value="1.5") 1.5x
+                                                option(value="2") 2x
+                                            p.label-items Tốc độ 
+                                        .chapter--icon.items-postion
+                                            <svg id="btnChapter" width="30" height="30" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.6665 11.667H4.6665V14.0003H18.6665V11.667Z" fill="#4F4F4F"/><path d="M18.6665 7H4.6665V9.33333H18.6665V7Z" fill="#4F4F4F"/><path d="M13.9998 16.333H4.6665V18.6663H13.9998V16.333Z" fill="#4F4F4F"/><path d="M16.333 16.333V23.333L22.1663 19.833L16.333 16.333Z" fill="#4F4F4F"/></svg>
+                                            p.label-items.mt-2 Chương 
+                                        .volume-event-selector.items-postion
+                                            .volume-icons.d-flex.align-items-center
+                                                i(class="fas fa-volume-up volumeBtn")
+                                                .range-input.ml-2
+                                                    input(type="range" min="0" max="100" steps="1" value="100" id="volumeslider")
+                                                    #range-progressBar
+                                            p.label-items#muted-volume Tắt tiếng 
+                                        
+                .audiobook-content__right
+                    ul.chaper__list.chapter__list-change
+                        each item in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20]
+                            li(data-src="https://stream.nxbxaydung.com.vn/public/audio/1113f58b-bf77-4f29-8183-53e49646a2f5/index_1113f58b-bf77-4f29-8183-53e49646a2f5.m3u8").chapter__list-item.d-flex.align-items-center.justify-content-between
+                                .item-order
+                                    span.chapter__number=item
+                                    img(class="chapter__video-active" src="./assets/images/audio-player/waveform.png" alt="")
+                                .item-main-content
+                                    p.item-content.body-13.medium Nội dung đang chạy ở đây
+                                    p.item-intro.caption-12.regular Lời giới thiệu
+                                span.item-time__counter.px-3 03:22

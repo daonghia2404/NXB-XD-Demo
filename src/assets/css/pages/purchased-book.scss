@@ -1,0 +1,13 @@
+.purchased__book {
+    font-family: $font-inter;
+    .purchased__book-pagination {
+        margin-top: 24px;
+        .component__pagination ul {
+            margin: 0;
+        }
+        .container {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}

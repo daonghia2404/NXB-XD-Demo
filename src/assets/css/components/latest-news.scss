@@ -1,0 +1,163 @@
+.latest-news {
+	border-radius: 5px;
+	background-color: $white;
+
+	@include breakpointminmax(768, 1023) {
+		margin-bottom: 50px;
+	}
+
+	&__heading {
+		font-family: $font-inter;
+		padding-bottom: 8px;
+		margin-bottom: 24px;
+
+		@include breakpointminmax(1024, 1439) {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+
+		&-label {
+			color: #8c8c8c !important;
+		}
+
+		&-view {
+			text-decoration: none;
+
+			svg {
+				position: relative;
+				top: -1px;
+			}
+
+			h6 {
+				color: #8c8c8c !important;
+			}
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0%;
+			right: 0%;
+			top: 100%;
+			bottom: 0%;
+			height: 1px;
+			background-color: $border-color-1;
+		}
+	}
+
+	&__body {
+		@include breakpointminmax(1024, 1439) {
+			padding-top: 34px !important;
+		}
+
+		&-box {
+			a {
+				img {
+					border-radius: 5px;
+				}
+			}
+
+			.box__date {
+				color: #333;
+			}
+
+			.box__label {
+				a {
+					color: #212529;
+				}
+			}
+
+			.box__author {
+				color: $headding-color;
+			}
+
+			.box__content {
+				color: $headding-color;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 4;
+				-webkit-box-orient: vertical;
+			}
+		}
+
+		&-list {
+			@include breakpointminmax(768, 1023) {
+				padding-top: 30px;
+
+				&::before {
+					content: "";
+					position: absolute;
+					width: 642px;
+					height: 1px;
+					top: 0;
+					background-color: $border-color-1;
+				}
+			}
+
+			.list__item {
+				margin-bottom: 35px;
+
+				a {
+					.list__item-img {
+						img {
+							object-fit: cover;
+							border-radius: 5px;
+						}
+					}
+
+					.list__item-main {
+						width: 206px;
+						font-family: $font-inter;
+
+						.main__title {
+							color: #02010e;
+						}
+
+						.main__content {
+							color: $headding-color;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							display: -webkit-box;
+							-webkit-line-clamp: 2;
+							-webkit-box-orient: vertical;
+						}
+
+						.main__date {
+							color: $grey-1;
+						}
+
+						@include breakpointminmax(768, 1023) {
+							flex: 1;
+						}
+					}
+
+					@include breakpointminmax(768, 1023) {
+						display: flex;
+					}
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.owl-nav {
+		margin-top: 30px;
+
+		button {
+			outline: none;
+			margin-right: 20px;
+		}
+
+		@include breakpointminmax(1024, 1439) {
+			margin-top: 16px;
+		}
+
+		@include breakpointminmax(768, 1023) {
+			margin-bottom: 24px;
+		}
+	}
+}

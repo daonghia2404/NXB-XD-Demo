@@ -1,0 +1,354 @@
+.container
+    .row
+        .col-12
+            .breadcumb.p-3.my-3.border-bottom.border-top.border-dark
+                h2.text-primary.my-3 Breadcumb
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a(href="#") Home
+                        li(class="breadcrumb-item active" aria-current="page") Library
+            .table.p-3.my-3.border-bottom.border-top.border-dark
+                .striped-rows
+                    h2.text-primary.my-3 Table Striped Rows
+                    table(class="table table-striped")
+                        thead
+                            tr
+                                <th scope="col">#
+                                <th scope="col">First
+                                <th scope="col">Last
+                                <th scope="col">Handle
+                        tbody
+                            tr
+                                <th scope="row">1
+                                td Mark
+                                td Otto
+                                td @mdo
+                            tr
+                                <th scope="row">2
+                                td Jacob
+                                td Thornton
+                                td @fat
+                            tr
+                                <th scope="row">3
+                                td Larry
+                                td the Bird
+                                td @twitter
+                .borderless-table
+                    h2.text-primary.my-3 Table Borderless Rows
+                    table(class="table table-borderless")
+                        thead
+                            tr
+                                <th scope="col">#
+                                <th scope="col">First
+                                <th scope="col">Last
+                                <th scope="col">Handle
+                        tbody
+                            tr
+                                th(scope="row") 1
+                                td Mark
+                                td Otto
+                                td @mdo
+                            tr
+                                th(scope="row") 2
+                                td Jacob
+                                td Thornton
+                                td @fat
+                            tr
+                                th(scope="row") 3
+                                td(colspan="2") Larry the Bird
+                                td @twitter
+                .table-respon
+                    h2.text-primary.my-3 Table Responsive
+                    .table-responsive-sm
+                        table.table
+                            thead
+                                tr
+                                    <th scope="col">#
+                                    <th scope="col">First
+                                    <th scope="col">Last
+                                    <th scope="col">Handle
+                                    <th scope="col">Handle
+                                    <th scope="col">Handle
+                                    <th scope="col">Handle
+                                    <th scope="col">Handle
+                                tbody
+                                    tr
+                                        th(scope="row") 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                        td @Handle
+                                        td @Handle
+                                        td @Handle
+                                        td @Handle
+                                    tr
+                                        th(scope="row") 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                        td @Handle
+                                        td @Handle
+                                        td @Handle
+                                        td @Handle
+                                    tr
+                                        th(scope="row") 3
+                                        td Larry
+                                        td @twitter
+                                        td @twitter
+                                        td @Handle
+                                        td @Handle
+                                        td @Handle
+                                        td @Handle
+            .modals.p-3.my-3.border-bottom.border-top.border-dark
+                .modal-small
+                    h2.text-primary.my-3 Small Modal
+                    button(type="button" class="btn btn-danger" data-toggle="modal" data-target=".bd-example-modal-sm") Small modal
+                    div(class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true")
+                        .modal-dialog.modal-sm
+                            .modal-content
+                                .modal-header
+                                    h4.modal-title Small Modal
+                                    button(type="button" class="close" data-dismiss="modal") &times;
+                                .modal-body Modal body..
+                                .modal-footer
+                                    button(type="button" class="btn btn-danger" data-dismiss="modal") Close
+                .modal-large
+                    h2.text-primary.my-3 Large Modal
+                    button(type="button" class="btn btn-warning" data-toggle="modal" data-target=".bd-example-modal-lg") Large modal
+                    div(class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true")
+                        .modal-dialog.modal-lg
+                            .modal-content
+                                .modal-header
+                                    h4.modal-title Large Modal
+                                    button(type="button" class="close" data-dismiss="modal") &times;
+                                .modal-body Modal body..
+                                .modal-footer
+                                    button(type="button" class="btn btn-danger" data-dismiss="modal") Close
+                .vertically-centered-modal
+                    h2.text-primary.my-3 Vertically Centered Modal
+                    button(type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter") Vertically Centered Modal
+                    div(class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter" aria-hidden="true")
+                        .modal-dialog.modal-dialog-centered
+                            .modal-content
+                                .modal-header
+                                    h.modal-title Vertically Centered Modal
+                                    button(type="button" class="close" data-dismiss="modal") &times;
+                                .modal-body Modal body..
+                                .modal-footer
+                                    button(type="button" class="btn btn-danger" data-dismiss="modal") Close
+                                    button(type="button" class="btn btn-warning") Save Changes
+            .alert-basic.p-3.my-3.border-bottom.border-top.border-dark
+                .alerts
+                    h2.text-primary.my-3 Alerts
+                    div(class="alert alert-primary" role="alert") A simple primary alert—check it out!
+                    div(class="alert alert-secondary" role="alert") A simple primary alert—check it out!
+                    div(class="alert alert-success" role="alert") A simple primary alert—check it out!
+                    div(class="alert alert-danger" role="alert") A simple primary alert—check it out!
+                    div(class="alert alert-info" role="alert") A simple primary alert—check it out!
+                    div(class="alert alert-light" role="alert") A simple primary alert—check it out!
+                    div(class="alert alert-dark" role="alert") A simple primary alert—check it out!
+                    div(class="alert alert-rgba-green" role="alert")
+                        .alert-inner
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 30C24.232 30 30.5 23.732 30.5 16C30.5 8.26801 24.232 2 16.5 2C8.76801 2 2.5 8.26801 2.5 16C2.5 23.732 8.76801 30 16.5 30ZM16.5 32C25.3366 32 32.5 24.8366 32.5 16C32.5 7.16344 25.3366 0 16.5 0C7.66344 0 0.5 7.16344 0.5 16C0.5 24.8366 7.66344 32 16.5 32Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4393 9.93934C23.0251 9.35355 23.9748 9.35355 24.5606 9.93934C25.1392 10.5179 25.1463 11.4516 24.5819 12.0389L16.5975 22.0195C16.5859 22.0339 16.5736 22.0476 16.5606 22.0607C15.9748 22.6464 15.0251 22.6464 14.4393 22.0607L9.14637 16.7678C8.56058 16.182 8.56058 15.2322 9.14637 14.6464C9.73216 14.0607 10.6819 14.0607 11.2677 14.6464L15.4547 18.8335L22.3995 9.98421C22.4118 9.96847 22.4251 9.95349 22.4393 9.93934Z" fill="white"/>
+                            </svg>
+                            p(class="alert-text") Thành công, bạn hãy kiểm tra email và nhấn xác nhận nhé
+                    div(class="alert alert-rgba-pink" role="alert")
+                        .alert-inner
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 23.732 8.26801 30 16 30ZM16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 9.29289C9.68342 8.90237 10.3166 8.90237 10.7071 9.29289L16 14.5858L21.2929 9.29289C21.6834 8.90237 22.3166 8.90237 22.7071 9.29289C23.0976 9.68342 23.0976 10.3166 22.7071 10.7071L17.4142 16L22.7071 21.2929C23.0976 21.6834 23.0976 22.3166 22.7071 22.7071C22.3166 23.0976 21.6834 23.0976 21.2929 22.7071L16 17.4142L10.7071 22.7071C10.3166 23.0976 9.68342 23.0976 9.29289 22.7071C8.90237 22.3166 8.90237 21.6834 9.29289 21.2929L14.5858 16L9.29289 10.7071C8.90237 10.3166 8.90237 9.68342 9.29289 9.29289Z" fill="white"/>
+                            </svg>
+                            p(class="alert-text") Lạ ghê, không có tài khoản nào email như bạn đăng nhập. Bạn thử lại nhé!
+                    div(class="alert alert-rgba-warning" role="alert")
+                        .alert-inner
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 23.732 8.26801 30 16 30ZM16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="white"/>
+                                <path d="M14.0029 22C14.0029 20.8954 14.8984 20 16.0029 20C17.1075 20 18.0029 20.8954 18.0029 22C18.0029 23.1046 17.1075 24 16.0029 24C14.8984 24 14.0029 23.1046 14.0029 22Z" fill="white"/>
+                                <path d="M14.1989 9.99008C14.0923 8.92457 14.929 8 15.9998 8C17.0707 8 17.9074 8.92457 17.8008 9.99007L17.0994 17.005C17.0429 17.5698 16.5675 18 15.9998 18C15.4322 18 14.9568 17.5698 14.9003 17.005L14.1989 9.99008Z" fill="white"/>
+                            </svg>
+                            p(class="alert-text") Lưu ý, đây là toast messenger warning nha các đồng chí!
+                    div(class="alert alert-rgba-primary" role="alert")
+                        .alert-inner
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 23.732 8.26801 30 16 30ZM16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="white"/>
+                                <path d="M17.8614 13.1758L13.2794 13.75L13.1153 14.5117L14.0177 14.6758C14.6036 14.8164 14.7208 15.0273 14.5919 15.6133L13.1153 22.5508C12.7286 24.3438 13.3262 25.1875 14.7325 25.1875C15.8223 25.1875 17.088 24.6836 17.6622 23.9922L17.838 23.1602C17.4395 23.5117 16.8536 23.6523 16.4669 23.6523C15.9161 23.6523 15.7169 23.2656 15.8575 22.5859L17.8614 13.1758Z" fill="white"/>
+                                <circle cx="16" cy="9" r="2" fill="white"/>
+                            </svg>    
+                            p(class="alert-text") Thông báo là không có cái thông báo nào cả
+            .forms.p-3.my-3.border-bottom.border-top.border-dark
+                .form-grid
+                    h2.text-primary.my-3 Form Grid
+                    form(action="")
+                        .form-row
+                            .form-group.col-md-6
+                                label(for="inputEmail4") Email
+                                input(type="email" class="form-control" id="inputEmail4" placeholder="Email")
+                            .form-group.col-md-6
+                                label(for="inputPassword4") Password
+                                input(type="password" class="form-control" id="inputPassword4" placeholder="Password")
+                        .form-group
+                            label(for="inputAdrress") Address
+                            input(type="text" class="form-control" id="inputAddress" placeholder="1234 Main St")
+                        .form-group
+                            label(for="inputAdrress2") Address 2
+                            input(type="text" class="form-control" id="inputAdrress2" placeholder="Apartment, studio, or floor")
+                        .form-row
+                            .form-group.col-md-6
+                                label(for="inputCity") City
+                                input(type="text" class="form-control" id="inputCity")
+                            .form-group.col-md-4
+                                label(for="inputState") State
+                                select(id="inputState" class="form-control")
+                                    option(value="1" selected) Choose
+                                    option(value="") ....
+                            .form-group.col-md-2
+                                label(for="inputZip") Zip
+                                input(type="text" class="form-control" id="inputZip")
+                        .form-group
+                            .form-check
+                                input(class="form-check-input" type="checkbox" id="gridCheck")
+                                label(class="form-check-label" for="gridCheck") Check me out
+                        button(type="submit" class="btn btn-primary") Sign in
+                .form--control
+                    h2.text-primary.my-5 Form Control
+                    form(action="")
+                        .form-group
+                            label(for="exampleFormControlInput1") Email address
+                            input(type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com")
+                        .form-group
+                            label(for="exampleFormControlSelect1") Example select
+                            select(class="form-control" id="exampleFormControlSelect1")
+                                option(value="") 1
+                                option(value="") 2
+                                option(value="") 3
+                                option(value="") 4
+                                option(value="") 5
+                        .form-group
+                            label(for="exampleFormControlSelect2") Example multiple select
+                            select(class="form-control" id="exampleFormControlSelect2" multiple)
+                                option(value="") 1
+                                option(value="") 2
+                                option(value="") 3
+                                option(value="") 4
+                                option(value="") 5
+                        .form-group
+                            label(for="exampleFormControlTextarea1") Example textarea
+                            textarea(class="form-control" id="exampleFormControlTextarea1" rows="3")
+                .input--group.mb-3
+                    h2.text-primary.my-5 Input Group
+                    form(action="")
+                        .input-group.mb-3
+                            .input-group-prepend
+                                span(class="input-group-text" id="basic-addon1") @
+                            input(type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1")
+                        .input-group.mb-3
+                            input(type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2")
+                            .input-group-prepend
+                                span(class="input-group-text" id="basic-addon2") @example.com
+                        label(for="basic-url") Your vanity URL
+                        .input-group.mb-3
+                            .input-group-prepend
+                                span(class="input-group-text" id="basic-addon3") https://example.com/users/
+                            input(type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3")
+                        .input-group.mb-3
+                            .input-group-prepend
+                                span(class="input-group-text") $
+                            input(type="text" class="form-control" aria-label="Amount (to the nearest dollar)")
+                            .input-group-prepend
+                                span(class="input-group-text") .00
+                        .input-group
+                            .input-group-prepend
+                                span(class="input-group-text") With textarea
+                            textarea(class="form-control" aria-label="With textarea")
+            .badges.p-3.my-3.border-bottom.border-top.border-dark
+                .pill-badges
+                    h2.text-primary.my-3 Pill Badges
+                    span.badge.badge-pill.badge-primary 1
+                    span.badge.badge-pill.badge-secondary 2
+                    span.badge.badge-pill.badge-success 3
+                    span.badge.badge-pill.badge-danger 4
+                    span.badge.badge-pill.badge-warning 5
+                    span.badge.badge-pill.badge-info 6
+                    span.badge.badge-pill.badge-light 7
+                    span.badge.badge-pill.badge-dark 8
+            .books.p-3.my-3.border-bottom.border-top.border-dark
+                h2.text-primary.my-3 Books
+                .row
+                    .col-2
+                        include ../components/book-list.pug
+                    .col-2
+                        include ../components/book-slider.pug
+                    .col-3
+                        include ../components/partner-card.pug
+            .toasts.p-3.my-3.border-bottom.border-top.border-dark.bg-white
+                h2.text-primary.my-3 Toast
+                .row
+                    .col-6
+                        .toast-wrapper.mb-5
+                            .toast-img.mb-3
+                                <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M54.7045 28.6475C54.7045 43.396 42.7485 55.352 28 55.352C13.2515 55.352 1.29545 43.396 1.29545 28.6475C1.29545 13.8989 13.2515 1.94292 28 1.94292C42.7485 1.94292 54.7045 13.8989 54.7045 28.6475Z" stroke="#F8BB86" stroke-opacity="0.3" stroke-width="2.59091"/>
+                                    <path d="M29.0955 36.9433H27.103L26.1352 16.8473H30.0633L29.0955 36.9433ZM25.7936 42.5793C25.7936 40.8588 26.5526 39.9985 28.0708 39.9985C28.8045 39.9985 29.3675 40.2199 29.7597 40.6627C30.1645 41.1055 30.3669 41.7444 30.3669 42.5793C30.3669 43.389 30.1645 44.0215 29.7597 44.477C29.3548 44.9197 28.7919 45.1411 28.0708 45.1411C27.4129 45.1411 26.8689 44.945 26.4388 44.5529C26.0087 44.148 25.7936 43.4902 25.7936 42.5793Z" fill="#F8BB86"/>
+                                </svg>
+                            h4.toast-title Hết đọc thử
+                            span.toast-mess Bạn có muốn mua sách hoặc thuê sách để tiếp tục đọc
+                            .btn-groups
+                                button.btn.btn-brown-medium.mr-1 Thuê sách
+                                button.btn.btn-blue-secondary Mua sách
+                    .col-6
+                        .toast-wrapper.mb-5
+                            .toast-img.mb-3
+                                <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M54.7045 28.6475C54.7045 43.396 42.7485 55.352 28 55.352C13.2515 55.352 1.29545 43.396 1.29545 28.6475C1.29545 13.8989 13.2515 1.94292 28 1.94292C42.7485 1.94292 54.7045 13.8989 54.7045 28.6475Z" stroke="#F8BB86" stroke-opacity="0.3" stroke-width="2.59091"/>
+                                    <path d="M29.0955 36.9433H27.103L26.1352 16.8473H30.0633L29.0955 36.9433ZM25.7936 42.5793C25.7936 40.8588 26.5526 39.9985 28.0708 39.9985C28.8045 39.9985 29.3675 40.2199 29.7597 40.6627C30.1645 41.1055 30.3669 41.7444 30.3669 42.5793C30.3669 43.389 30.1645 44.0215 29.7597 44.477C29.3548 44.9197 28.7919 45.1411 28.0708 45.1411C27.4129 45.1411 26.8689 44.945 26.4388 44.5529C26.0087 44.148 25.7936 43.4902 25.7936 42.5793Z" fill="#F8BB86"/>
+                                </svg>
+                            h4.toast-title Xóa sản phẩm đã chọn
+                            span.toast-mess Xóa sản phẩm
+                            .btn-groups
+                                button.btn.btn-white.mr-1 Hủy
+                                button.btn.btn-yellow-bold Xóa     
+                    .col-6
+                        .toast-wrapper.mb-5
+                            .toast-img.mb-3
+                                <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M54.6437 28C54.6437 42.3379 42.8806 54 28.3218 54C13.7631 54 2 42.3379 2 28C2 13.6621 13.7631 2 28.3218 2C42.8806 2 54.6437 13.6621 54.6437 28Z" stroke="#A5DC86" stroke-opacity="0.3" stroke-width="4"/>
+                                    <path d="M14.7266 29.2528L24.1812 38.2559L44.0047 18.4248" stroke="#A5DC86" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            h4.toast-title Đặt mua sách thành công
+                            span.toast-mess Cảm ơn bạn đã đặt hàng
+                            .btn-groups
+                                button.btn.btn-green Ok     
+                    .col-6
+                        .toast-wrapper.mb-5
+                            .toast-img.mb-3
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M54.7273 28C54.7273 42.7611 42.7611 54.7273 28 54.7273C13.2389 54.7273 1.27273 42.7611 1.27273 28C1.27273 13.2389 13.2389 1.27273 28 1.27273C42.7611 1.27273 54.7273 13.2389 54.7273 28Z" stroke="#D4B26B" stroke-opacity="0.3" stroke-width="2.54545"/>
+                                    <path d="M26.624 33.3926C26.6488 31.9206 26.8158 30.7578 27.125 29.9043C27.4342 29.0508 28.0651 28.1045 29.0176 27.0654L31.4482 24.5605C32.4873 23.3854 33.0068 22.1237 33.0068 20.7754C33.0068 19.4766 32.6667 18.4622 31.9863 17.7324C31.306 16.9902 30.3164 16.6191 29.0176 16.6191C27.7559 16.6191 26.7415 16.9531 25.9746 17.6211C25.2077 18.2891 24.8242 19.1859 24.8242 20.3115H21.3916C21.4163 18.3076 22.1276 16.6934 23.5254 15.4688C24.9355 14.2318 26.7663 13.6133 29.0176 13.6133C31.3555 13.6133 33.1738 14.2441 34.4727 15.5059C35.7839 16.7552 36.4395 18.4746 36.4395 20.6641C36.4395 22.8288 35.4375 24.9626 33.4336 27.0654L31.4111 29.0693C30.5081 30.0713 30.0566 31.5124 30.0566 33.3926H26.624ZM26.4756 39.2744C26.4756 38.7178 26.6426 38.2539 26.9766 37.8828C27.3229 37.4993 27.8301 37.3076 28.498 37.3076C29.166 37.3076 29.6732 37.4993 30.0195 37.8828C30.3659 38.2539 30.5391 38.7178 30.5391 39.2744C30.5391 39.8311 30.3659 40.2949 30.0195 40.666C29.6732 41.0247 29.166 41.2041 28.498 41.2041C27.8301 41.2041 27.3229 41.0247 26.9766 40.666C26.6426 40.2949 26.4756 39.8311 26.4756 39.2744Z" fill="#D4B26B"/>
+                                </svg>
+                            h4.toast-title Xác nhận thanh toán
+                            span.toast-mess Bạn có chắc chắn muốn thanh toán qua ví
+                            .btn-groups
+                                button.btn.btn-white.mr-1 Hủy
+                                button.btn.btn-blue-secondary Xác nhận  
+                    .col-6
+                        .toast-wrapper.mb-5
+                            .toast-img.mb-3
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M54 28C54 42.3594 42.3594 54 28 54C13.6406 54 2 42.3594 2 28C2 13.6406 13.6406 2 28 2C42.3594 2 54 13.6406 54 28Z" stroke="#445FF5" stroke-opacity="0.3" stroke-width="4"/>
+                                    <path d="M29.3457 43H26.2656V22.6641H29.3457V43ZM26.0059 17.1533C26.0059 16.4482 26.179 15.9349 26.5254 15.6133C26.8717 15.2793 27.3047 15.1123 27.8242 15.1123C28.319 15.1123 28.7458 15.2793 29.1045 15.6133C29.4632 15.9473 29.6426 16.4606 29.6426 17.1533C29.6426 17.846 29.4632 18.3656 29.1045 18.7119C28.7458 19.0459 28.319 19.2129 27.8242 19.2129C27.3047 19.2129 26.8717 19.0459 26.5254 18.7119C26.179 18.3656 26.0059 17.846 26.0059 17.1533Z" fill="#445FF5"/>
+                                </svg>
+                            h4.toast-title Thông tin
+                            span.toast-mess Thông báo info
+                            .btn-groups
+                                button.btn.btn-blue-secondary Ok 
+                    .col-6
+                        .toast-wrapper.mb-5
+                            h4.toast-title Tiêu đề thông báo
+                            span.toast-small-mess Nội dung thông báo nhập ở đây
+                            .btn-groups
+                                button.btn.btn-blue-secondary Ok     
+                
+

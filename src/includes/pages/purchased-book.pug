@@ -1,0 +1,15 @@
+.purchased__book
+    .container
+        .row.mb-4
+            .col-lg-3
+                include ../components/account-sidebar.pug
+                +slide__bar("book")
+            .col-lg-9
+                .mb-3
+                    include ../components/list-book.pug
+                    +list-book('Sách bạn đã mua')
+                include ../components/pagination.pug
+        .row.mb-4
+            .col-lg-12
+                include ../components/typical-book-slider.pug
+                +typical__book-slider('Có thể bạn quan tâm')

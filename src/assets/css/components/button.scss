@@ -1,0 +1,125 @@
+.btn-red-search {
+    background: $red-B70808;
+    color: $white;
+    padding: 5px 8px;
+    &:hover {
+        color: $white;
+    }
+}
+.btn-brand {
+    background: $brand-D4B26B;
+    border-radius: $nxb-border;
+    color: $white;
+    &:hover {
+        color: $white;
+    }
+}
+.btn-brand-brown {
+    background: $brand-D4B880;
+    border-color: $brand-D4B880;
+    border-radius: $nxb-border;
+    color: $white;
+    &:hover {
+        background: $brand-D4B26B;
+        border-color: $brand-D4B26B;
+        color: $white;
+    }
+}
+.btn-outline-brand {
+    border-color: $brand-D4B26B;
+    border-radius: $nxb-border;
+    color: $brand-D4B26B;
+    &:hover {
+        background: $brand-D4B26B;
+        color: $white;
+    }
+}
+.btn-outline-brand-2 {
+    border-color: $brand-D4B26B;
+    border-radius: $nxb-border;
+    color: $brand-D4B26B;
+    &:hover {
+        background: $brand-FBF6EB;
+        color: $brand-D4B26B;
+    }
+}
+.btn-outline-brand-none-border {
+    background: $white;
+    border-radius: $nxb-border;
+    color: $brand-D4B26B;
+    &:hover {
+        background: $brand-FBF6EB;
+        color: $brand-D4B26B;
+    }
+}
+.btn-xsm {
+    padding: 3px 8px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.btn-border-radius-30 {
+    border-radius: $nxb-border-30;
+}
+.btn-red {
+    background: $red-EB5757;
+    border-radius: $nxb-border;
+    padding: 6px 72px;
+    color: $white;
+    &:hover {
+        color: $white;
+        background-color: #E94646;
+    }
+}
+.btn-red-1 {
+    background: $red-EB5757;
+    border-radius: $nxb-border;
+    padding: 6px 64px;
+    color: $white;
+    &:hover {
+        color: $white;
+    }
+}
+.btn-outline-red {
+    background: $red-FFF7F7;
+    border-color: $red-EB5757;
+    border-radius: $nxb-border;
+    color: $red-EB5757;
+    padding: 6px 72px;
+    &:hover {
+        color: $red-EB5757;
+        background: #FFDADA;
+    }
+}
+.btn-outline-gray {
+    border-color: $gray-D1D1D1;
+    border-radius: $nxb-border;
+    color: $gray-828282;
+    &:hover {
+        color: $gray-828282;
+    }
+}
+.btn-gray-link {
+    color: $gray-8C8C8C;
+    &:hover {
+        color: $blue-377DFF;
+        svg path {
+            stroke: $blue-377DFF;
+        }
+    }
+    &:active,
+    &:focus{
+        box-shadow: none;
+    }
+}
+.btn-outline-F2994A {
+    border-color: #F2994A;
+    border-radius: $nxb-border;
+    color: #F2994A;
+    &:hover {
+        background: #F2994A;
+        color: $white;
+    }
+}
+.br-2px {
+    border-radius: 2px !important;
+}

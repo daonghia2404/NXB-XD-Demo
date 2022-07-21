@@ -1,0 +1,29 @@
+-
+    const newFeedDatas = [
+        {
+            newImage: './assets/images/new-feed/new-feed-01.jpg',
+            title: 'Hệ thống giao thông thông minh trong các đô...'
+        },
+        {
+            newImage: './assets/images/new-feed/new-feed-02.jpg',
+            title: 'Hợp tác cùng PGS.TS.KTS. Nguyễn Đình Thi'
+        },
+        {
+            newImage: './assets/images/new-feed/new-feed-03.jpg',
+            title: 'Thông báo mua sách'
+        }
+    ]
+
+.new-feed
+    a(href="#" class="new-feed__heading")
+        | Tin tức
+    ul.new-feed__list
+        each newItem in newFeedDatas
+            li.new-feed__list-item
+                a(href="#" class="item__link")
+                    img(class="lazy" data-src=`${newItem.newImage}` src=`${newItem.newImage}`, alt="#")
+                a(href="#" class="item__title")
+                    p= `${newItem.title}`
+
+    a(href="#" class="new-feed__view")
+        | Xem toàn bộ 

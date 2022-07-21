@@ -1,0 +1,25 @@
+.search-author {
+    &__box {
+        border-radius: 5px;
+        background-color: #fff;
+        &-img {
+            border-radius: 100%;
+            overflow: hidden;
+            border: 2px solid #d4b26b;
+        }
+        &-info {
+            p {
+                line-height: 18px;
+                span:first-child {
+                    color: #b92626;
+                }
+            }
+        }
+        &-link {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+    }
+}

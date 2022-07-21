@@ -1,0 +1,28 @@
+.partner__full-img {
+    width: 126px;
+    height: 126px;
+    position: relative;
+    border-radius: 2.33471px;
+    z-index: 333;
+    margin: 0 auto;
+    img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 111;
+    }
+    .author__img-boder {
+        position: absolute;
+        right: -9px;
+        bottom: -9px;
+        border: 2px solid $border-color2;
+        border-radius: 2.33471px;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+}
+.partner__full-name{
+    padding: 20px 60px;
+    
+}

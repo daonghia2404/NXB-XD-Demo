@@ -1,0 +1,96 @@
+.video--viewer{
+    padding-left: 80px;
+    padding-right: 80px;
+    position: relative;
+}
+
+.video--player{
+    padding: 30px 5px;
+    flex: 1;
+    .bookvideo .plyr--video{
+        border-radius: 5px;
+    }
+}
+
+.video-comment{
+    padding: 20px 0;
+    .comment-box{
+        padding: 0;
+    }
+}
+
+.video-content-detail{
+    padding: 20px 0;
+    border-bottom: 2px dashed $gray-D1D1D1;
+}
+
+.slidebar-content-left{
+    flex: 0 0 0;
+    padding: 8px 0;
+    position: relative;
+    overflow: hidden;
+    &.active{
+        @media (min-width: 768px){
+            flex: 0 0 32%;
+        }
+        @media (min-width: 992px){
+            flex: 0 0 26%;
+        }
+        @media (min-width: 1200px){
+            flex: 0 0 23%;
+        }
+    }
+}
+
+.slidebar-content-left::after{
+    position: absolute;
+    content: '';
+    background: $gray-F2F2F2;
+    width: 1px;
+    top: 0;
+    right: 0;
+    height: 90%;
+}
+
+.content__study-title{
+    border-bottom: 1px solid $gray-E0E0E0;
+    padding: 8px 15px;
+}
+
+.learning-content{
+    cursor: pointer;
+}
+
+.panel-change-icon{
+    &.active .heading--icon{
+        transform: rotate(180deg);
+        svg{
+            margin: 0;
+        }
+    }
+}
+
+.heading--icon{
+    svg{
+        margin-bottom: 8px;
+    }
+}
+
+.roate-icon.active{
+    transform: rotate(180deg);
+}
+
+@media(min-width:2560px){
+    .container--cs{
+        max-width: 1890px;
+    }
+}
+
+@media(max-width: 768px){
+    .video-detail-text.change--width{
+        flex: 0 0 300px;
+    }
+    .font-respons{
+        font-size: 12px !important;
+    }
+}

@@ -1,0 +1,73 @@
+.BookBlock {
+  &-image {
+    position: relative;
+    margin-bottom: 12px;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  &-badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    top: 9px;
+    right: 3px;
+    background: #EB5757;
+    color: $white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &-title {
+    font-size: 14px;
+    font-weight: 500;
+    @include ellipsis(1);
+    color: #02010E;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  &-description {
+    font-size: 13px;
+    color: #4F4F4F;
+    height: 40px;
+    @include ellipsis(2);
+    margin-bottom: 8px;
+  }
+
+  &-star {
+    display: flex;
+    margin-bottom: 10px;
+
+    &-item {
+      margin-right: 4px;
+
+      svg {
+        width: 9.5px;
+        height: 9.5px;
+      }
+    }
+  }
+
+  &-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #AA8B47;
+
+    del {
+      font-size: 12px;
+      font-weight: 500;
+      color: #4F4F4F;
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+}

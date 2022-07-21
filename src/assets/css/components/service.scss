@@ -1,0 +1,78 @@
+.service {
+    font-family: $font-inter;
+    padding: 33px 0px 0px;
+    margin-bottom: -5px;
+    background-color: $grey-3;
+    @include max-breakpoint(767) {
+        background-color: $grey-7;
+        padding: 25px 14px 15px;
+    }
+    &__main {
+        @include max-breakpoint(768) {
+        }
+        &-title {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+            height: 48px;
+            color: $black;
+            @include max-breakpoint(767) {
+                color: $grey-dark;
+                font-size: 20px;
+                line-height: 32px;
+                text-align: center;
+                margin-top: 25px 0px 33px;
+                height: 32px;
+            }
+        }
+        @include max-breakpoint(767) {
+            .service__main-title::after {
+                content: "";
+                display: block;
+                width: 120px;
+                height: 2px;
+                background: $primary-color;
+                margin: 0 auto;
+                margin-top: 4px;
+            }
+            .service__main-list {
+                padding-top: 33px;
+            }
+        }
+        &-list {
+            .list__service {
+                &-img {
+                    border-radius: 5px;
+                    overflow: hidden;
+                }
+                &-text {
+                    a {
+                        color: $black;
+                        font-size: 16px;
+                        line-height: 19px;
+                        font-weight: 500;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                        span {
+                            @include max-breakpoint(1022) {
+                                display: none;
+                            }
+                        }
+                    }
+                    margin: 21px 0px 22px;
+                    height: 39px;
+                    @include max-breakpoint(998) {
+                        height: 19px;
+                        margin: 8px 0px 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nopadding {
+    padding: 0 !important;
+    padding-left: 7px;
+}

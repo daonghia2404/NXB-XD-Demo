@@ -1,0 +1,39 @@
+.home-sp
+    .home__section_sp.home_slider
+        include ../components/home-slider-mb
+
+    include ../containers/NxbCarousel.pug
+    
+    .section
+        include ../components/typical-book-slider.pug
+        +typical__book-slider("Sách mới nổi",1)
+    .section.mt-2
+        include ../components/typical-book-slider.pug
+        +typical__book-slider("Sách mới nổi",2)
+    .section.mt-2.bg-white
+        .container
+            .row.m-0
+                include ../components/topview-decu-mb.pug
+    .section.mt-2.bg-white
+        include ../components/ebook-video-audio-mb.pug
+        +audio-ebook-video-mb("Video","video")
+    .section.mt-2.bg-white
+        include ../components/ebook-video-audio-mb.pug
+        +audio-ebook-video-mb("Sách giấy và ebook")
+    .section.mt-2.bg-white
+        include ../components/ebook-video-audio-mb.pug
+        +audio-ebook-video-mb("Audio Book","audio")
+    .section.mt-2
+        .container
+            include ../components/collection-slider.pug
+    .section
+        include  ../components/service.pug
+    .section
+        include ../components/partner-author.pug
+        +parter-author(false)
+    .section
+        include ../components/partner-author.pug
+        +parter-author(true)
+    .section.mt-4
+        .container
+            include ../components/printer-list.pug

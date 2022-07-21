@@ -1,0 +1,8 @@
+extend includes/layout/layout.pug
+block pages
+    include includes/components/breadcrumb.pug
+    +brcrumb('Giỏ hàng của bạn')
+    include includes/pages/checkout1.pug
+    .container.my-4
+        include includes/components/typical-book-slider.pug
+        +typical__book-slider("Có thể bạn quan tâm")

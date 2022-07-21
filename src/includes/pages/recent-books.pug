@@ -1,0 +1,41 @@
+.recent-books
+    .container 
+        .row 
+            .col-lg-3.col-md-4
+                include ../components/account-sidebar.pug
+                +slide__bar("ebook")
+            .col-lg-9.col-md-8
+                .recent__content
+                    .recent__book
+                        h3.recent__book-heading Sách đang đọc gần đây nhất
+                        .recent__book-content
+                            .row
+                                .col-md-3
+                                    .recent__book-content-detail-img
+                                        img(class="lazy" data-src="./assets/images/recent-books/recent-book.png", alt="")
+                                .col-md-9
+                                    .content__description 
+                                        p.content__description-heading  Các đô thị Việt Nam quá trình hình thành, phát triển và quy hoạch đô thị. Tập 1: Hà Nội, Hải Phòng, Vinh, Huế, Đà Nẵng, Hội An, Đà Lạt, Nha Trang, Buôn Ma Thuột, Cần Thơ
+                                        .content__description-subheading 
+                                            .subheading__author.d-flex.align-items-center
+                                                img(class="lazy" data-src="./assets/images/recent-books/author.svg", alt="")
+                                                p Tác giả: 
+                                                    a(href="#") Dương Vân
+                                            .subheading__time.d-flex.align-items-center
+                                                img(class="lazy" data-src="./assets/images/recent-books/time.svg", alt="")
+                                                p 
+                                                    | còn 
+                                                    a(href="#") 3 
+                                                    | ngày đọc
+                                        .content__description-button 
+                                            a(href="#").btn.btn-primary.blue Đọc thêm 
+                                                img(class="lazy" data-src="./assets/images/recent-books/forward.svg", alt="")
+                                            a(href="#").btn.btn-primary.green Gia hạn 
+                    .recent__ebook.mt-3
+                        .detail__wrapper-right
+                            .wrapper__right
+                                include ../components/list-book.pug
+                                +list-book('Ebook đang đọc')
+                    .wrapper__pagination
+                                include ../components/pagination.pug
+

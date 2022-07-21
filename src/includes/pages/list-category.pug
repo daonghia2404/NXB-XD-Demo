@@ -1,0 +1,32 @@
+.list__category-wrapper
+    .category__wrapper-breadcrum
+        include ../components/breadcrumb.pug
+        +brcrumb('Các chủ đề')
+    .container
+        include ../components/typical-book-slider.pug
+        +typical__book-slider('Sách được mua nhiều')
+        .row
+            .col-lg-3
+                .category__wrapper-left
+                    include ../components/filter-menu.pug
+            .col-lg-9
+                .category__wrapper-right
+                    .wrapper__right-topic
+                        include ../components/topic.pug
+                        +topic(12, "Chủ đề tiêu biểu", true)
+                    .wrapper__right
+                        .wrapper__right-tabbar
+                            include ../components/tabbar.pug
+                        .wrapper__right-book.mt-4
+                            .row
+                                each item in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+                                    .col-lg-3.col-md-4.mb-4
+                                        include ../components/book-box-2.pug
+                                        if item==1
+                                            +box-book("video")
+                                        else if item==2
+                                            +box-book("audio")
+                                        else
+                                            +box-book()
+                .wrapper__pagination
+                    include ../components/pagination.pug

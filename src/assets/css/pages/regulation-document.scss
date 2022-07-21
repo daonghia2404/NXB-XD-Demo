@@ -1,0 +1,184 @@
+.regulation__document {
+    padding-bottom: 23px;
+    .regulation__files-pagination {
+        padding-bottom: 14px;
+        margin-top: 0;
+        .component__pagination ul {
+            margin: 0;
+        }
+        .container {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    .regulation__document-content {
+        font-family: $font-inter;
+        .document__content-category {
+            background-color: $white;
+            border-radius: 5px;
+            padding: 21px 23px 0 23px;
+            .content__category-title {
+                h4 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 21.09px;
+                    color: $grey-medium;
+                    margin-bottom: 0;
+                }
+            }
+            .content__category-list {
+                .category__list-items:last-child {
+                    border-bottom: none;
+                }
+                .category__list-items {
+                    padding-bottom: 9px;
+                    padding-top: 9px;
+                    border-bottom: 1px solid $grey-2;
+                    a.list__item-content {
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 16.41px;
+                        color: $grey-medium;
+                        margin-left: 12px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .document__content-regulation {
+            .content__regulation-other {
+                background-color: $white;
+                border-radius: 5px;
+                padding: 17px 30px 23px 38px;
+                .regulation__other-title {
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid $grey-2;
+                    h3 {
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 28.13px;
+                        margin-bottom: 0;
+                        color: $grey-color;
+                    }
+                }
+                .regulation__other-list {
+                    padding-top: 32px;
+                    .col-lg-3 {
+                        padding-left: 7.5px;
+                        padding-right: 7.5px;
+                    }
+                    .other__list-items {
+                        padding-top: 20px;
+                        .list__items-icon{
+                            border-radius: 5px;
+                           &:hover{
+                               background-color: $brown-2;
+                               cursor: pointer;
+                           }
+                        }
+                        a.list__items-link {
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 22px;
+                            color: $grey-color;
+                            cursor: pointer;
+                            &:hover {
+                                color: $blue-secondary;
+                            }
+                        }
+                    }
+                }
+            }
+            .content__regulation-files {
+                margin-top: 23px;
+                background-color: $white;
+                border-radius: 5px;
+                padding: 14px 31px 0 33px;
+                .regulation__files-title {
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid $grey-2;
+                    h3 {
+                        margin-bottom: 0;
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 28.13px;
+                        color: $grey-color;
+                    }
+                }
+                .regulation__files-list {
+                    .files__list-items:last-child {
+                        border-bottom: none;
+                    }
+                    .files__list-items {
+                        border-bottom: 1px solid $grey-2;
+                        padding: 32px 0 24px 0;
+                        @include breakpoint(768) {
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .list__items-content {
+                            .items__content-decription {
+                                @include min-breakpoint(768) {
+                                    padding-left: 32px;
+                                    padding-right: 63px;
+                                }
+                                font-size: 16px;
+                                line-height: 22px;
+                                p {
+                                    font-weight: 400;
+                                    margin-bottom: 5px;
+                                    color: $grey-color;
+                                    span {
+                                        font-weight: bold;
+                                    }
+                                }
+                                p.mg-bt-0 {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                        .list__items-button {
+                            align-items: flex-end;
+                            @include breakpoint(768) {
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            p {
+                                font-size: 16px;
+                                margin-bottom: 0;
+                                color: $red;
+                                span {
+                                    font-weight: bold;
+                                    color: $black;
+                                }
+                            }
+                            button {
+                                font-size: 16px;
+                                line-height: 18.75px;
+                                font-weight: 500;
+                                border-radius: 5px;
+                                padding: 5px 8px;
+                                border: none;
+                                a {
+                                    color: $white;
+                                    white-space: nowrap;
+                                }
+                            }
+                            .button-blue {
+                                background-color: $blue;
+                                margin-top: 16px;
+                                margin-bottom: 16px;
+                                width: 101px;
+                            }
+                            .button-color {
+                                background-color: $green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

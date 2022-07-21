@@ -1,0 +1,291 @@
+.section-checkout {
+    &#cart-mb {
+        padding-top: 0;
+        background: $grey-3;
+        padding-bottom: 20px;
+        & .content-cart {
+            margin-top: 20px;
+        }
+        & .block-576 {
+            display: none;
+            @include breakpoint(1024) {
+                display: flex;
+            }
+        }
+        & .none-576 {
+            @include breakpoint(1024) {
+                display: none;
+            }
+        }
+        & .section-checkout__left{
+            margin-left: 0;
+        }
+        & .section-checkout__left-item .left-item__desc-price {
+            display: flex;
+            flex-direction: column;
+        }
+        & .section-checkout__left-item .left-item__desc-price span {
+            display: inline-block;
+            padding: 5px 0;
+            &.text-over{
+                font-family: $font-roboto;
+                font-weight: 500;
+                font-size: 16px;
+                color: $gray-BDBDBD;
+                display: none;
+            }
+            & b{
+                color:$grey-1;
+            }
+        }
+        & .section-checkout__left-item.--product-end .left-item__desc-price span {
+            &.text-over{
+                display: inline-block;
+            }
+        }
+        & .section-checkout__left-item.--product-end .num-in {
+            & .minus{
+                opacity: 0.5;
+            }
+            & .in-num{
+                opacity: 0.5;
+            }
+            & .plus{
+                opacity: 0.5;
+            }
+        }
+        & .time-cart-mb {
+            max-width: 106px;
+            margin: 5px 0;
+            cursor: pointer;
+            position:relative;
+            & .valua-time {
+                display: none;
+            }
+            & .time-text {
+                width: 100%;
+                height: 100%;
+                font-family: $font-inter;
+                font-size: 16px;
+                line-height: 19px;
+                color: $grey-dark;
+                border: none;
+                cursor: pointer;
+                background: $nav-color;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                white-space: nowrap;
+            }
+            & .choose-time{
+                position:absolute;
+                width: 102%;
+                top:100%;
+                left:-1px;
+                background:$headding-color;
+                padding:8px;
+                border: 1px solid $border-color3;
+                box-sizing: border-box;
+                border-radius: 5px;
+                z-index: 999;
+                height: 0;
+                overflow: hidden;
+                transition:opacity 0.2s ease-in-out;
+                opacity: 0;
+                visibility: hidden;
+                &.active{
+                    height: auto;
+                    opacity:1;
+                    visibility:visible;
+                }
+                & li{
+                    position:relative;
+                    padding-bottom:10px;
+                    &:last-child{
+                        padding-bottom:0;
+                    }
+                    & h6{
+                        color:$white;
+                        margin-bottom:0px;
+                    }
+                    & i{
+                        color:$white;
+                        font-size:12px;
+                        margin-right:6px;
+                        opacity: 0;
+                    }
+                    & input{
+                        position:absolute;
+                        width:100%;
+                        height:100%;
+                        &:checked + i{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            @include breakpoint(576) {
+                max-width: 125px;
+            }
+        }
+        @include breakpoint(1024) {
+            & .section-checkout__left-item .left-item__img span {
+                padding: 0 5px;
+                right: -6px;
+            }
+            & .section-checkout__left-item .left-item__desc-item {
+                justify-content: space-between;
+            }
+            & .section-checkout__left-item {
+                padding-right: 0px;
+                & .left-item__desc h4 {
+                    padding-right: 25px;
+                    margin-bottom: 8px;
+                    a {
+                        margin-right: 10px;
+                        min-height: 30px;
+                    }
+                }
+            }
+            & .num-in {
+                width: initial;
+                & .in-num {
+                    width: 40px;
+                }
+            }
+            & .section-checkout__right {
+                padding: 0px;
+                margin-top: 20px;
+                margin-right: 0;
+                & h3 {
+                    padding: 15px;
+                }
+            }
+            & .section-checkout__right-content {
+                padding-bottom: 35px;
+            }
+        }
+        @include breakpoint(425) {
+            & .num-in {
+                & .in-num {
+                    width: 35px;
+                }
+            }
+            & .click-show-dropdow {
+                padding: 10px 10px 10px 25px;
+            }
+        }
+        & .modal-radio__content-group label {
+            height: 100%;
+        }
+        & .modal-radio__content-group {
+            display: block;
+            & p {
+                margin: 0;
+            }
+        }
+        & .click-show-dropdow .valua-time {
+            background: $nav-color;
+            // display: none;
+        }
+        & .num-block {
+            padding:6px 0;
+        }
+    }
+}
+// .modal-radio {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: #333333cf;
+//     z-index: 998;
+//     cursor: pointer;
+//     display: none;
+//     &.active {
+//         display: flex;
+//     }
+//     &__content {
+//         background: $grey-7;
+//         border: 1px solid $border-color3;
+//         box-sizing: border-box;
+//         border-radius: 10px;
+//         margin: auto 24px;
+//         width: 100%;
+//         background: $white;
+//         &-group {
+//             padding: 12px 20px;
+//             border-bottom: 1px solid $border-color-grey;
+//             margin: 0;
+//             position: relative;
+//             &:last-child {
+//                 border: none;
+//             }
+//             & label {
+//                 font-family: $font-inter;
+//                 font-size: 16px;
+//                 line-height: 19px;
+//                 color: $grey-dark;
+//                 width: 100%;
+//             }
+//             & input {
+//                 position: absolute;
+//                 right: 20px;
+//                 top: 50%;
+//                 transform: translateY(-50%);
+//                 width: 20px;
+//                 height: 20px;
+//                 background: $grey-7;
+//                 border: 1px solid $border-color3;
+//                 box-sizing: border-box;
+//             }
+//         }
+//     }
+// }
+
+.num-in.hide {
+    & span {
+        background: $white;
+        color: $red-secondary;
+        border: 1px solid $red-secondary;
+        &::before {
+            background: $red-secondary !important;
+        }
+        &::after {
+            background: $red-secondary !important;
+        }
+    }
+    & input {
+        color: $red-secondary;
+    }
+}
+.section-checkout__left-item .left-item__desc-item span.colorHide {
+    color: $red-secondary;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.section-checkout__left-item .left-item__delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-checkout__right .insert-code h4 {
+    font-weight: 400;
+}
+.section-checkout__right .insert-code__group input {
+    background: $nav-color;
+}
+.section-checkout__left-item .left-item__delete i {
+    font-size: 10px;
+}
+

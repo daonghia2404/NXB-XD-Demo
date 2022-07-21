@@ -1,0 +1,8 @@
+extend includes/layout/layout.pug
+block pages
+    include includes/pages/ttdoitac-full.pug
+    include includes/components/filter-cate-mb.pug
+    include includes/components/ebook-video-audio-mb.pug
+    +audio-ebook-video-mb("","video", false, false)
+    .search-result-mb.pb-3.d-flex.justify-content-center
+        include includes/components/pagination-mb.pug

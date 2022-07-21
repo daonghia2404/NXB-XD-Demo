@@ -1,0 +1,48 @@
+.search-books-wrapper {
+    margin-bottom: 20px;
+    padding-top: 16px;
+    border-top: 1px solid $red-secondary;
+    &:first-of-type {
+        border-top: none;
+    }
+    .search-book-img {
+        @media (min-width: 425px) {
+            width: 209px !important;
+        }
+        @media (min-width: 768px) {
+            width: 109px !important;
+        }
+    }
+    .search-book-detail {
+        .book-detail-title {
+            font-size: 16px;
+            color: $black;
+            font-weight: 500;
+        }
+        .book-detail-desc {
+            color: $grey-1;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 12px 0;
+        }
+        .book-detail-check {
+            display: flex;
+            align-items: center;
+            width: 145px;
+            max-width: 100%;
+            background-color: $blue-secondary;
+            border-radius: 5px;
+            padding: 5px 10px 5px 16px;
+            .btn-check-link {
+                display: inline-block;
+                color: $white;
+                font-size: 16px;
+                font-weight: 500;
+                margin-right: 6px;
+            }
+        }
+    }
+    .search-books-wrapper:last-child {
+        border: none;
+    }
+}

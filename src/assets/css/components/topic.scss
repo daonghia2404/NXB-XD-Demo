@@ -1,0 +1,57 @@
+.topic-headding {
+    color: $black;
+    .topic-box {
+        overflow-y: auto;
+        margin-left: -22px;
+        @include max-breakpoint(425) {
+            margin-left: 0px;
+            justify-content: space-between;
+        }
+        @include breakpointminmax(768, 1023) {
+            margin-left: -6px;
+        }
+        &.fourItem {
+            margin-left: -16px;
+        }
+        .box_item {
+            border-radius: 5px;
+            margin-left: 22px;
+            background-image: url("../images/topic/bg.svg");
+            background-size: cover;
+            width: 166.6px;
+            height: 96px;
+            &.fourItem {
+                width: calc(100% / 4 - 16px);
+                margin-left: 16px;
+            }
+            @include max-breakpoint(425) {
+                margin-left: 0;
+                width: calc(100%/2 - 8px);
+                height: 92px;
+            }
+            @include breakpointminmax(320, 374) {
+                padding: 0 4px;
+            }
+            @include breakpointminmax(375, 425) {
+                padding: 14px;
+            }
+            @include breakpointminmax(768, 1023) {
+                margin-left: 6px;
+            }
+            h2 {
+                color: $white;
+                @include breakpointminmax(375, 767) {
+                    margin-bottom: 8px;
+                }
+            }
+            h6 {
+                color: $white;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}

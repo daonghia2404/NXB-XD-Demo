@@ -1,0 +1,96 @@
+.tabbar {
+    border-radius: 10px;
+
+    &__border {
+        border-bottom: 1px solid #F2F2F2;
+
+        @include max-breakpoint(425) {
+            border-bottom: 1px solid #d1d1d1;
+        }
+    }
+
+    .btn__filter {
+        display: none;
+
+        @include max-breakpoint(991) {
+            display: flex;
+        }
+
+        width: 68px;
+        height: 30px;
+        background-color: #d4b26b;
+        border-radius: 3px;
+        z-index: 100;
+        cursor: pointer;
+
+        span {
+            color: $white;
+        }
+    }
+
+    .bd-b {
+        border-bottom: 1px solid $bd-b;
+    }
+
+    .nav-item-ct {
+        .nav-custom {
+            border-radius: 5px;
+            background-color: $nav-color;
+            color: $nav-black;
+            padding: 12px 20px;
+            cursor: pointer;
+        }
+
+        .nav-custom.active {
+            background-color: $primary-color;
+            color: $white;
+        }
+    }
+
+    h3 {
+        @include max-breakpoint(425) {
+            font-size: 16px !important;
+        }
+    }
+}
+
+.select-dropdown {
+    position: relative;
+    background-color: $white;
+    border-radius: 5px;
+    border: 1px solid $bd-black !important;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        width: 0;
+        height: 0;
+        margin-top: -2px;
+        border-top: 5px solid $grey-medium;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+    }
+
+    select {
+        padding-right: 40px;
+        height: 34px;
+        border: none;
+        background-color: transparent;
+        appearance: none;
+
+        &:active,
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    select,
+    option {
+        @include max-breakpoint(425) {
+            font-size: 13px !important;
+        }
+    }
+}

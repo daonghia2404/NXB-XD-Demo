@@ -1,0 +1,86 @@
+extend includes/layout/layout.pug
+block pages
+  section.services-contact.payment-page
+    include includes/components/breadcrumb.pug
+    +brcrumb('Thanh toán đơn hàng #210206144604093')
+
+    include includes/components/account-sidebar-mb.pug
+    +slide__bar-mb(" Thanh toán đơn hàng #210206144604093", true)
+
+    .container 
+      .services-contact-wrapper.d-flex.justify-content-between.flex-wrap
+        .services-contact-item 
+          h5.services-contact-title Thông tin chuyển khoản
+
+          .payment-page-info
+            .payment-page-info-item.d-flex.align-items-center
+              .payment-page-info-item-text Ngân hàng
+              .payment-page-info-item-input.d-flex.align-items-center.justify-content-between
+                .payment-page-info-item-input-text Ngân hàng Thương mại Cổ phần Quân Đội 
+                .payment-page-info-item-input-icon 
+                  img(src="./assets/images/image-mb-bank.png" alt="")
+
+            .payment-page-info-item.d-flex.align-items-center
+              .payment-page-info-item-text Chi nhánh
+              .payment-page-info-item-input.d-flex.align-items-center.justify-content-between
+                .payment-page-info-item-input-text Lãn Ông
+                .payment-page-info-item-input-icon.js-copy(data-copy="Lãn Ông")
+                  img(src="./assets/images/image-copy.png" alt="")
+
+            .payment-page-info-item.d-flex.align-items-center
+              .payment-page-info-item-text Số tài khoản: 
+              .payment-page-info-item-input.d-flex.align-items-center.justify-content-between
+                .payment-page-info-item-input-text 0601119779999
+                .payment-page-info-item-input-icon.js-copy(data-copy="0601119779999")
+                  img(src="./assets/images/image-copy.png" alt="")
+
+            .payment-page-info-item.d-flex.align-items-center
+              .payment-page-info-item-text Chi nhánh
+              .payment-page-info-item-input.d-flex.align-items-center.justify-content-between
+                .payment-page-info-item-input-text Nhà xuất bản Xây dựng
+                .payment-page-info-item-input-icon.js-copy(data-copy="Nhà xuất bản Xây dựng")
+                  img(src="./assets/images/image-copy.png" alt="")
+
+            .payment-page-info-item-note
+              .payment-page-info-item-note-text Nội dung Chuyển khoản vui lòng điền dãy số:
+
+              .payment-page-info-item-note-input.d-flex.align-items-center.justify-content-between
+                .payment-page-info-item-note-input-text 464754
+                .payment-page-info-item-note-input-icon.js-copy(data-copy="464754")
+                  img(src="./assets/images/image-copy.png" alt="")
+
+              .payment-page-info-item-note-text Lưu ý: Thông tin “Nội dung chuyển khoản” cần chính xác để đơn hàng được kích hoạt tự động
+
+
+
+        .services-contact-item
+          h5.services-contact-title Thông tin đơn hàng
+
+          .payment-page-bill
+            .payment-page-bill-row.d-flex.justify-content-between 
+              .payment-page-bill-text Mã đơn hàng
+              .payment-page-bill-text.medium #125464754
+            .payment-page-bill-row.d-flex.justify-content-between 
+              .payment-page-bill-text Tạm tính:
+              .payment-page-bill-text.medium 900.000đ
+            .payment-page-bill-row.d-flex.justify-content-between 
+              .payment-page-bill-text Phí vận chuyển:
+              .payment-page-bill-text.medium 30.000đ
+
+            .payment-page-bill-note.d-flex
+              .payment-page-bill-note-icon
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" fill="#247BCB"/><path d="M8.9307 6.58789L6.63969 6.875L6.55766 7.25586L7.00883 7.33789C7.3018 7.4082 7.36039 7.51367 7.29594 7.80664L6.55766 11.2754C6.3643 12.1719 6.66312 12.5938 7.36625 12.5938C7.91117 12.5938 8.54398 12.3418 8.83109 11.9961L8.91898 11.5801C8.71977 11.7559 8.4268 11.8262 8.23344 11.8262C7.95805 11.8262 7.85844 11.6328 7.92875 11.293L8.9307 6.58789Z" fill="#247BCB"/><circle cx="8" cy="4.5" r="1" fill="#247BCB"/></svg>
+              .payment-page-bill-note-text Phí ship tính theo đơn (không giới hạn số lượng sách) đồng giá miền Bắc 20k miền Trung 25k, miền Nam 30k.
+
+            .payment-page-bill-row.d-flex.justify-content-between 
+              .payment-page-bill-text Giảm giá:
+              .payment-page-bill-text.green.medium -25.000đ
+            .payment-page-bill-row.d-flex.justify-content-between.align-items-center
+              .payment-page-bill-text Thành tiền:
+              .payment-page-bill-text.big.red 900.000đ
+
+            .payment-page-bill-row
+              .payment-page-bill-text.text-center.small Bằng việc nhấn thanh toán, bạn đồng ý với #[a(href="#") #[strong Các điều khoản khách hàng]] của Nhà xuất bản Xây Dựng
+
+            .d-flex.justify-content-center(style="margin-top: 24px;")
+              button.btn.btn-danger Xác nhận đã chuyển khoản

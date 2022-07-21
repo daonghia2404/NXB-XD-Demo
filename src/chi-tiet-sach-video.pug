@@ -1,0 +1,20 @@
+extend includes/layout/layout.pug
+block pages
+  section.detail.section-chi-tiet-sach 
+    .container
+      .breadcrumb_detail
+          p Trang chủ
+            span / Trang chi tiết sách
+      .row.chi-tiet-sach-main
+        .col-lg-9
+          include includes/components/chi-tiet-sach-video.pug
+        .col-lg-3
+          include includes/components/author-list.pug
+          include includes/components/menu-topic.pug
+          include includes/components/check-license.pug
+          include includes/components/news.pug
+      .mt-4
+        include includes/components/typical-book-slider.pug
+        +typical__book-slider('Sách có thể bạn quan tâm')
+      .mt-4
+        include includes/components/collection-slider.pug

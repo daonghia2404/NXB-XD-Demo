@@ -1,0 +1,151 @@
+.info-partner {
+    display: flex;
+    padding: 40px;
+    background-color: $white;
+    border-radius: 5px;
+    @include breakpointminmax(768, 1023) {
+        flex-direction: column;
+    }
+    &__left {
+        width: 245px;
+        margin-right: 30px;
+        &-img {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            &::before {
+                content: "";
+                position: absolute;
+                border: 4px solid #e1d6bf;
+                top: 15px;
+                right: -15px;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                border-radius: 5px;
+            }
+        }
+        &-list {
+            display: flex;
+            margin-top: 32px;
+            .list__item {
+                width: 100%;
+                text-align: center;
+                &:not(:last-child) {
+                    border-right: 1px solid $red-secondary;
+                }
+                span {
+                    display: block;
+                    font-family: $font-inter;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    color: $grey-dark;
+                }
+                &-num {
+                    font-family: $font-inter;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 23px;
+                    color: $brown-price;
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+    &__right {
+        flex: 1;
+        @include breakpointminmax(768, 1023) {
+            margin-top: 20px;
+        }
+        &-heading {
+            font-family: $font-inter;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            color: $grey-dark;
+            display: inline-block;
+            border-bottom: 3px solid $brown-price;
+            padding-bottom: 4px;
+        }
+        &-list {
+            margin-left: 20px;
+            margin-top: 10px;
+            &.load-more-active {
+                height: 170px !important;
+            }
+            .list__item {
+                &:not(:last-child) {
+                    margin-bottom: 14px;
+                }
+                &:last-child {
+                    display: none;
+                }
+                &-title {
+                    font-family: $font-inter;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    color: $grey-dark;
+                    margin-bottom: 11px;
+                }
+                &-content {
+                    font-family: $font-inter;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    color: $black;
+                    text-align: justify;
+                }
+                &-listData {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .listData__item-wrap {
+                        max-width: 327px;
+                        &:not(:last-child) {
+                            margin-right: 60px;
+                            @include breakpointminmax(768, 1023) {
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                    .listData__item {
+                        &:nth-child(odd) {
+                            flex-basis: 45%;
+                            margin-right: 50px;
+                        }
+                        &:nth-child(even) {
+                            flex-basis: 45%;
+                        }
+                        list-style-image: url(../../assets/images/info-partner/circle.svg) !important;
+                        &:not(:last-child) {
+                            margin-bottom: 13px;
+                        }
+                        &-title {
+                            font-family: $font-inter;
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 22px;
+                            color: $grey-dark;
+                            margin-bottom: 4px;
+                        }
+                        &-content {
+                            font-family: $font-inter;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 22px;
+                            color: $black;
+                        }
+                        span.listData__item-content {
+                            margin-left: 6px;
+                        }
+                    }
+                    .listData__item-full {
+                        flex-basis: 100% !important;
+                        margin-right: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}

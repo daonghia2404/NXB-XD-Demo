@@ -1,0 +1,11 @@
+extend includes/layout/layout.pug
+block pages
+  section.section-combo-book
+    .container
+      .section-combo-book
+        include includes/components/combo-books-filter-menu.pug
+
+        .row
+          .wrapper__pagination(style="margin-bottom: 24px;")
+            include ./includes/containers/ComboBooksList.pug
+            include includes/components/pagination.pug

@@ -1,0 +1,214 @@
+.detail-order-desktop{
+    margin-bottom: 36px;
+    & .detailOrder-content{
+        background: #FFFFFF;
+        border-radius: 5px;
+        padding: 30px 40px;
+        @include breakpoint(767){
+            padding: 15px;
+        }
+        &__top{
+            margin-bottom: 20px;
+            @include breakpoint(767){
+                flex-wrap: wrap;
+            }
+            & .left{
+                & h3{
+                    font-family: $font-inter;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: $black;
+                    margin-right: 10px;
+                    margin-bottom: 0;
+                }
+            }
+            & .right{
+                @include breakpoint(767){
+                    flex-wrap: wrap;
+                    & a{
+                        margin: 5px 0;
+                    }
+                }
+                & .delete{
+                    font-family: $font-inter;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color:$white;
+                    display: inline-block;
+                    padding: 9px 18px;
+                    background: $red;
+                    border-radius: 5px;
+                    margin-right: 20px;
+                    height: 32px;
+                    & img{
+                        margin-right: 4px;
+                    }
+                }
+                & .hotline{
+                    margin-right: 8px;
+                    & span{
+                        font-family: $font-inter;
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: $blue3;
+                        &.phone{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        &__bot{
+            & .bot-table{
+                margin-bottom: 15px;
+                & table{
+                    color: $grey-dark;
+                    font-style: normal;
+                    font-family: $font-inter;
+                    font-size: 16px;
+                    line-height: 19px;
+                    & thead{
+                        & tr{
+                            background: $grey-7;
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                            & th{
+                                font-weight: 500;
+                                white-space: nowrap;
+                                padding: 18px 10px;
+                                border: none;
+                            }
+                        }
+                    }
+                    & tbody{
+                        & .sort-desc{
+                            font-family: $font-inter;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: $grey-dark;
+                            min-width: 227px;
+                            padding-right: 20px;
+                        }
+                        & td{
+                            padding: 8px;
+                            border: none;
+                            max-width: 260px;
+                        }
+                        & th{
+                            padding: 8px 10px;
+                            font-weight: normal;
+                            border: none;
+                        }
+                    }
+                }
+            }
+            & .info-money{
+                max-width: 260px;
+                margin-left: auto;
+                & li{
+                    font-family: $font-inter;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $grey-dark;
+                    padding: 10px;
+                    border-top: 0.5px dashed $grey-2;
+                    &:first-child{
+                        border-bottom: none;
+                    }
+                    & h4{
+                        font-family: $font-inter;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $grey-dark;
+                        margin-bottom: 0;
+                    }
+                    &.into-money{
+                        border-top: 0.5px solid $grey-2;
+                        & h4{
+                            font-weight: bold;
+
+                        }
+                        & span{
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: $red;
+                        }
+                    }
+                }
+            }
+            & .right-info{
+                background: $grey-7;
+                border-radius: 5px;
+                color: $grey-color;
+                font-family: $font-inter;
+                font-weight: normal;
+                font-size: 16px;
+                color: $grey-color;
+                padding: 16px;
+                & h3{
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: $grey-color;
+                    margin-bottom: 10px;
+                    align-items: center;
+                    & .blue-outline{
+                        padding: 2px 10px;
+                    }
+                }
+                & table{
+                    font-weight: normal;
+                    color: $grey-color;
+                    & th{
+                        padding: 10px 0;
+                        white-space: nowrap;
+                    }
+                    & td{
+                        padding: 10px 0;
+                    }
+                    & .info{
+                        & tr{
+                            & th{
+                                font-weight: 500;
+                                width: 105px;
+                                
+                            }
+                        }
+                    }
+                    & .adress{
+                        & th{
+                            font-weight: bold;
+                            width: 105px;
+                        }
+                    }
+                }
+                & .info-pay{
+                    @include breakpoint(1023){
+                        flex-wrap: wrap;
+                    }
+                }
+                & .namepay{
+                    padding-right: 15px;
+                }
+                & .search{
+                    max-height: 28px;
+                    background: $blue-secondary;
+                    color: $white;
+                    font-size: 12px;
+                    padding: 6px 12px;
+                    border-radius: 2px;
+                    white-space: nowrap;
+                    & img{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

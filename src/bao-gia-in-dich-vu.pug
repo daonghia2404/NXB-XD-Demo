@@ -1,0 +1,111 @@
+extend includes/layout/layout.pug
+block pages
+    section.services-contact 
+        include includes/components/breadcrumb.pug
+        +brcrumb('Báo giá Dịch vụ in')
+
+        include includes/components/account-sidebar-mb.pug
+        +slide__bar-mb(" Báo giá Dịch vụ in", true)
+
+        .container 
+            .services-contact-wrapper.d-flex.justify-content-between.flex-wrap
+                .services-contact-item 
+                    form(action="#")
+                        h5.services-contact-title Thông tin khách hàng
+
+                        .form-groups.d-flex.flex-wrap
+                            .form-group.full
+                                label(for='') Đơn vị / cá nhân đặt hàng
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-user-gray.svg", alt="" width="20px")
+                                    input.form-control.hover-input(type='text' placeholder='Đơn vị / cá nhân đặt hàng' aria-label='Đơn vị / cá nhân đặt hàng' )
+
+                            .form-group.width-40
+                                label(for='') Số điện thoại
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-phone-gray.svg", alt="")
+                                    input.form-control.hover-input(type='phone' placeholder='Số điện thoại' aria-label='Số điện thoại' )
+                                    
+
+                            .form-group.width-60
+                                label(for='') Email
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-mail-gray.svg", alt="")
+                                    input.form-control.hover-input(type='Email' placeholder='Email' aria-label='Email' )
+
+                            .form-group.full
+                                label(for='') Tên sản phẩm
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-paper-gray.svg", alt="")
+                                    input.form-control.hover-input(type='text' placeholder='Nhập tên sản phẩm' aria-label='Tên sản phẩm' )
+
+                            .form-group.width-30
+                                label(for='') Quy cách
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-angle-down-gray.svg", alt="")
+                                    input.form-control.hover-input(type='text' placeholder='Nhập quy cách' aria-label='Quy cách' )
+
+                            .form-group.width-30
+                                label(for='') Số lượng
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-chart-gray.svg", alt="")
+                                    input.form-control.hover-input(type='text' placeholder='Nhập số lượng' aria-label='Số lượng' )
+
+                            .form-group.width-30
+                                label(for='') Thời gian cần hàng
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-calendar-gray.svg", alt="")
+                                    input.form-control.hover-input(type='text' placeholder='Nhập thời gian cần hàng' aria-label='Thời gian cần hàng' )
+                                
+
+                            .form-group.full
+                                label(for='') Địa chỉ
+                                .input-group
+                                    .form-icon
+                                        img(src="./assets/images/contact-info/icon-map-marker-gray.svg", alt="")
+                                    input.form-control.hover-input(type='text' placeholder='Nhập vị trí' aria-label='Địa chỉ' )
+
+                            .form-group.full
+                                .checkbox-group.flex-wrap.checkbox-bill
+                                    input(type="checkbox" name="book" id="bill-export").checkbox-input
+                                    .checkbox-wrapper
+                                    label(for="bill-export") Thông tin xuất hoá đơn (chỉ tích chọn khi cần xuất hoá đơn)
+
+                                    .bill-export-info 
+                                        .form-group.full
+                                            label(for='') Tên công ty
+                                            .input-group
+                                                input.form-control.hover-input(type='text' placeholder='Ít nhất 2 từ' aria-label='Tên công ty' )
+
+                                        .form-group.full
+                                            label(for='') Mã số thuế
+                                            .input-group
+                                                input.form-control.hover-input(type='text' placeholder='Ít nhất 2 từ' aria-label='Mã số thuế' )
+
+                                        .form-group.full
+                                            label(for='') Địa chỉ
+                                            .input-group.form-area
+                                                textarea.hover-input(placeholder='Nhập địa chỉ công ty (bao gồm Phường/Xã, Quận/Huyện, Tỉnh/Thành phố nếu có)')
+                                                .form-area__icon
+                                                    img(class="lazy" data-src="./assets/images/checkout/Icon.svg", alt="")
+
+                            .form-group.full.d-flex.justify-content-center 
+                                .button__item
+                                    button.btn.btn-red-1.btn-sm
+                                        span Gửi thông tin
+
+                .services-contact-item
+                    include includes/components/section-contact-info.pug
+                    +sectionContactInfo({
+                        description: 'Nhà xuất bản Xây dựng - Đối tác xuất bản với một hệ thống chu trình sản xuất khép kín từ khâu chế bản, biên tập, in ấn các xuất bản phẩm giây và điện tử.',
+                        hotline: '090 346 2002',
+                        email: 'kinhdoanhdichvu@nxbxaydung.com.vn',
+                        address: '37 Lê Đại Hành, Hai Bà Trưng, TP. Hà Nội',
+                    })

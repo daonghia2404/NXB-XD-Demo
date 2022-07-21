@@ -1,0 +1,52 @@
+.home__page
+    .banner__section
+        .container
+            include ../components/home-slider.pug
+
+    include ../containers/NxbCarousel.pug
+
+    .section.my-4
+        .container
+            .row
+                .col-12
+                    include ../components/typical-book-slider.pug
+                    +typical__book-slider("Sách mới nổi")
+    .section
+        .container
+            .row
+                .col-lg-9.col-sm-12
+                    .mb-4
+                        include ../components/ebook-video-audio.pug
+                        +audio-ebook-video("Video","video")
+                    .mb-4
+                        include ../components/ebook-video-audio.pug
+                        +audio-ebook-video("Sách giấy và ebook")
+                    .mb-4
+                        include ../components/ebook-video-audio.pug
+                        +audio-ebook-video("Audio Book","audio")
+                    .mb-4
+                        include ../components/latest-news.pug
+                .col-lg-3.col-sm-12
+                    .row
+                        .col-lg-12.col-sm-6.mb-4
+                            include ../components/topview-decu.pug
+                        .col-lg-12.col-sm-6.mb-4
+                            include ../components/topview-decu.pug
+    .section
+        .container
+            .row
+                .col-12
+                    include ../components/topic.pug
+                    +topic(12, 'Chủ đề')
+    .section
+        .container
+            include ../components/collection-slider.pug
+    .section
+        include ../components/partner-author.pug
+        +parter-author(true)
+    .section
+        include ../components/partner-author.pug
+        +parter-author(false)
+    .section.mt-4
+        .container
+            include ../components/printer-list.pug

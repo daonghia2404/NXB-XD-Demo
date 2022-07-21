@@ -1,0 +1,77 @@
+.large-title-32 {
+    font-style: normal;
+    font-size: 32px;
+    line-height: 39px;
+    color: $black-3F3B3B;
+}
+.h1-28 {
+    font-style: normal;
+    font-size: 28px;
+    line-height: 44px;
+    color: $black-3F3B3B;
+}
+.h2-24 {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: $black-3F3B3B;
+}
+.h3-20 {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: $black-3F3B3B;
+}
+.h4-18 {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black-3F3B3B;
+}
+.h5-16 {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black-3F3B3B;
+}
+.h6-14 {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black-3F3B3B;
+}
+.body-13 {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: $black-3F3B3B;
+}
+.caption-12 {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: $black-3F3B3B;
+}
+.bold {
+    font-weight: bold;
+}
+.medium {
+    font-weight: 500;
+}
+.regular {
+    font-weight: 400;
+}
+
+.w-20 {
+    width: calc(20% - 30px);
+    margin: 0 15px;
+    @include max-breakpoint(425) {
+        width: calc(50% - 30px);
+    }
+}
+
+.sm-11 {
+    font-size: 11px;
+    line-height: 13.31px;
+}

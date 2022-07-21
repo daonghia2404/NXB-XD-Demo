@@ -1,0 +1,12 @@
+mixin partner-author(author,img)
+    -var author;
+    div(class=author ? 'partner__box --author':'partner__box')
+        .partner__box-img
+            a(href="./partner-detail-desktop.html")
+                img(class="lazy" src=img data-src=img alt="")
+        .partner__box-body
+            h5(class="h5-16 bold")
+                a(href="")  Trường đại học mở hà nội
+            .body__detail.d-flex.align-items-center
+                img(class="lazy" data-src="./assets/images/booksvg.svg" src="./assets/images/booksvg.svg", alt="")
+                h6.h6-14.regular 1500 đầu sách

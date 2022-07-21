@@ -1,0 +1,29 @@
+.list-video.bg-white.rounded
+    .tabbar
+        .row.ml-0.mr-0.pd-0
+            .col-lg-9.pl-0.d-flex.col-7
+                h3.h3-20.medium.d-flex.align-items-center Video của bạn
+            .col-lg-3.pr-0.pl-0.col-5
+                .select-dropdown
+                    select.form-control.form-control-lg.pl-2.mw-100.h6-14.regular
+                        option.h6-14.regular  Sắp xếp theo
+                        option.h6-14.regular  Theo giá từ thấp đến cao
+                        option.h6-14.regular  Theo giá từ cao đến thấp
+                        option.h6-14.regular  Năm xuất bản
+                        option.h6-14.regular  Theo thời gian
+        .tabbar__border            
+    .row.m-0
+        each item in [1,2,3,4,5,6,7,8,9,10,11,12]
+            .col-md-4.col-6.px-2.list-video-item
+                .list-video-item-div.mx-auto.position-relative
+                    a(href="#").list-video-item-div-play.h-100.w-100.position-absolute
+                        img(src="./assets/images/video-cua-ban/play-button.png", alt="").list-video-item-div-play-button.position-relative
+                    img(src="./assets/images/video-cua-ban/video-1.png", alt="").list-video-item-img.img-fluid
+                .list-video-item-description.d-flex
+                    img(src="./assets/images/video-cua-ban/tac-gia.png", alt="").list-video-item-description__author.h-100.rounded-circle
+                    .list-video-item-description__content
+                        p.list-video-item-description__content-heading.medium.body-13 Khóa học thiết kế kiến trúc thực hành AWE
+                        p.list-video-item-description__content-subheading.regular.body-13 Học viện FamHRM
+                        span.list-video-item-description__content-total.regular.body-13 63 bài giảng
+                        span.list-video-item-description__content-time.regular.body-13 06:32:21
+        

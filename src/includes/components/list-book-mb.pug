@@ -1,0 +1,23 @@
+.list__book-mb
+    .list__book-title
+        h4 Ebook đang đọc
+    each item in [1,2,3,4,5,6]
+        .list__book-content.d-flex
+            .col-xs-3
+                .book__content-img
+                    a(href="./book-detail-mobile-1.html")
+                        div(class="lazy lazy-opacity bg-layout" data-bg="./assets/images/typical-book/image.png" style="width: 115px; height: 173px;")
+                        span Sách giấy
+            .col-xs-9
+                .book__content-infor
+                    .content__infor-title
+                        h4 Các đô thị Việt Nam quá trình hình thành, phát triể...
+                    .content__infor-description
+                        p • Tác giả:
+                        p.text-indent Phan Huy Đông (CB) Đỗ Thị Thu Hiền, Phan Hồng Quân - ĐH Xây dựng HN
+                    .content__infor-btn
+                        button.infor__btn-details.d-flex.justify-content-center.align-items-center
+                            a(href="book-detail-mobile-2.html")
+                                span Đọc tiếp
+                                svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M6 18L14.5 12L6 6V18ZM16 6V18H18V6H16Z' fill='white')

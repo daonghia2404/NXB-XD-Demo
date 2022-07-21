@@ -1,0 +1,155 @@
+.payment-page {
+  .services-contact-title {
+    font-size: 20px !important;
+
+    @media (min-width: 992px) {
+      border-bottom: none !important;
+    }
+  }
+
+  &-info {
+    &-item {
+      margin-bottom: 16px;
+
+      @media (max-width: 991px) {
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+      }
+
+      &-text {
+        min-width: 120px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #333333;
+        margin-right: 12px;
+
+        @media (max-width: 991px) {
+          min-width: unset;
+          margin: 0 0 12px 0;
+        }
+      }
+
+      &-input {
+        padding: 12px 16px;
+        background: #F8F8F8;
+        border: 1px solid #D1D1D1;
+        border-radius: 5px;
+        width: 100%;
+
+        &-text {
+          color: #333333;
+          font-size: 14px;
+          font-weight: 700;
+          width: 80%;
+        }
+
+        &-icon {
+          cursor: pointer;
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+
+      &-note {
+        padding: 16px;
+        background: #FFF9EB;
+        border-radius: 5px;
+
+        &-text {
+          font-size: 14px;
+          font-weight: 700;
+          color: #E2621A;
+        }
+
+        &-input {
+          margin: 12px 0;
+          padding: 5px 16px;
+          background: #FFFFFF;
+          border: 1px dashed #E2621A;
+          border-radius: 5px;
+
+          &-text {
+            color: #333333;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            width: 80%;
+          }
+
+          &-icon {
+            cursor: pointer;
+
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-bill {
+    background: url('../images/bg-bill.png');
+    background-size: cover;
+    background-position: center bottom;
+    padding: 38px 24px;
+    border-radius: 5px;
+
+    &-row {
+      padding: 8px 0;
+
+      &.border-bottom {
+        border: 1px dashed #E1D6BF;
+      }
+    }
+
+    &-text {
+      font-size: 14px;
+      color: #333333;
+
+      &.medium {
+        font-size: 16px;
+      }
+
+      &.green {
+        color: #219626;
+      }
+
+      &.red {
+        color: #EB5757;
+      }
+
+      &.big {
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      &.small {
+        font-size: 14px;
+      }
+    }
+
+    &-note {
+      margin: 8px 0;
+      padding: 5px 10px;
+      background: #F4FAFF;
+      border: 1px solid #8CC7FD;
+      border-radius: 2px;
+
+      &-icon {
+        flex: 0 0 16px;
+        max-width: 16px;
+        margin-right: 12px;
+      }
+
+      &-text {
+        color: #247BCB;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+  }
+}

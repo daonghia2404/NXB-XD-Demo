@@ -1,0 +1,114 @@
+.regulation-payment {
+    background: $white;
+    border-radius: 5px;
+    padding: 30px;
+    @include breakpoint(1024) {
+        padding: 30px 15px;
+    }
+    color: $grey-color;
+    h2 {
+        font-family: $font-inter;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        margin-bottom: 18px;
+    }
+    &__list {
+        &-item {
+            border-top: 1px dashed $border-color2;
+            padding: 11px 0;
+            &:first-child {
+                border-top-style: solid;
+            }
+            img {
+                margin-right: 9px;
+                width: 24px;
+                height: 22px;
+            }
+            .item__label {
+                font-family: $font-inter;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 22px;
+            }
+            .item__content {
+                float: right;
+                font-family: $font-inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                &-red {
+                    color: $red;
+                    font-weight: 700;
+                    font-size: 20px;
+                    span {
+                        font-weight: 400;
+                    }
+                }
+                &-blue {
+                    color: $blue-dark;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    &__btn {
+        display: block;
+        background-color: $red;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 5px;
+        margin-top: 8px;
+        span {
+            font-family: $font-inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            color: $white;
+        }
+        img {
+            margin-right: 6px;
+        }
+    }
+}
+
+.regulation-moveon {
+    background: $white;
+    border-radius: 5px;
+    padding: 26px 30px 18px 30px;
+    @include breakpoint(1024) {
+        padding: 26px 15px 18px 15px;
+    }
+    color: $grey-color;
+    margin-top: 21px;
+    h2 {
+        font-family: $font-inter;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        margin-bottom: 13px;
+    }
+    &__list {
+        &-item {
+            display: flex;
+            align-items: start;
+            font-family: $font-inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            text-decoration: none;
+            color: $grey-color;
+            border-top: 1px dashed $border-color2;
+            padding: 11px 0;
+            &:first-child {
+                border-top-style: solid;
+            }
+            img {
+                margin-right: 8px;
+                position: relative;
+                top: -1px;
+            }
+        }
+    }
+}

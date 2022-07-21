@@ -1,0 +1,239 @@
+.comment-box {
+	background: $white;
+	border-radius: 5px;
+	padding: 24px;
+
+	@include breakpointminmax(767, 991) {
+		margin-bottom: 24px;
+	}
+
+	.comment__title {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 21.09px;
+		font-family: $font-inter;
+		color: $grey-dark;
+		border-bottom: 1px solid $grey-2;
+		padding-bottom: 13px;
+		position: relative;
+		margin-bottom: 21px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 77px;
+			height: 5px;
+			left: 0;
+			top: 29px;
+			background: $brown-medium;
+		}
+	}
+
+	.comment__list {
+		.comment__list-user {
+			display: flex;
+
+			.user__avatar {
+				width: 24px;
+				height: 24px;
+				border-radius: 50%;
+				background: $grey-light;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 12px;
+				font-weight: 700;
+			}
+
+			.user__name {
+				line-height: 1.5;
+				font-size: 14px;
+				margin: 0 0 8px 8px;
+				color: $grey-dark;
+				font-family: $font-inter;
+				font-weight: 700;
+
+				@media (max-width: 767px) {
+					display: flex;
+					flex-wrap: wrap;
+				}
+			}
+		}
+
+		.comment__list-content {
+			margin-left: calc(24px + 8px);
+
+			@include breakpoint(767) {
+				margin-left: 0;
+			}
+
+			.list-content__cm {
+				font-family: $font-inter;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 1.5;
+				color: $grey-1;
+			}
+
+			.list-content__reply {
+				margin-top: 4px;
+
+				.content__reply-name {
+					cursor: pointer;
+					font-size: 14px;
+					line-height: 16px;
+					color: $blue;
+				}
+
+				small {
+					margin-left: 10px;
+					font-size: 12px;
+					line-height: 14px;
+					color: $grey-1;
+				}
+			}
+
+			.comment__list-rectangle {
+				margin-top: 16px;
+				padding: 20px 10px;
+				margin-bottom: 30px;
+				background: $grey-7;
+				border: 1px solid $grey-3;
+				border-radius: 5px;
+				position: relative;
+
+				&::before {
+					content: '';
+					position: absolute;
+					width: 16px;
+					height: 16px;
+					background: $grey-7;
+					border-top: 1px solid $grey-3;
+					border-left: 1px solid $grey-3;
+					transform: translateY(-50%) rotate(45deg);
+					left: 14px;
+					top: 0;
+				}
+
+				.comment__list-user {
+					.user__name {
+						.name-role {
+							margin-left: 8px;
+							font-size: 12px;
+							color: #4F4F4F;
+							background: #F2C94C;
+							line-height: 14.06px;
+							font-family: $font-inter;
+							font-weight: 400;
+							font-style: normal;
+							border-radius: 3px;
+							padding: 3px 10px;
+
+							@include breakpoint(767) {
+								margin-left: 5px;
+							}
+						}
+					}
+				}
+
+				.comment__list-content {
+					.list-content__cm {
+						.cm-greeting {
+							display: block;
+							padding-bottom: 2px;
+						}
+					}
+				}
+			}
+
+			.comment__reply {
+				padding: 0 10px;
+				overflow: hidden;
+				max-height: 0;
+				opacity: 0;
+				transition: all .3s ease-in;
+
+				&.active {
+					opacity: 1;
+					overflow: visible;
+					max-height: 100%;
+				}
+
+				form {
+					.comment__avatar {
+						display: flex;
+
+						.avt {
+							width: 30px;
+							height: 30px;
+							border-radius: 50%;
+							background: $grey-light;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+
+						.reply {
+							margin-left: 10px;
+							width: 90%;
+							padding: 6px 10px;
+							border: none;
+							border: 1px solid $grey-2;
+							margin-bottom: 20px;
+							box-shadow: none !important;
+							border-radius: 5px;
+							display: inline-block;
+							transition: border 0.25s linear;
+							font-weight: normal;
+							font-size: 14px;
+							outline: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.comment__text {
+		.message__form {
+			position: relative;
+
+			.message {
+				width: 100%;
+				font-size: 13px;
+				position: relative;
+				padding: 10px 16px;
+				resize: none;
+				outline: none;
+				border: 1px solid $grey-2;
+				margin-bottom: 1.5rem;
+				min-height: 80px;
+				box-shadow: none !important;
+				border-radius: 5px;
+
+				&::placeholder {
+					font-size: 13px;
+					line-height: 1.5;
+				}
+			}
+
+			.icon-mess {
+				position: absolute;
+				right: 10px;
+				bottom: 40px;
+			}
+		}
+
+		.btn-submit {
+			text-align: center;
+
+			a {
+				color: $white;
+				padding: 6px 10px 7px 11px;
+				background: $brown-medium;
+				border-radius: 5px;
+			}
+		}
+	}
+}

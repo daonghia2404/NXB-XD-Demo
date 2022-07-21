@@ -1,0 +1,77 @@
+.custom-audio-title{
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.audiobook__author{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content--mobile .body-13{
+    font-size: 14px;
+}
+
+.audio-time-mb{
+    position: relative;
+    top: 6px;
+}
+
+.audio-controls-pos{
+    margin-top: 30px;
+}
+
+.main-controls-mb{
+    margin-bottom: 30px;
+}
+
+.chapter--icon{
+    cursor: pointer;
+    margin: 0 30px;
+}
+
+.item-access .items-postion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .label-items{
+        margin-top: 16px;
+    }
+}
+
+.chapter__list-change{
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    &.open{
+        max-height: max-content;
+        overflow: inherit;
+    }
+    .chapter__list-item:nth-child(odd){
+        background: $white;
+    }
+
+    .chapter__list-item:first-child{
+        border-top: none;
+    }
+
+    .chapter__list-item{
+        .item-main-content{
+            flex: 1;
+        }
+        .item-intro{
+            color: $gray-828282;
+            margin: 0;
+            flex-basis: 100%;
+        }
+        .item-time__counter{
+            font-size: 14px;
+        }
+        &.active{
+            .item-content,.item-intro{
+                color: $blue-007BFF;
+            }
+        }    
+    }
+}

@@ -1,0 +1,5 @@
+extend includes/layout/layout.pug
+block pages
+    include ./includes/components/account-sidebar-mb.pug
+    +slide__bar-mb("Thông tin người nhận", true)
+    include includes/pages/edit_order_mb.pug

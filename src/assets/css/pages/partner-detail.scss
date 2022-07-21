@@ -1,0 +1,23 @@
+.partner__detail-wrapper {
+    padding-top: 20px;
+    .detail__wrapper-right {
+        .wrapper__right {
+            background-color: $white;
+            padding: 25px 31px 25px 31px;
+            border-radius: 5px;
+        }
+    }
+    .wrapper__pagination {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .main__left img {
+        @include breakpoint(768) {
+            display: none;
+        }
+    }
+    .main__left,
+    .detail__wrapper-right {
+        margin-top: 20px;
+    }
+}

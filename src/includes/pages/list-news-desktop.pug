@@ -1,0 +1,70 @@
+-
+    const listHeader = [
+        {
+            img: "./assets/images/list-news/img_her.png",
+            title: "Tin xây dựng",
+        },
+        {
+            img: "./assets/images/list-news/img_her.png",
+            title: "Thông tin Xuất bản ",
+        },
+        {
+            img: "./assets/images/list-news/img_her.png",
+            title: "Công nghệ mới",
+        },
+        {
+            img: "./assets/images/list-news/img_her.png",
+            title: "Cảm nhận sách",
+        },
+    ]
+mixin list__news(title)    
+    .list__news
+        .category__wrapper-breadcrum
+            include ../components/breadcrumb.pug
+            +brcrumb('Tin tức')
+        .container
+            .row 
+                .col-lg-9 
+                    .row 
+                        each item in listHeader 
+                            .col-lg-3 
+                                .list__news-gr 
+                                    a(href="")
+                                        img(src=item.img, alt="")
+                                        p.news-gr__title=item.title
+                    .row 
+                        .col-lg-12 
+                            .list__news-content 
+                                h2.news-content__title=title 
+                                .news-content__img 
+                                    img(src="./assets/images/list-news/bg.png", alt="")
+                                    .content-text
+                                        a(href="")
+                                            small Cảm nhận sách | eBook
+                                        a(href="news-detail.html")
+                                            h4.text__description Đà Lạt Một thời hương xa   
+                                .news-content__book 
+                                    each item in[1,2,3,4,5]
+                                        .content__book-list
+                                            .row 
+                                                .col-lg-3.col-md-3 
+                                                    .book-left 
+                                                        img(src="./assets/images/list-news/food.png", alt="")
+                                                        p.book-left__pos 
+                                                            span Dự án 
+                                                .col-lg-9.col-md-9 
+                                                    .book-right 
+                                                        a(href="")
+                                                            small Cảm nhận sách | eBook
+                                                        a(href="news-detail.html")
+                                                            h4.text__description Đà Lạt Một thời hương xa  
+                                                        p.book-right__text Áp dụng hệ thống quản lý số hóa và thư viện sách trực tuyến 4.0, NXB xây dựng tiên phong trong....Áp dụng hệ thống quản lý số hóa và thư viện sách trực tuyến 4.0, NXB xây dựng tiên phong trong....        
+                    .row 
+                        .col-lg-12
+                            .news-pagination 
+                                include ../components/pagination.pug
+                .col-lg-3
+                    include ../components/menu-topic.pug  
+                    include ../components/check-license.pug
+                    include ../components/news.pug                  
+

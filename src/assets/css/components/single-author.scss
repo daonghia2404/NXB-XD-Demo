@@ -1,0 +1,48 @@
+.single-author {
+    padding: 24px;
+    background-color: $white;
+    border-radius: 5px;
+    &__info {
+        padding-bottom: 15px;
+        border-bottom: 1px solid $border-color;
+        .info-avatar {
+            position: relative;
+            margin-right: 15px;
+            border: 1px solid $brown-medium;
+            border-radius: 50%;
+            height: 36px;
+            width: 36px;
+            .icon-check {
+                position: absolute;
+                top: -12px;
+                right: 0;
+            }
+        }
+
+        .info-txt {
+            font-size: 13px;
+        }
+    }
+    &__publisher {
+        .publisher-title {
+            padding: 10px 0;
+            color: $text-color;
+        }
+        .publisher-info {
+            &__logo {
+                margin-right: 8px;
+            }
+            &__desc {
+                .desc-icon {
+                    margin-right: 5px;
+                }
+                .desc-txt {
+                    span {
+                        font-size: 12px;
+                        color: $gray-4F4F4F;
+                    }
+                }
+            }
+        }
+    }
+}
